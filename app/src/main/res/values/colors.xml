@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroung">#D6D3D3</color>
+    <color name="textColor2">#000000</color>
+    <color name="InCorrect">#F44336</color>
+    <color name="button2s">#3F51B5</color>
+    <color name="button3">#FFEB3B</color>
+    <color name="Correct">#4CAF50</color>
+    <color name="niceButton">#088EE4</color>
+    <color name="aws">#FF9900</color>
+    <color name="button2">#232F3E</color>
+    <color name="textColor">#FFFFFF</color>
+</resources>
