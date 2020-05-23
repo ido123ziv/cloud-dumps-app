@@ -13,28 +13,41 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        awsButton.setOnClickListener {
-            if (QuestionsInput.text.toString() == "") {
-                Snackbar.make(it, "נא להזין את כמות השאלות", Snackbar.LENGTH_SHORT)
-                    .setAction("Action", null).show()
-            } else {
-                val intent = Intent(this, GameActivity::class.java)
-
-                // TODO pass parameters
-                val n = QuestionsInput.text.toString().toInt()
-                intent.putExtra("NUM_OF_QUESTIONS", n)
-
-                // Go to activity
-                startActivity(intent)
-            }
+        button.setOnClickListener {
+            val intent = Intent(this, GameActivity::class.java)
+            // Go to activity
+            intent.putExtra("NUM_OF_QUESTIONS", 5)
+            startActivity(intent)
         }
+
+        button2.setOnClickListener {
+            val intent = Intent(this, GameActivity::class.java)
+            // Go to activity
+            intent.putExtra("NUM_OF_QUESTIONS", 15)
+            startActivity(intent)
+        }
+
+        button3.setOnClickListener {
+            val intent = Intent(this, GameActivity::class.java)
+            // Go to activity
+            intent.putExtra("NUM_OF_QUESTIONS", 30)
+            startActivity(intent)
+        }
+
+
+        button4.setOnClickListener {
+            val intent = Intent(this, GameActivity::class.java)
+            // Go to activity
+            intent.putExtra("NUM_OF_QUESTIONS", 50)
+            startActivity(intent)
+        }
+
     }
 
-    fun buOBClick(v: View) {
-        var intent = Intent(this, GameActivity::class.java)
-        startActivity(intent)
+//    fun buOBClick(v: View) {
+//        var intent = Intent(this, GameActivity::class.java)
+//        startActivity(intent)
+//    }
 
-
-    }
 
 }

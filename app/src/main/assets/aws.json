@@ -1,13 +1,13 @@
 [
   {
     "Correct": [
-      "The Principal of Least Privilege "
+      "The Principal of Least Privilege"
     ],
     "Answers": [
-      "The Least Privilege User Principal ",
-      "The Principal of Least Privilege ",
-      "The Only Access Principal. ",
-      "None of the above   "
+      "The Least Privilege User Principal",
+      "The Principal of Least Privilege",
+      "The Only Access Principal.",
+      "None of the above"
     ],
     "Question": " What is the term used to describe giving an AWS user only access to the exact services he/she needs to do the required job and nothing more?  ",
     "id": 0
