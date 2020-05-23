@@ -14,7 +14,7 @@
             android:layout_weight="1"
             android:text="Welcome to the AWS Training Center!"
             android:textAlignment="center"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/aws"
             android:textSize="40dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -37,15 +37,18 @@
             <Button
                     android:id="@+id/button"
                     style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="100dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
+                    android:background="@color/aws"
                     android:text="short" />
 
             <Button
                     android:id="@+id/button2"
-                    android:layout_width="100dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:text="med" />
+                    android:text="med"
+                    android:background="@color/cardview_dark_background"
+                    android:textColor="@android:color/holo_blue_dark"/>
         </TableRow>
 
         <TableRow
@@ -55,15 +58,19 @@
 
             <Button
                     android:id="@+id/button4"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:text="long" />
+                    android:text="long"
+                    android:background="@color/cardview_dark_background"
+                    android:textColor="@android:color/white"/>
 
             <Button
                     android:id="@+id/button3"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:text="ex-long" />
+                    android:text="ex-long"
+                    android:background="@color/aws"
+                    />
         </TableRow>
     </TableLayout>
 

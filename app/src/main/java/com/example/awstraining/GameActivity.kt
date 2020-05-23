@@ -24,9 +24,10 @@ import kotlin.collections.ArrayList
 
 class GameActivity : AppCompatActivity() {
     lateinit var listOfQuestions: List<Question> // all the questions from the JSON
-    var myList = arrayListOf<Question>() // the questions we will use
+    lateinit var myList: List<Question> // the questions we will use
     var lastQ = 0 // the last questions that was displayed
     var nextQ = 0
+    var current_question_index: Int = 0
     var listOfCorrect = arrayListOf<Int>() // ?
     private var num_of_questions = 10 //num of questions
     private var score = 0 //player score
@@ -44,15 +45,17 @@ class GameActivity : AppCompatActivity() {
 //        myList = pickQuestions(max)
 //        // Question2.text= listOfQuestions[0].subject
 //        nextQuestion()
-//        Question2.setOnClickListener { nextQuestion() }
-        listOfQuestions = getDataFromJSON(assets, applicationContext)
+        Question2.setOnClickListener { next_Question() }
+        listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
+        myList = listOfQuestions.slice(0..num_of_questions)
 
+        // print first question
         Question2.text = listOfQuestions[0].q
-
         recycler_view_Answers.apply {
             layoutManager = LinearLayoutManager(this@GameActivity)
             adapter = AnswerAdapter(listOfQuestions[0].la)
         }
+        current_question_index = 0
 
         LocalBroadcastManager.getInstance(this).registerReceiver(object : BroadcastReceiver() {
             override fun onReceive(p0: Context?, p1: Intent?) {
@@ -74,7 +77,22 @@ class GameActivity : AppCompatActivity() {
         }, IntentFilter("custom-message"))
     }
 
+    fun print_question(question: Question){
+        Question2.text = question.q
 
+        recycler_view_Answers.apply {
+            layoutManager = LinearLayoutManager(this@GameActivity)
+            adapter = AnswerAdapter(question.la)
+        }
+    }
+
+    fun next_Question() {
+        current_question_index += 1
+        var q : Question = myList[current_question_index]
+        print_question(q)
+    }
+
+}
 
 //    /* logic */
 //    fun getButtonFromID(i : Int): Button { //converts id to button
@@ -232,5 +250,3 @@ class GameActivity : AppCompatActivity() {
 //        //var listofab = listofa.shuffled()
 //        return Question(name,listofa,correct,"")
 //    }
-
-}
