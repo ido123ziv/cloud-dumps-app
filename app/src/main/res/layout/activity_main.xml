@@ -46,9 +46,9 @@
                     android:id="@+id/button2"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:text="med"
                     android:background="@color/cardview_dark_background"
-                    android:textColor="@android:color/holo_blue_dark"/>
+                    android:text="med"
+                    android:textColor="@android:color/holo_blue_dark" />
         </TableRow>
 
         <TableRow
@@ -68,9 +68,8 @@
                     android:id="@+id/button3"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:text="ex-long"
                     android:background="@color/aws"
-                    />
+                    android:text="ex-long" />
         </TableRow>
     </TableLayout>
 

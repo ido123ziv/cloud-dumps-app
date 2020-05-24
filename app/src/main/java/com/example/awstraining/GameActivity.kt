@@ -47,7 +47,7 @@ class GameActivity : AppCompatActivity() {
 //        nextQuestion()
         Question2.setOnClickListener { next_Question() }
         listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
-        myList = listOfQuestions.slice(0..num_of_questions)
+        myList = listOfQuestions.slice(0 until num_of_questions)
 
         // print first question
         Question2.text = listOfQuestions[0].q
@@ -79,7 +79,6 @@ class GameActivity : AppCompatActivity() {
 
     fun print_question(question: Question){
         Question2.text = question.q
-
         recycler_view_Answers.apply {
             layoutManager = LinearLayoutManager(this@GameActivity)
             adapter = AnswerAdapter(question.la)
@@ -91,6 +90,13 @@ class GameActivity : AppCompatActivity() {
         var q : Question = myList[current_question_index]
         print_question(q)
     }
+
+    fun isCorrect(a: Answer) : Boolean{
+        val currQuestion : Question = listOfQuestions[current_question_index]
+        return currQuestion.corrects.contains(a)
+    }
+
+
 
 }
 
