@@ -33,9 +33,9 @@ class GameActivity : AppCompatActivity() {
     private var score = 0 //player score
     var listOfCorrect = mutableListOf<Question>() // ?
     var listOfInCorrect : MutableList<Question> = mutableListOf()
+    var isFirstTry : Boolean = true
 
     var cond = false // determinates if it was the first incorrect or not
-    var firstTry = true
     var lastQ = 0 // the last questions that was displayed
     var nextQ = 0
 
@@ -46,6 +46,7 @@ class GameActivity : AppCompatActivity() {
         bundle?.let {
             num_of_questions = it.getInt("NUM_OF_QUESTIONS")
         }
+        score = 0
 //        listOfQuestions = getDataFromJSON()
 //        myList = pickQuestions(max)
 //        // Question2.text= listOfQuestions[0].subject
@@ -66,7 +67,7 @@ class GameActivity : AppCompatActivity() {
             override fun onReceive(p0: Context?, p1: Intent?) {
                 val currentQuestion = myList[current_question_index]
                 val answerText = p1?.getStringExtra("answer")
-
+                isFirstTry = true
                 val answer = currentQuestion.la.find { a -> a.answer == answerText }
                 // Question2.text = listOfQuestions[1].q
 
@@ -79,10 +80,12 @@ class GameActivity : AppCompatActivity() {
                         layoutManager = LinearLayoutManager(this@GameActivity)
                         adapter = AnswerAdapter(currentQuestion.la)
                     }
-                    if(currentQuestion.corrects.size == selectedAnswers.size) {
-                        score += 1
-                        listOfCorrect.add(currentQuestion)
-                        Thread.sleep(100)
+                    if(currentQuestion.corrects.size == selectedAnswers.size)
+                    {
+                        if (isFirstTry) {
+                            score += 1
+                            listOfCorrect.add(currentQuestion)
+                        }
                         if (current_question_index < myList.size - 1)
                         {
                             next_Question()
@@ -99,6 +102,7 @@ class GameActivity : AppCompatActivity() {
                     }
                 }
                 else {
+                    isFirstTry = false
                     answer.backgroundColor = Color.RED
                     listOfInCorrect.add(currentQuestion)
                     recycler_view_Answers.apply {

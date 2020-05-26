@@ -1,0 +1,83 @@
+[
+  {
+    "Correct": [
+      "The Principal of Least Privilege"
+    ],
+    "Answers": [
+      "The Least Privilege User Principal",
+      "The Principal of Least Privilege",
+      "The Only Access Principal.",
+      "None of the above"
+    ],
+    "Question": " What is the term used to describe giving an AWS user only access to the exact services he/she needs to do the required job and nothing more?  ",
+    "id": 0
+  },
+  {
+    "Correct": [
+      "A+B are correct "
+    ],
+    "Answers": [
+      "Bucket names must be unique across all of AWS. ",
+      "Bucket names must be between 3-63 characters in length. ",
+      "Bucket names must contain at least one uppercase letter ",
+      "A+B are correct "
+    ],
+    "Question": " When you create a S3 bucket, what rules must be followed regarding the bucket name?",
+    "id": 1
+  },
+  {
+    "Correct": [
+      "All Are correct "
+    ],
+    "Answers": [
+      "Pay As You Go Subscription",
+      "They are the most filexible buying option. ",
+      "All Are correct ",
+      "Create, start, stop, and terminate at any time.  "
+    ],
+    "Question": " What are the main benefits of On-Demand EC2 instances?",
+    "id": 2
+  },
+  {
+    "Correct": [
+      "CloudWatch "
+    ],
+    "Answers": [
+      "CloudWatch ",
+      "CloudMonitor ",
+      "Consolidated bil ing ",
+      "CloudTrail   "
+    ],
+    "Question": " What AWS service must you use if you want to configure an AWS bil ing alarm?   ",
+    "id": 3
+  },
+  {
+    "Correct": [
+      "All Are Correct "
+    ],
+    "Answers": [
+      "Networking ",
+      "All Are Correct ",
+      "Storage ",
+      "Virtualization and Analytics "
+    ],
+    "Question": " What are some common uses of AWS?",
+    "id": 4
+  },
+  {
+    "Question": "Which of the following items are required to allow an application deployed on an EC2 instance to write data to a DynamoDB table? Assume that no security Keys are allowed to be stored on the EC2 instance. Choose 2 answers",
+    "Answers": [
+      "Create an IAM User that allows write access to the DynamoDB table.",
+      "Add an IAM Role to a running EC2 instance.",
+      "Add an IAM User to a running EC2 Instance.",
+      "Launch an EC2 Instance with the IAM Role included in the launch configuration.",
+      "Create an IAM Role that allows write access to the DynamoDB table.",
+      "Launch an EC2 Instance with the IAM User included in the launch configuration."
+    ],
+    "id": 215,
+    "Correct": [
+      "Launch an EC2 Instance with the IAM Role included in the launch configuration.",
+      "Create an IAM Role that allows write access to the DynamoDB table."
+    ]
+  }
+]
