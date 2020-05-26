@@ -1,18 +1,20 @@
 package com.example.awstraining
 
-import android.content.BroadcastReceiver
-import android.content.Context
-import android.content.Intent
-import android.content.IntentFilter
+import android.annotation.SuppressLint
+import android.content.*
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.awstraining.MainActivity.Companion.LOADING_DELAY
 import com.example.awstraining.dal.getDataFromJSON
 import kotlinx.android.synthetic.main.activity_game.*
 import org.json.JSONArray
@@ -25,14 +27,17 @@ import kotlin.collections.ArrayList
 class GameActivity : AppCompatActivity() {
     lateinit var listOfQuestions: List<Question> // all the questions from the JSON
     lateinit var myList: List<Question> // the questions we will use
-    var lastQ = 0 // the last questions that was displayed
-    var nextQ = 0
+    lateinit var selectedAnswers: MutableList<Answer>
     var current_question_index: Int = 0
-    var listOfCorrect = arrayListOf<Int>() // ?
     private var num_of_questions = 10 //num of questions
     private var score = 0 //player score
+    var listOfCorrect = mutableListOf<Question>() // ?
+    var listOfInCorrect : MutableList<Question> = mutableListOf()
+
     var cond = false // determinates if it was the first incorrect or not
     var firstTry = true
+    var lastQ = 0 // the last questions that was displayed
+    var nextQ = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,36 +50,82 @@ class GameActivity : AppCompatActivity() {
 //        myList = pickQuestions(max)
 //        // Question2.text= listOfQuestions[0].subject
 //        nextQuestion()
-        Question2.setOnClickListener { next_Question() }
+        Question2.setOnClickListener {
+            if (current_question_index < myList.size - 1)
+                next_Question() }
         listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
         myList = listOfQuestions.slice(0 until num_of_questions)
 
         // print first question
-        Question2.text = listOfQuestions[0].q
-        recycler_view_Answers.apply {
-            layoutManager = LinearLayoutManager(this@GameActivity)
-            adapter = AnswerAdapter(listOfQuestions[0].la)
-        }
         current_question_index = 0
+        print_question(myList[current_question_index])
+        selectedAnswers = mutableListOf()
 
         LocalBroadcastManager.getInstance(this).registerReceiver(object : BroadcastReceiver() {
+            @SuppressLint("SetTextI18n")
             override fun onReceive(p0: Context?, p1: Intent?) {
-                Question2.text = listOfQuestions[1].q
-                recycler_view_Answers.apply {
-                    layoutManager = LinearLayoutManager(this@GameActivity)
-                    adapter = AnswerAdapter(listOfQuestions[1].la)
+                val currentQuestion = myList[current_question_index]
+                val answerText = p1?.getStringExtra("answer")
+
+                val answer = currentQuestion.la.find { a -> a.answer == answerText }
+                // Question2.text = listOfQuestions[1].q
+
+                if (isCorrect(answer!!)) {
+                    answer.backgroundColor = Color.GREEN
+
+                    selectedAnswers.add(answer)
+                    // if all the answers were selected
+                    recycler_view_Answers.apply {
+                        layoutManager = LinearLayoutManager(this@GameActivity)
+                        adapter = AnswerAdapter(currentQuestion.la)
+                    }
+                    if(currentQuestion.corrects.size == selectedAnswers.size) {
+                        score += 1
+                        listOfCorrect.add(currentQuestion)
+                        Thread.sleep(100)
+                        if (current_question_index < myList.size - 1)
+                        {
+                            next_Question()
+                        }
+                        else
+                        {
+                          val res = "$score/$num_of_questions"
+                            Question2.text = "Your score is $res"
+                            recycler_view_Answers.apply {
+                                layoutManager = LinearLayoutManager(this@GameActivity)
+                                adapter = AnswerAdapter(listOf())
+                            }
+                        }
+                    }
                 }
-                Toast.makeText(applicationContext, "here 1", Toast.LENGTH_LONG)
+                else {
+                    answer.backgroundColor = Color.RED
+                    listOfInCorrect.add(currentQuestion)
+                    recycler_view_Answers.apply {
+                        layoutManager = LinearLayoutManager(this@GameActivity)
+                        adapter = AnswerAdapter(currentQuestion.la)
+                    }
+                    var listOfCorr = currentQuestion.corrects
+                    correctAnswerPopUp(getStringOfAllCorrectFromList(listOfCorr))
+                }
+
+
+//                Toast.makeText(applicationContext, "here 1", Toast.LENGTH_LONG)
 //                when (p1?.action) {
 //                    "custom-message" -> {
 //                        Toast.makeText(applicationContext, "here 2", Toast.LENGTH_LONG)
 //                    }
-//                }
-                p1?.getStringExtra("answer")
+
 
 
             }
         }, IntentFilter("custom-message"))
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+//        var intent = Intent(this,ExamListActivity::class.java)
+//        startActivity(intent)
     }
 
     fun print_question(question: Question){
@@ -88,13 +139,35 @@ class GameActivity : AppCompatActivity() {
     fun next_Question() {
         current_question_index += 1
         var q : Question = myList[current_question_index]
+        selectedAnswers = mutableListOf()
         print_question(q)
     }
 
     fun isCorrect(a: Answer) : Boolean{
         val currQuestion : Question = listOfQuestions[current_question_index]
-        return currQuestion.corrects.contains(a)
+        return currQuestion.corrects.map { it.answer }.contains(a.answer)
     }
+
+    fun correctAnswerPopUp(answerText : String) {
+        val builder: AlertDialog.Builder = AlertDialog.Builder(this)
+        with(builder) {
+            setTitle("Correct Answer is:")
+            setMessage(answerText)
+            setPositiveButton("", DialogInterface.OnClickListener { dialog, which ->
+            })
+            show()
+
+        }
+    }
+
+    fun getStringOfAllCorrectFromList(listOfCorr : List<Answer>) : String{
+        var str = ""
+        for (i in listOfCorr){
+            str += i.answer + "\n"
+        }
+        return str
+    }
+
 
 
 

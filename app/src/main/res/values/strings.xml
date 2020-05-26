@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">AWS Training</string>
     <string name="answer">Answer</string>
+    <string name="pickAGame">Please Pick the Length of The Game</string>
+    <string name="five">5</string>
+    <string name="ten">10</string>
+    <string name="fifteen">15</string>
+    <string name="twenty">20</string>
+    <string name="thirty">30</string>
+    <string name="fifty">50</string>
 </resources>

@@ -63,5 +63,21 @@
     ],
     "Question": " What are some common uses of AWS?",
     "id": 4
+  },
+  {
+    "Question": "Which of the following items are required to allow an application deployed on an EC2 instance to write data to a DynamoDB table? Assume that no security Keys are allowed to be stored on the EC2 instance. Choose 2 answers",
+    "Answers": [
+      "Create an IAM User that allows write access to the DynamoDB table.",
+      "Add an IAM Role to a running EC2 instance.",
+      "Add an IAM User to a running EC2 Instance.",
+      "Launch an EC2 Instance with the IAM Role included in the launch configuration.",
+      "Create an IAM Role that allows write access to the DynamoDB table.",
+      "Launch an EC2 Instance with the IAM User included in the launch configuration."
+    ],
+    "id": 215,
+    "Correct": [
+      "Launch an EC2 Instance with the IAM Role included in the launch configuration.",
+      "Create an IAM Role that allows write access to the DynamoDB table."
+    ]
   }
 ]
