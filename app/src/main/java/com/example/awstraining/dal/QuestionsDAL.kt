@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.res.AssetManager
 import android.widget.Toast
 import com.example.awstraining.Answer
-import com.example.awstraining.GameActivity
 import com.example.awstraining.Question
 import org.json.JSONArray
 import org.json.JSONObject
@@ -14,7 +13,7 @@ fun getDataFromJSON(assets : AssetManager, context: Context) : ArrayList<Questio
     var loq = arrayListOf<Question>() //list of questions
     var json : String
     try {
-        var iS : InputStream = assets.open("aws.json")
+        var iS : InputStream = assets.open("JsonFiles/aws.json")
         json = iS.bufferedReader().use { it.readText() }
         //  Question2.text = json
         var jsonArr = JSONArray(json)
@@ -36,16 +35,16 @@ fun getQuestionFromJsonObject(jsonobj : JSONObject) : Question { //build a quest
     val name = jsonobj.getString("Question")
     //  bu4.text = name
     //  val catr = jsonobj.getString("QuestionSubject")
-    var list_of_correct = jsonobj.getJSONArray("Correct")
+    var listOfCorrect = jsonobj.getJSONArray("Correct")
     var corrects = arrayListOf<Answer>()
-    for (i in 0..list_of_correct.length() - 1){
-        corrects.add(Answer(list_of_correct[i].toString()))
+    for (i in 0 until listOfCorrect.length()){
+        corrects.add(Answer(listOfCorrect[i].toString()))
     }
 //    val correct = jsonobj.getInt("Answer")-1
 //        bu4.text = correct.toString()
     var l = jsonobj.getJSONArray("Answers")
     var listofa = arrayListOf<Answer>()
-    for (i in 0..l.length() -1){
+    for (i in 0 until l.length()){
         val s = l[i].toString()
 //        bu3.text = s
         val a= Answer(s)

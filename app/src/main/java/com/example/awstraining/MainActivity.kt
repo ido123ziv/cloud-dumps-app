@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
+import com.example.awstraining.Suppliers.listOfQuestions
+import com.example.awstraining.dal.getDataFromJSON
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -29,6 +31,9 @@ class MainActivity : AppCompatActivity() {
     internal val mRunnable: Runnable = Runnable {
         android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_BACKGROUND)
         var intent: Intent?
+
+         listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
+
         intent = Intent(this, ExamListActivity::class.java)
         startActivity(intent)
         finish()

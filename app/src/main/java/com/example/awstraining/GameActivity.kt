@@ -15,6 +15,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.awstraining.MainActivity.Companion.LOADING_DELAY
+import com.example.awstraining.Suppliers.listOfQuestions
 import com.example.awstraining.dal.getDataFromJSON
 import kotlinx.android.synthetic.main.activity_game.*
 import org.json.JSONArray
@@ -25,7 +26,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class GameActivity : AppCompatActivity() {
-    lateinit var listOfQuestions: List<Question> // all the questions from the JSON
+//    lateinit var listOfQuestions: List<Question> // all the questions from the JSON
     lateinit var myList: List<Question> // the questions we will use
     lateinit var selectedAnswers: MutableList<Answer>
     var current_question_index: Int = 0
@@ -54,7 +55,7 @@ class GameActivity : AppCompatActivity() {
         Question2.setOnClickListener {
             if (current_question_index < myList.size - 1)
                 next_Question() }
-        listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
+//        listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
         myList = listOfQuestions.slice(0 until num_of_questions)
 
         // print first question
@@ -87,7 +88,8 @@ class GameActivity : AppCompatActivity() {
                         }
                         if (current_question_index < myList.size - 1)
                         {
-                            next_Question()
+//                            next_Question()
+
                         }
                         else
                         {
