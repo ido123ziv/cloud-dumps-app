@@ -92,7 +92,9 @@ class GameActivity : AppCompatActivity() {
                         else
                         {
                           val res = "${listOfCorrect.size}/$num_of_questions"
-                            Question2.text = "Your score is $res"
+                            Question2.text = "Your score is $res \nTouch here to create a game of incorrect"
+                            Question2.setOnClickListener {
+                                createGameFromIncorrect() }
                             recycler_view_Answers.apply {
                                 layoutManager = LinearLayoutManager(this@GameActivity)
                                 adapter = AnswerAdapter(listOf())
@@ -178,6 +180,19 @@ class GameActivity : AppCompatActivity() {
             str += i.answer + "\n"
         }
         return str
+    }
+
+    fun createGameFromIncorrect(){
+        myList = listOfInCorrect
+        listOfInCorrect = mutableListOf()
+        listOfCorrect = mutableListOf()
+        num_of_questions = myList.size
+        current_question_index = 0
+        print_question(myList[current_question_index])
+        selectedAnswers = mutableListOf()
+        Question2.setOnClickListener {
+            if (current_question_index < myList.size - 1)
+                next_Question() }
     }
 
 
