@@ -82,8 +82,7 @@ class GameActivity : AppCompatActivity() {
                     }
                     if(currentQuestion.corrects.size == selectedAnswers.size)
                     {
-                        if (isFirstTry) {
-                            score += 1
+                        if (!isAlreadyWrong(currentQuestion)){
                             listOfCorrect.add(currentQuestion)
                         }
                         if (current_question_index < myList.size - 1)
@@ -92,7 +91,7 @@ class GameActivity : AppCompatActivity() {
                         }
                         else
                         {
-                          val res = "$score/$num_of_questions"
+                          val res = "${listOfCorrect.size}/$num_of_questions"
                             Question2.text = "Your score is $res"
                             recycler_view_Answers.apply {
                                 layoutManager = LinearLayoutManager(this@GameActivity)
@@ -150,6 +149,15 @@ class GameActivity : AppCompatActivity() {
     fun isCorrect(a: Answer) : Boolean{
         val currQuestion : Question = listOfQuestions[current_question_index]
         return currQuestion.corrects.map { it.answer }.contains(a.answer)
+    }
+
+    fun isAlreadyWrong(question: Question) : Boolean{
+        var isFound = false
+        for (icq in listOfInCorrect){
+            if (icq.q == question.q)
+                return true
+        }
+        return isFound
     }
 
     fun correctAnswerPopUp(answerText : String) {

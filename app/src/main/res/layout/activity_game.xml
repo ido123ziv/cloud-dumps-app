@@ -16,7 +16,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:autoSizeMaxTextSize="48sp"
-            android:autoSizeMinTextSize="16sp"
+            android:autoSizeMinTextSize="12sp"
             android:autoSizeStepGranularity="4sp"
             android:autoSizeTextType="uniform"
             android:background="@color/aws"
