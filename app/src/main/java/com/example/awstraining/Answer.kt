@@ -8,4 +8,7 @@ class Answer(a : String, var backgroundColor: Int = Color.WHITE) {
     override fun toString(): String {
         return this.answer
     }
+    fun resetColor(){
+        backgroundColor = Color.WHITE
+    }
 }

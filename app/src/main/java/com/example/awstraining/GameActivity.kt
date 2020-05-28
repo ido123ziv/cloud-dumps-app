@@ -16,6 +16,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.awstraining.MainActivity.Companion.LOADING_DELAY
 import com.example.awstraining.Suppliers.listOfQuestions
+//import com.example.awstraining.Suppliers.saveListOfIncorrect
 import com.example.awstraining.dal.getDataFromJSON
 import kotlinx.android.synthetic.main.activity_game.*
 import org.json.JSONArray
@@ -48,16 +49,13 @@ class GameActivity : AppCompatActivity() {
             num_of_questions = it.getInt("NUM_OF_QUESTIONS")
         }
         score = 0
-//        listOfQuestions = getDataFromJSON()
-//        myList = pickQuestions(max)
-//        // Question2.text= listOfQuestions[0].subject
-//        nextQuestion()
+
         Question2.setOnClickListener {
             if (current_question_index < myList.size - 1)
                 next_Question() }
 //        listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
-        myList = listOfQuestions.slice(0 until num_of_questions)
-
+        var setMyList = listOfQuestions.shuffled().take(num_of_questions)
+        myList = copyListEntirely(setMyList)
         // print first question
         current_question_index = 0
         print_question(myList[current_question_index])
@@ -96,7 +94,8 @@ class GameActivity : AppCompatActivity() {
                           val res = "${listOfCorrect.size}/$num_of_questions"
                             Question2.text = "Your score is $res \nTouch here to create a game of incorrect"
                             Question2.setOnClickListener {
-                                createGameFromIncorrect() }
+                                createNewListFromIncorrect()
+                            }
                             recycler_view_Answers.apply {
                                 layoutManager = LinearLayoutManager(this@GameActivity)
                                 adapter = AnswerAdapter(listOf())
@@ -152,7 +151,11 @@ class GameActivity : AppCompatActivity() {
 
     fun isCorrect(a: Answer) : Boolean{
         val currQuestion : Question = listOfQuestions[current_question_index]
-        return currQuestion.corrects.map { it.answer }.contains(a.answer)
+        for (c in currQuestion.corrects){
+            if (a.answer == c.answer)
+                return true
+        }
+        return false
     }
 
     fun isAlreadyWrong(question: Question) : Boolean{
@@ -162,6 +165,13 @@ class GameActivity : AppCompatActivity() {
                 return true
         }
         return isFound
+    }
+    fun copyListEntirely(questionList :List<Question>) : List<Question>{
+        var newList : MutableList<Question> = mutableListOf()
+        for (q in questionList){
+            newList.add(Question(q.q, q.la, q.corrects, q.subject))
+        }
+        return newList
     }
 
     fun correctAnswerPopUp(answerText : String) {
@@ -186,6 +196,7 @@ class GameActivity : AppCompatActivity() {
 
     fun createGameFromIncorrect(){
         myList = listOfInCorrect
+        myList = clearList(myList)
         listOfInCorrect = mutableListOf()
         listOfCorrect = mutableListOf()
         num_of_questions = myList.size
@@ -197,7 +208,36 @@ class GameActivity : AppCompatActivity() {
                 next_Question() }
     }
 
+    fun createNewListFromIncorrect() {
+        var newList = mutableListOf<Question>()
+        for (q in listOfInCorrect){
+            var newAns = mutableListOf<Answer>()
+            for (a in q.la) {
+                newAns.add(Answer(a.answer))
+            }
+            newList.add(Question(q.q, newAns, q.corrects, q.subject))
+        }
+        myList = newList
 
+        listOfInCorrect = mutableListOf()
+        listOfCorrect = mutableListOf()
+        num_of_questions = myList.size
+        current_question_index = 0
+        print_question(myList[current_question_index])
+        selectedAnswers = mutableListOf()
+        Question2.setOnClickListener {
+            if (current_question_index < myList.size - 1)
+                next_Question() }
+    }
+
+    fun clearList(listOfQuestion: List<Question>) : List<Question>{
+        for (q in listOfQuestion) {
+            for (a in q.la){
+                a.resetColor()
+            }
+        }
+        return listOfQuestion
+    }
 
 
 }

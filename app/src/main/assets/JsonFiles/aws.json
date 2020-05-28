@@ -454,7 +454,7 @@
       "Execution timeout",
       "Memory "
     ],
-    "Question": "Lambda requires you to specifically allocate certain resources. Which of the following can you adjust directly yourself?",
+    "Question": "Lambda requires you to specifically allocate certain resources. Which of the following can you adjust directly yourself? (choose 2)",
     "id": 34
   },
   {
@@ -598,7 +598,6 @@
     "Correct": [
       "An AWS service that allows you to add additional configuration to your ECS cluster at the operating system layer"
     ],
-    "Problem": "Question",
     "Question": "AWS Fargate is:",
     "id": 45
   },
@@ -627,7 +626,7 @@
       "Separating application components into multiple containers - each for a particular application purpose.",
       "Microservice oriented architectures that require independent scaling of multiple different services"
     ],
-    "Question": "AWS ECS is well suited to:",
+    "Question": "AWS ECS is well suited to: (choose 2)",
     "id": 47
   },
   {
@@ -666,7 +665,6 @@
     "Correct": [
       "When using Elastic Beanstalk you will have to pay for:"
     ],
-    "Problem": "Question",
     "Question": "When using Elastic Beanstalk you will have to pay for:",
     "id": 50
   },
@@ -682,7 +680,7 @@
       "An Elastic Load Balancer",
       "An EC2 instance"
     ],
-    "Question": "When deploying a simple Python web application with Elastic Beanstalk which of the following AWS resources will be created and managed for you by Elastic Beanstalk?",
+    "Question": "When deploying a simple Python web application with Elastic Beanstalk which of the following AWS resources will be created and managed for you by Elastic Beanstalk? (choose 3)",
     "id": 51
   },
   {
@@ -2511,13 +2509,13 @@
   },
   {
     "Answers": [
-      "you\u2019II need to upload each file separately",
-      "you\u2019II need to create each file and path",
-      "you\u2019II need to upload a source bundle",
-      "you\u2019II need to create each file"
+      "you need to upload each file separately",
+      "you need to create each file and path",
+      "you need to upload a source bundle",
+      "you need to create each file"
     ],
     "Correct": [
-      "you\u2019II need to upload a source bundle"
+      "you need to upload a source bundle"
     ],
     "Question": "When you use the AWS Elastic Beanstalk console to deploy a new application .",
     "id": 191
@@ -2538,7 +2536,7 @@
   {
     "Answers": [
       "False, AWS CIoudFormation does not support Microsoft Windows.",
-      "False, Amazon doesn\u2019t support Microsoft Windows.",
+      "False, Amazon doesn't support Microsoft Windows.",
       "False, you cannot create Windows stacks.",
       "True"
     ],
@@ -2687,7 +2685,7 @@
     "Correct": [
       "Yes, provided it is a single zone implementation"
     ],
-    "Question": "A user has configured an automated backup between 5 AM \u2014 5:30 AM for the MySQL RDS DB. Will the performance of RDS get frozen momentarily during a backup?",
+    "Question": "A user has configured an automated backup between 5 AM _ 5:30 AM for the MySQL RDS DB. Will the performance of RDS get frozen momentarily during a backup?",
     "id": 204
   },
   {
@@ -3043,7 +3041,7 @@
       "Allows you to scale RDS usage with demand",
       "Automatic failover in the case of Availability Zone service failures"
     ],
-    "Question": "What are three benefits of using RDS read replicas?",
+    "Question": "What are three benefits of using RDS read replicas? choose 3",
     "id": 230
   },
   {
@@ -3123,7 +3121,7 @@
       "AWS Services (S3 Events, CloudWatch alarms, Lambda Functions)",
       "An EC2 service that sends messages to SNS using the Publish API action"
     ],
-    "Question": "Which of these options is a good example of an SNS publisher?",
+    "Question": "Which of these options is a good example of an SNS publisher? choose 2",
     "id": 236
   },
   {
@@ -3419,7 +3417,7 @@
       "License Codes",
       "Database Strings and Passwords"
     ],
-    "Question": "SSM Parameter Store is used to store information like:",
+    "Question": "SSM Parameter Store is used to store information like: (choose 3)",
     "id": 258
   },
   {
@@ -3433,7 +3431,7 @@
       "Provide logging for services such as AWS Lambda",
       "Monitor various AWS services like EC2, S3, and ELBs"
     ],
-    "Question": "The CloudWatch service is used to:",
+    "Question": "The CloudWatch service is used to: (Choose 2)",
     "id": 259
   }
 ]
