@@ -2,10 +2,10 @@
     <string name="app_name">AWS Training</string>
     <string name="answer">Answer</string>
     <string name="pickAGame">Please Pick the Number of The Questions in the Game</string>
-    <string name="five">Short - 5 Questions</string>
-    <string name="ten">Short - 10 Questions</string>
-    <string name="fifteen">Short - 15 Questions</string>
-    <string name="twenty">Med - 20 Questions</string>
-    <string name="thirty">Med- 30 Questions</string>
-    <string name="fifty">Long - 50 Questions</string>
+    <string name="five">5 Questions</string>
+    <string name="ten">10 Questions</string>
+    <string name="fifteen">15 Questions</string>
+    <string name="twenty">20 Questions</string>
+    <string name="thirty">30 Questions</string>
+    <string name="fifty">50 Questions</string>
 </resources>
