@@ -150,7 +150,7 @@ class GameActivity : AppCompatActivity() {
     }
 
     fun isCorrect(a: Answer) : Boolean{
-        val currQuestion : Question = listOfQuestions[current_question_index]
+        val currQuestion : Question = myList[current_question_index]
         for (c in currQuestion.corrects){
             if (a.answer == c.answer)
                 return true
