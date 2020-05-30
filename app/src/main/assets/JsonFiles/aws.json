@@ -663,7 +663,7 @@
       "A fixed cost for every deployment of your application"
     ],
     "Correct": [
-      "When using Elastic Beanstalk you will have to pay for:"
+      "Only the costs of resources deployed by Elastic Beanstalk"
     ],
     "Question": "When using Elastic Beanstalk you will have to pay for:",
     "id": 50
@@ -711,14 +711,13 @@
   },
   {
     "Answers": [
-      "Elastic Beanstalk is used to:",
       "Deploy and scale web applications and services developed with a supported platform",
       "Deploy and scale serverless applications",
       "Deploy and scale applications based purely on EC2 instances",
       "Manage the deployment of all AWS infrastructure resources of your AWS applications"
     ],
     "Correct": [
-      "Elastic Beanstalk is used to:"
+      "Deploy and scale web applications and services developed with a supported platform"
     ],
     "Question": "With AWS Elastic Beanstalk, you can: choose from several available database and storage options",
     "id": 54

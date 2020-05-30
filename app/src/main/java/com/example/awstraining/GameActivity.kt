@@ -92,13 +92,25 @@ class GameActivity : AppCompatActivity() {
                         else
                         {
                           val res = "${listOfCorrect.size}/$num_of_questions"
-                            Question2.text = "Your score is $res \nTouch here to create a game of incorrect"
-                            Question2.setOnClickListener {
-                                createNewListFromIncorrect()
-                            }
                             recycler_view_Answers.apply {
                                 layoutManager = LinearLayoutManager(this@GameActivity)
                                 adapter = AnswerAdapter(listOf())
+                            }
+                            if (listOfCorrect.size == num_of_questions){
+                                Question2.text = "Your score is $res \nTouch here to return to the main menu"
+//                                Question2.setCompoundDrawablesWithIntrinsicBounds(R.drawable.aws, 0, 0, 0 )
+//                                android:drawableEnd="@mipmap/ic_launcher_foreground"
+
+                                Question2.setOnClickListener {
+                                    getBackToPickLenght()
+                                }
+                            }
+                            else {
+                                Question2.text = "Your score is $res \nTouch here to create a game of incorrect"
+                                Question2.setOnClickListener {
+                                    createNewListFromIncorrect()
+                                }
+
                             }
                         }
                     }
@@ -127,6 +139,12 @@ class GameActivity : AppCompatActivity() {
             }
         }, IntentFilter("custom-message"))
     }
+    fun getBackToPickLenght(){
+        val intent = Intent(this, ExamListActivity::class.java)
+        startActivity(intent)
+        this.finish()
+    }
+
 
     override fun onDestroy() {
         super.onDestroy()
