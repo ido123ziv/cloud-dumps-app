@@ -3,31 +3,20 @@ package com.example.awstraining
 import android.annotation.SuppressLint
 import android.content.*
 import android.graphics.Color
+import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.view.View
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.awstraining.MainActivity.Companion.LOADING_DELAY
 import com.example.awstraining.Suppliers.listOfQuestions
 //import com.example.awstraining.Suppliers.saveListOfIncorrect
-import com.example.awstraining.dal.getDataFromJSON
 import kotlinx.android.synthetic.main.activity_game.*
-import org.json.JSONArray
-import org.json.JSONObject
-import java.io.InputStream
-import java.lang.Exception
-import java.util.*
-import kotlin.collections.ArrayList
 
 class GameActivity : AppCompatActivity() {
-//    lateinit var listOfQuestions: List<Question> // all the questions from the JSON
+    private lateinit var receiver: BroadcastReceiver
+
+    //    lateinit var listOfQuestions: List<Question> // all the questions from the JSON
     lateinit var myList: List<Question> // the questions we will use
     lateinit var selectedAnswers: MutableList<Answer>
     var current_question_index: Int = 0
@@ -51,8 +40,15 @@ class GameActivity : AppCompatActivity() {
         score = 0
 
         Question2.setOnClickListener {
-            if (current_question_index < myList.size - 1)
-                next_Question() }
+            val currentQuestion = myList[current_question_index]
+
+            if (currentQuestion.corrects.size == selectedAnswers.size) {
+                if (current_question_index < myList.size - 1) {
+                    next_Question()
+                }
+            }
+        }
+
 //        listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
         var setMyList = listOfQuestions.shuffled().take(num_of_questions)
         myList = copyListEntirely(setMyList)
@@ -61,12 +57,13 @@ class GameActivity : AppCompatActivity() {
         print_question(myList[current_question_index])
         selectedAnswers = mutableListOf()
 
-        LocalBroadcastManager.getInstance(this).registerReceiver(object : BroadcastReceiver() {
+        receiver = object : BroadcastReceiver() {
             @SuppressLint("SetTextI18n")
             override fun onReceive(p0: Context?, p1: Intent?) {
+                recycler_view_Answers.requestLayout()
                 val currentQuestion = myList[current_question_index]
                 val answerText = p1?.getStringExtra("answer")
-                isFirstTry = true
+//                isFirstTry = true
                 val answer = currentQuestion.la.find { a -> a.answer == answerText }
                 // Question2.text = listOfQuestions[1].q
 
@@ -79,33 +76,30 @@ class GameActivity : AppCompatActivity() {
                         layoutManager = LinearLayoutManager(this@GameActivity)
                         adapter = AnswerAdapter(currentQuestion.la)
                     }
-                    if(currentQuestion.corrects.size == selectedAnswers.size)
-                    {
-                        if (!isAlreadyWrong(currentQuestion)){
+                    if (currentQuestion.corrects.size == selectedAnswers.size) {
+                        if (!isAlreadyWrong(currentQuestion)) {
                             listOfCorrect.add(currentQuestion)
                         }
-                        if (current_question_index < myList.size - 1)
-                        {
-//                            next_Question()
-
-                        }
-                        else
-                        {
-                          val res = "${listOfCorrect.size}/$num_of_questions"
+                        if (current_question_index < myList.size - 1) {
+                            InvokeWithDelay(500) {
+                                next_Question()
+                            }.execute("")
+                        } else {
+                            val res = "${listOfCorrect.size}/$num_of_questions"
                             recycler_view_Answers.apply {
                                 layoutManager = LinearLayoutManager(this@GameActivity)
                                 adapter = AnswerAdapter(listOf())
                             }
-                            if (listOfCorrect.size == num_of_questions){
-                                Question2.text = "Your score is $res \nTouch here to return to the main menu"
+                            if (listOfCorrect.size == num_of_questions) {
+                                Question2.text =
+                                    "Your score is $res \nTouch here to return to the main menu"
 //                                Question2.setCompoundDrawablesWithIntrinsicBounds(R.drawable.aws, 0, 0, 0 )
 //                                android:drawableEnd="@mipmap/ic_launcher_foreground"
 
                                 Question2.setOnClickListener {
                                     getBackToPickLenght()
                                 }
-                            }
-                            else {
+                            } else {
                                 Question2.text = "Your score is $res \nTouch here to create a game of incorrect"
                                 Question2.setOnClickListener {
                                     createNewListFromIncorrect()
@@ -114,11 +108,13 @@ class GameActivity : AppCompatActivity() {
                             }
                         }
                     }
-                }
-                else {
-                    isFirstTry = false
+                } else {
+                    if (isFirstTry) {
+                        listOfInCorrect.add(currentQuestion)
+                    }
+
                     answer.backgroundColor = Color.RED
-                    listOfInCorrect.add(currentQuestion)
+                    isFirstTry = false
                     recycler_view_Answers.apply {
                         layoutManager = LinearLayoutManager(this@GameActivity)
                         adapter = AnswerAdapter(currentQuestion.la)
@@ -135,14 +131,16 @@ class GameActivity : AppCompatActivity() {
 //                    }
 
 
-
             }
-        }, IntentFilter("custom-message"))
+        }
+        LocalBroadcastManager.getInstance(this).registerReceiver(receiver, IntentFilter("custom-message"))
     }
     fun getBackToPickLenght(){
-        val intent = Intent(this, ExamListActivity::class.java)
-        startActivity(intent)
-        this.finish()
+//        val intent = Intent(this, ExamListActivity::class.java)
+//        startActivity(intent)
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(receiver)
+        finish()
+//        this.onBackPressed()
     }
 
 
@@ -161,6 +159,7 @@ class GameActivity : AppCompatActivity() {
     }
 
     fun next_Question() {
+        isFirstTry = true
         current_question_index += 1
         var q : Question = myList[current_question_index]
         selectedAnswers = mutableListOf()
@@ -188,6 +187,10 @@ class GameActivity : AppCompatActivity() {
         var newList : MutableList<Question> = mutableListOf()
         for (q in questionList){
             newList.add(Question(q.q, q.la, q.corrects, q.subject))
+
+            for (a in q.la) {
+                a.resetColor()
+            }
         }
         return newList
     }
@@ -257,7 +260,21 @@ class GameActivity : AppCompatActivity() {
         return listOfQuestion
     }
 
+    companion object {
+        class InvokeWithDelay(private var ms: Int, private var cbOnFinish: () -> Unit) : AsyncTask<String, Unit, String>() {
+            override fun onPreExecute() {
+            }
 
+            override fun doInBackground(vararg params: String?): String {
+                Thread.sleep(ms.toLong())
+                return ""
+            }
+
+            override fun onPostExecute(result: String?) {
+                cbOnFinish.invoke()
+            }
+        }
+    }
 }
 
 //    /* logic */
