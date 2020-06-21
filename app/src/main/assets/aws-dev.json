@@ -1,0 +1,3436 @@
+[
+  {
+    "Answers": [
+      "There is only one AZ in each AWS Region",
+      "AZs are not geographically separated inside a region to help protect against natural disasters affecting more than one at a time",
+      "AZs can be moved between AWS Regions based on your needs",
+      "There are (almost always) two or more AZs in each AWS Region"
+    ],
+    "Correct": [
+      "There are (almost always) two or more AZs in each AWS Region"
+    ],
+    "Question": "Which statements is true about Availability Zones (AZs) and Regions?",
+    "id": 0
+  },
+  {
+    "Answers": [
+      "There is only one AZ in each AWS Region",
+      "AZs are geographically separated inside a region to help protect against natural disasters affecting more than one at a time",
+      "AZs can be moved between AWS Regions based on your needs",
+      "There have less than two or more AZs in each AWS Region"
+    ],
+    "Correct": [
+      "AZs are geographically separated inside a region to help protect against natural disasters affecting more than one at a time"
+    ],
+    "Question": "Which statements is true about Availability Zones (AZs) and Regions?",
+    "id": 1
+  },
+  {
+    "Answers": [
+      "In over 10 countries located all around the world",
+      "Regions are located inside Availability Zones and have no physical location",
+      "In the United States, Japan, and Ireland",
+      "Only in the United States of America"
+    ],
+    "Correct": [
+      "In over 10 countries located all around the world"
+    ],
+    "Question": "AWS Regions are located where?",
+    "id": 2
+  },
+  {
+    "Answers": [
+      "Availability Zones have low latency connections between Availability Zones in different regions",
+      "Availability Zones have low latency connections between one another within a region",
+      "Availability Zones contain one or more data centers",
+      "Every AWS region contains at least one Availability Zone (and usually more than one)"
+    ],
+    "Correct": [
+      "Availability Zones have low latency connections between Availability Zones in different regions"
+    ],
+    "Question": "Which of the following statements about Availability Zones, Regions or Edge Locations is FALSE:",
+    "id": 3
+  },
+  {
+    "Answers": [
+      "Edge Locations",
+      "Data Centers",
+      "AWS Services",
+      "Availability Zones"
+    ],
+    "Correct": [
+      "Edge Locations"
+    ],
+    "Question": "An AWS Region does not contains:",
+    "id": 4
+  },
+  {
+    "Answers": [
+      "AWS SNS",
+      "AWS EC2",
+      "AWS RDS",
+      "AWS IAM"
+    ],
+    "Correct": [
+      "AWS IAM"
+    ],
+    "Question": "When interacting with AWS, most services will allow you to create resources within an AWS region. Which of the following services is an exception that only allows you to interact with it at the \"Global\" level?",
+    "id": 5
+  },
+  {
+    "Answers": [
+      "transfer root permissions to another AWS user only when the root account owner leaves the organization",
+      "securely store its API Keys on an encrypted physical device",
+      "take advantage of multi-factor authentication",
+      "be shared only between 5-10 top technical staff of the organization"
+    ],
+    "Correct": [
+      "take advantage of multi-factor authentication"
+    ],
+    "Question": "As a best practice, the AWS Root Account should ___.",
+    "id": 6
+  },
+  {
+    "Answers": [
+      "Web Identity Federation",
+      "Enterprise Identity Federation",
+      "Cross-Account Access",
+      "Commercial Federation"
+    ],
+    "Correct": [
+      "Web Identity Federation"
+    ],
+    "Question": "You would like to use STS to allow end users to authenticate from third-party providers such as Facebook, Google, and Amazon. What is this type of authentication called?",
+    "id": 7
+  },
+  {
+    "Answers": [
+      "Managing AWS resources through the AWS console",
+      "Direct HTTP call using the API",
+      "The AWS Terra GUI",
+      "Commercial Federation"
+    ],
+    "Correct": [
+      "Direct HTTP call using the API"
+    ],
+    "Question": "API Access Keys are required to make programmatic calls to AWS from which of the following?",
+    "id": 8
+  },
+  {
+    "Answers": [
+      "Grant access to AWS resources without having to create an IAM identity for them",
+      "Temporary security credentials can be extended indefinitely",
+      "Temporary security credentials can be restricted to a specific region",
+      "Temporary security credentials can be distributed to a specific region"
+    ],
+    "Correct": [
+      "Grant access to AWS resources without having to create an IAM identity for them"
+    ],
+    "Question": "What are benefits of using AWS STS?",
+    "id": 9
+  },
+  {
+    "Answers": [
+      "Apply an IAM password policy",
+      "Give all initial users admin access",
+      "Create individual IAM users",
+      "Use user groups to assign permissions"
+    ],
+    "Correct": [
+      "Give all initial users admin access"
+    ],
+    "Question": "Which of the following is  not required as part of AWS's suggested \"best practices\" for new accounts?",
+    "id": 10
+  },
+  {
+    "Answers": [
+      "Only IAM account admins can make changes to Auto Scaling groups",
+      "Because she is working remotely, she would need to SSH into the instances in the Auto Scaling group via her terminal to make the changes",
+      "When you created the new user, you forgot to assign access keys",
+      "You have not added the appropriate IAM permissions and access policies to her user; there is a non-explicit deny to all new users"
+    ],
+    "Correct": [
+      "You have not added the appropriate IAM permissions and access policies to her user; there is a non-explicit deny to all new users"
+    ],
+    "Question": "You work for an application development company that has just hired a senior consultant, named Jessica, who will be working on a large AWS project. You create a new IAM user for her named \"Jessica\" in your companys AWS account. On Jessica's first day, you ask her to deploy a Lambda function. Jessica reports back that she does not have access to create a new Lambda function from the AWS Console. But you're unable to review the errors in the AWS console because she is currently working remotely. What is a possible explanation for this?",
+    "id": 11
+  },
+  {
+    "Answers": [
+      "Managing AWS resources through the AWS console",
+      "VPN",
+      "The AWS Terra GUI",
+      "AWS CLI"
+    ],
+    "Correct": [
+      "AWS CLI"
+    ],
+    "Question": "API Access Keys are required to make programmatic calls to AWS from which of the following?",
+    "id": 12
+  },
+  {
+    "Answers": [
+      "Since credentials are temporary, you don't have to rotate or revoke them",
+      "Temporary security credentials can be extended indefinitely",
+      "Temporary security credentials can be restricted to a specific region",
+      "Temporary security credentials can be distributed to a specific region"
+    ],
+    "Correct": [
+      "Since credentials are temporary, you don't have to rotate or revoke them"
+    ],
+    "Question": "What are benefits of using AWS STS?",
+    "id": 13
+  },
+  {
+    "Answers": [
+      "Signed URL, Security Token, Username",
+      "Security Token, Access Key ID, Signed URL",
+      "Security Token, Secret Access Key, Personal Pin Code",
+      "Security Token, Access Key ID, Secret Access Key"
+    ],
+    "Correct": [
+      "Security Token, Access Key ID, Secret Access Key"
+    ],
+    "Question": "When requested through an STS API call, credentials are returned with what three components?",
+    "id": 14
+  },
+  {
+    "Answers": [
+      "You must remove the deny policy, as a deny policy will override an allow policy",
+      "You must delete and recreate the group and the group's permissions",
+      "Nothing, as the allow policy overrides the deny policy",
+      "You just need to add a second allow rule"
+    ],
+    "Correct": [
+      "You must remove the deny policy, as a deny policy will override an allow policy"
+    ],
+    "Question": "You have just taken over managing your company's AWS account. As one of your first tasks, you are reviewing IAM groups and their associated permissions. You notice that one of the groups has two conflicting permissions attached: One that allows S3 access and one that denies S3 access. If your goal is to allow members of the group to have S3 access, what needs to be done?",
+    "id": 15
+  },
+  {
+    "Answers": [
+      "Actions",
+      "id",
+      "Resources",
+      "Effects"
+    ],
+    "Correct": [
+      "id"
+    ],
+    "Question": "Which of these is not necessary fields in an IAM Policy?",
+    "id": 16
+  },
+  {
+    "Answers": [
+      "Nothing, as an IAM user can have multiple IAM permission policies attached to them at the same time, either directly to the user or through an associated IAM group.",
+      "Only one IAM policy can be attached to a user at a time. You need to create another IAM user for her to use for her to perform her DynamoDB activities.",
+      "You would need to remove the DynamoDB policy from her IAM user and add it to the manager's group policy",
+      "It is not possible for an IAM group to have IAM permission policies, they need to be placed at the user level"
+    ],
+    "Correct": [
+      "Nothing, as an IAM user can have multiple IAM permission policies attached to them at the same time, either directly to the user or through an associated IAM group."
+    ],
+    "Question": "You have hired an engineer, Kathy Johnson, and have created an IAM user for her in the company's AWS account. She will be overseeing the company's DynamoDB tables, so you attached the \"AmazonDynamoDBFullAccess\" IAM Policy to her IAM user. Six months later, Kathy was promoted to a manager and you added her to the \"Managers\" IAM group. The \"Managers\" group has a few explicit allow permissions and no explicit denies attached. But, it does not have the \"AmazonDynamoDBFullAccess\" policy attached to it. What will happen to Kathy's DynamoDB access?",
+    "id": 17
+  },
+  {
+    "Answers": [
+      "Users should belong to multiple layers of groups each group granting subsequent additional priviliges and denying others.",
+      "Users can be tagged to approve access to existing groups or add to new groups when the group is created.",
+      "Users should all be tagged with the appropriate part of the organization to more-effectively allocate the correct permissions.",
+      "Users can be placed into groups and permissions can be applied to the groups themselves."
+    ],
+    "Correct": [
+      "Users can be placed into groups and permissions can be applied to the groups themselves."
+    ],
+    "Question": "How should organizations manage permissions across multiple IAM users?",
+    "id": 18
+  },
+  {
+    "Answers": [
+      "API Keys",
+      "Multi-Factor Authentication",
+      "Roles",
+      "Security Groups"
+    ],
+    "Correct": [
+      "Security Groups"
+    ],
+    "Question": "What are some items that are not managed in the IAM management section of the AWS Portal?",
+    "id": 19
+  },
+  {
+    "Answers": [
+      "Users should always have a little more access granted to them than they need, just in case they end up needing it in the future.",
+      "Users should submit all access request in writing so that there is a paper trail of who needs access to different AWS resources.",
+      "Users should be granted permission to access only the resources they need to do their assigned job.",
+      "All users should have the same baseline permissions granted to them to use basic AWS services."
+    ],
+    "Correct": [
+      "Users should be granted permission to access only the resources they need to do their assigned job."
+    ],
+    "Question": "What best describes the \"Principle of Least Privilege\"?",
+    "id": 20
+  },
+  {
+    "Answers": [
+      "Use an IAM user to manage temporary credentials for applications that run on an EC2 instance. The user will supply temporary permissions that applications can use when they make calls to other AWS resources.",
+      "Use an IAM PassRole to restrict which role a user can pass to an EC2 instance when the user launches the instance. This way you can eliminate the need for credentials.",
+      "Have your developers store AWS credentials directly within the EC2 instance and allow applications in that instance to use those credentials. Developers can manage the credentials and ensure that they securely pass the credentials to each instance and update each EC2 instance when it's time to rotate the credentials.",
+      "Use an IAM role to manage temporary credentials for applications that run on an EC2 instance. The role will supply temporary permissions that applications can use when they make calls to other AWS resources."
+    ],
+    "Correct": [
+      "Use an IAM role to manage temporary credentials for applications that run on an EC2 instance. The role will supply temporary permissions that applications can use when they make calls to other AWS resources."
+    ],
+    "Question": "You are the lead developer for a healthcare company and are managing an application running on multiple EC2 instances. Those EC2 instances must have the ability to access other AWS resources. What is the best way to manage this access?",
+    "id": 21
+  },
+  {
+    "Answers": [
+      "Explicit deny to all resources and actions",
+      "Default deny to all resources and actions",
+      "Default deny to management resources and actions",
+      "Default allows to non-management resources and actions"
+    ],
+    "Correct": [
+      "Default deny to all resources and actions"
+    ],
+    "Question": "What is the access level for newly created regular users in AWS?",
+    "id": 22
+  },
+  {
+    "Answers": [
+      "The ability to create custom permission policies and Assigning IAM permission policies to more than one user at a time.",
+      "Assigning IAM permission policies to more than one user at a time. and Easier user/policy management.",
+      "Easier user/policy management. and Allowing EC2 instances to gain access to S3.",
+      "Allowing EC2 instances to gain access to S3. and The ability to create custom permission policies"
+    ],
+    "Correct": [
+      "Assigning IAM permission policies to more than one user at a time. and Easier user/policy management."
+    ],
+    "Question": "What are the main benefits of IAM groups?",
+    "id": 23
+  },
+  {
+    "Answers": [
+      "Elastic Load Balancer",
+      "Nat Gateway",
+      "Elastic IP Address",
+      "VPN",
+      "A Nat Gateway is designed to allow instances in private subnets to access the open internet for updates.   It has nothing to do with configuring private connections between the VPC and on-premises networks. "
+    ],
+    "Correct": [
+      "VPN"
+    ],
+    "Question": "To connect your remote office (on-premises network) to your AWS VPC via a private connection, what do you need to setup and configure?",
+    "id": 24
+  },
+  {
+    "Answers": [
+      "A VPC is not an AWS term.",
+      "A VPC is a virtual network dedicated to your AWS account with your resources shared with other AWS accounts by default.",
+      "A VPC is a physical network dedicated to your AWS account and your resources and is isolated from other AWS accounts by default.",
+      "A virtual private cloud (VPC) is a configurable, virtual network dedicated to your AWS account and your resources and is isolated from other AWS accounts by default."
+    ],
+    "Correct": [
+      "A virtual private cloud (VPC) is a configurable, virtual network dedicated to your AWS account and your resources and is isolated from other AWS accounts by default."
+    ],
+    "Question": "What is a VPC?",
+    "id": 25
+  },
+  {
+    "Answers": [
+      "The security group associated with the EC2 instance has an inbound rule that allows SSH traffic OR the associated NACL has both an inbound and outbound rule that allows SSH traffic.",
+      "The security group associated with the EC2 instance has an inbound rule that allows SSH traffic but does not have an outbound rule that allows SSH traffic. ",
+      "The security group associated with the EC2 instance has an inbound rule that allows SSH traffic AND has an outbound rule that explicitly denies SSH traffic.",
+      "The security group associated with the EC2 instance does not have an inbound rule that allows SSH traffic OR the associated NACL does not have an outbound rule for return traffic to use ephemeral ports."
+    ],
+    "Correct": [
+      "The security group associated with the EC2 instance does not have an inbound rule that allows SSH traffic OR the associated NACL does not have an outbound rule for return traffic to use ephemeral ports."
+    ],
+    "Question": "You are attempting to SSH into an EC2 instance that is located in a public subnet.  However, you are currently receiving a timeout error trying to connect.  What could be a possible cause of this connection issue? ",
+    "id": 26
+  },
+  {
+    "Answers": [
+      "Create and assign EIP to each instance ",
+      "Create and attach a second IGW to the VPC.",
+      "Create and utilize a NAT Gateway",
+      "Connect to a VPN"
+    ],
+    "Correct": [
+      "Create and utilize a NAT Gateway"
+    ],
+    "Question": "You have instances inside private subnets and a properly configured bastion host instance in a public subnet. None of the instances in the private subnets have a public or Elastic IP address. How can you connect an instance in the private subnet to the open internet to download system updates?",
+    "id": 27
+  },
+  {
+    "Answers": [
+      "Auto Scaling",
+      "Security Groups",
+      "NACLs",
+      "Route Tables"
+    ],
+    "Correct": [
+      "Auto Scaling"
+    ],
+    "Question": "What feature of EC2 should you utilize if you want to create \"elasticity\" in your application's architecture? ",
+    "id": 28
+  },
+  {
+    "Answers": [
+      "It must have a public IP address.",
+      "It must be associated with a Route Table that is configured with a route to an IGW.",
+      "It must be set to \"public\" when it is created.",
+      "It must allow HTTP traffic in via its associated NACL."
+    ],
+    "Correct": [
+      "It must be associated with a Route Table that is configured with a route to an IGW."
+    ],
+    "Question": "What is required for a subnet to be considered \"public\"?",
+    "id": 29
+  },
+  {
+    "Answers": [
+      "None of these are correct.",
+      "It needs a NAT Gateway and an EIP to communicate with the internet.",
+      "It can access the Internet without any further specified configurations. ",
+      "It needs an Elastic IP address or public IP address assigned to it in order to connect to the internet and send data in or out.",
+      "The question does not specify if the instance has been assigned a public or elastic IP address.  Therefore we cannot assume that the instance can connect to the internet without any additional configurations. "
+    ],
+    "Correct": [
+      "It needs an Elastic IP address or public IP address assigned to it in order to connect to the internet and send data in or out."
+    ],
+    "Question": "You have created a VPC that has just one subnet, an internet gateway attached, and a route to the internet gateway added to the route table. The route table is also associated with the subnet.  If you launch an EC2 instance inside the subnet, which of the following is true?",
+    "id": 30
+  },
+  {
+    "Answers": [
+      "127.0.0.1",
+      "0.0.0.0",
+      "255.255.255.255",
+      "IGW"
+    ],
+    "Correct": [
+      "0.0.0.0"
+    ],
+    "Question": "What represents the catch all route that can help route traffic to the Internet Gateway for IP v4?",
+    "id": 31
+  },
+  {
+    "Answers": [
+      "The VPC has active resources in it.",
+      "You do not have the correct VPC ID #",
+      "The VPC already has an IGW attached",
+      "The IGW was not created properly"
+    ],
+    "Correct": [
+      "The VPC already has an IGW attached"
+    ],
+    "Question": "You have just created an Internet Gateway (IGW) and attempt to attach it to a VPC.  However, when attempting to attach the IGW to the VPC, a message on the screen states that this action is not allowed.  What is the most likely cause of this issue? ",
+    "id": 32
+  },
+  {
+    "Answers": [
+      "Can evenly distribute traffic to associated EC2 instances",
+      "Can prevent traffic from being sent to an unhealthy EC2 instance.",
+      "None of these are benefits of Elastic Load Balacing. ",
+      "Can add EC2 instances to your application's infrastructure based on demand"
+    ],
+    "Correct": [
+      "Can evenly distribute traffic to associated EC2 instances"
+    ],
+    "Question": "Elastic Load Balancing provides which of the following benefits?",
+    "id": 33
+  },
+  {
+    "Answers": [
+      "Execution timeout",
+      "Network bandwidth ",
+      "Memory ",
+      "CPU power "
+    ],
+    "Correct": [
+      "Execution timeout",
+      "Memory "
+    ],
+    "Question": "Lambda requires you to specifically allocate certain resources. Which of the following can you adjust directly yourself? (choose 2)",
+    "id": 34
+  },
+  {
+    "Answers": [
+      "Node.js 10, and 12",
+      "Swift",
+      "Java and C#",
+      "Python 3.6, 3.7, 3.8 and 2.7"
+    ],
+    "Correct": [
+      "Swift"
+    ],
+    "Question": "Which of these is NOT currently a supported Lambda runtime (not counting custom runtimes)?",
+    "id": 35
+  },
+  {
+    "Answers": [
+      "They have very large amounts of computing power to get the job done quickly.",
+      "They are self-contained and never rely on libraries or dependencies.",
+      "They can run in response to events that trigger them.",
+      "They don't integrate well with third-party services or tools."
+    ],
+    "Correct": [
+      "They can run in response to events that trigger them."
+    ],
+    "Question": "What is one characteristic of Lambda functions?",
+    "id": 36
+  },
+  {
+    "Answers": [
+      "Very long-running memory-intensive workloads",
+      "Integrating with many third-party APIs",
+      "Only executing code in response to events",
+      "Breaking code monoliths up into microservices"
+    ],
+    "Correct": [
+      "Very long-running memory-intensive workloads"
+    ],
+    "Question": "What type of workload is LEAST suited to AWS Lambda?",
+    "id": 37
+  },
+  {
+    "Answers": [
+      "One Minute",
+      "Fifteen Minutes",
+      " As long as you need them to",
+      "Five Seconds"
+    ],
+    "Correct": [
+      "Fifteen Minutes"
+    ],
+    "Question": "What is the maximum execution duration of your Lambda functions?",
+    "id": 38
+  },
+  {
+    "Answers": [
+      "Only from a directly uploaded zip file ",
+      "Only via SFTP",
+      "Only from a zip file in AWS S3",
+      "From a zip file in AWS S3 or uploaded directly from elsewhere"
+    ],
+    "Correct": [
+      "From a zip file in AWS S3 or uploaded directly from elsewhere"
+    ],
+    "Question": "Lambda allows you to upload code and dependencies for function packages:",
+    "id": 39
+  },
+  {
+    "Answers": [
+      "invocation, zone",
+      "event, zone",
+      "invocation, context",
+      "event, context"
+    ],
+    "Correct": [
+      "event, context"
+    ],
+    "Question": "What two arguments does a Python Lambda handler function require?",
+    "id": 40
+  },
+  {
+    "Answers": [
+      "Stored in the AWS Lambda Logs Ledger (L3)",
+      "Stored in the AWS Simple Storage Service (S3)",
+      "Stored in AWS CloudWatch",
+      "Stored outside AWS by default"
+    ],
+    "Correct": [
+      "Stored in AWS CloudWatch"
+    ],
+    "Question": "Logs for Lambda functions are:",
+    "id": 41
+  },
+  {
+    "Answers": [
+      "It has programming runtimes for every major programming language",
+      "It provides you more control over your underlying infrastructure",
+      "It has a very mature set of tooling for debugging large serverless applications",
+      "You pay only for the compute time you use."
+    ],
+    "Correct": [
+      "You pay only for the compute time you use."
+    ],
+    "Question": "What is a key benefit of AWS Lambda?",
+    "id": 42
+  },
+  {
+    "Answers": [
+      "A Lambda deployment package contains (including but not limited to):",
+      "Function code, libraries, and runtime binaries",
+      "Only function code",
+      "Only libraries not included within the runtime",
+      "Function code and libraries not included within the runtime environment"
+    ],
+    "Correct": [
+      "Only libraries not included within the runtime"
+    ],
+    "Question": "Correct this is a big benefit!   For details on pricing, see: <a href=\"https://aws.amazon.com/lambda/pricing/\" target=\"_blank\">https://aws.amazon.com/lambda/pricing/</a>",
+    "id": 43
+  },
+  {
+    "Answers": [
+      "The event object",
+      "The timeLeft object",
+      "The remains object",
+      "The context object"
+    ],
+    "Correct": [
+      "The context object"
+    ],
+    "Question": "When referencing the remaining time left for a Lambda function to run within the function's code you would use:",
+    "id": 44
+  },
+  {
+    "Answers": [
+      "An AWS service that allows you to add additional configuration to your ECS cluster at the operating system layer",
+      "An AWS service that allows you to use containers as the fundamental building blocks of your application while AWS manages the EC2 instances for you.",
+      "As AWS service that allows you to optimize containers at the hardware level",
+      "An AWS service that allows you to build containers within an AWS environment without having to install Docker on your development machine"
+    ],
+    "Correct": [
+      "An AWS service that allows you to add additional configuration to your ECS cluster at the operating system layer"
+    ],
+    "Question": "AWS Fargate is:",
+    "id": 45
+  },
+  {
+    "Answers": [
+      "Is responsible for starting and stopping tasks",
+      "Is responsible for managing the cluster of EC2 instances",
+      "Runs inside the EC2 instance and reports on information like running tasks and resource utilization",
+      "Runs inside each container and reports on metrics like open connections to that container and current processes"
+    ],
+    "Correct": [
+      "Is responsible for starting and stopping tasks",
+      "Runs inside the EC2 instance and reports on information like running tasks and resource utilization"
+    ],
+    "Question": "The ECS Task Agent:",
+    "id": 46
+  },
+  {
+    "Answers": [
+      "Separating application components into multiple containers - each for a particular application purpose.",
+      "Microservice oriented architectures that require independent scaling of multiple different services",
+      "Applications that require significant custom hardware configuration or software configuration at the virtual machine instance level",
+      "On-premises containerized applications that require a place to store container images"
+    ],
+    "Correct": [
+      "Separating application components into multiple containers - each for a particular application purpose.",
+      "Microservice oriented architectures that require independent scaling of multiple different services"
+    ],
+    "Question": "AWS ECS is well suited to: (choose 2)",
+    "id": 47
+  },
+  {
+    "Answers": [
+      "Stores Container Images",
+      "Deploys Containers to EC2",
+      "Stores Packages used by Container images",
+      "Stores AMIs used by ECS"
+    ],
+    "Correct": [
+      "Stores Container Images"
+    ],
+    "Question": "AWS ECR:",
+    "id": 48
+  },
+  {
+    "Answers": [
+      "Containerfile",
+      "Dockerfile",
+      "DockerC",
+      "docker.yml"
+    ],
+    "Correct": [
+      "Dockerfile"
+    ],
+    "Question": "Docker Container Images are constructed using instructions in a file called:",
+    "id": 49
+  },
+  {
+    "Answers": [
+      "Only the costs of resources deployed by Elastic Beanstalk",
+      "A variable cost for the deployment based on the application's size",
+      "A fixed cost for every deployment of your application and the cost of any resources deployed",
+      "A fixed cost for every deployment of your application"
+    ],
+    "Correct": [
+      "Only the costs of resources deployed by Elastic Beanstalk"
+    ],
+    "Question": "When using Elastic Beanstalk you will have to pay for:",
+    "id": 50
+  },
+  {
+    "Answers": [
+      "An S3 Bucket",
+      "An Elastic Load Balancer",
+      "A Lambda Function",
+      "An EC2 instance"
+    ],
+    "Correct": [
+      "An S3 Bucket",
+      "An Elastic Load Balancer",
+      "An EC2 instance"
+    ],
+    "Question": "When deploying a simple Python web application with Elastic Beanstalk which of the following AWS resources will be created and managed for you by Elastic Beanstalk? (choose 3)",
+    "id": 51
+  },
+  {
+    "Answers": [
+      "Rust",
+      "Ruby",
+      "Go",
+      "Docker"
+    ],
+    "Correct": [
+      "Rust"
+    ],
+    "Question": "Which of these is NOT currently an Elastic Beanstalk supported platform?",
+    "id": 52
+  },
+  {
+    "Answers": [
+      "Select the operating system ",
+      "Choose from several available database and storage options",
+      "Set up Auto Scaling",
+      "Set up capacity provisioning"
+    ],
+    "Correct": [
+      "Select the operating system "
+    ],
+    "Question": "What elements of my application can I control when using AWS Elastic Beanstalk?",
+    "id": 53
+  },
+  {
+    "Answers": [
+      "Deploy and scale web applications and services developed with a supported platform",
+      "Deploy and scale serverless applications",
+      "Deploy and scale applications based purely on EC2 instances",
+      "Manage the deployment of all AWS infrastructure resources of your AWS applications"
+    ],
+    "Correct": [
+      "Deploy and scale web applications and services developed with a supported platform"
+    ],
+    "Question": "With AWS Elastic Beanstalk, you can: choose from several available database and storage options",
+    "id": 54
+  },
+  {
+    "Answers": [
+      "Migrate commonly used objects to Amazon Glacier",
+      "Introduce random suffixes to S3 objects",
+      "Setup CloudFront for S3 objects",
+      "Introduce random prefixes to S3 objects"
+    ],
+    "Correct": [
+      "Setup CloudFront for S3 objects"
+    ],
+    "Question": "Users of your external web page access some static content from a S3 bucket.  Which of the following is a good option to improve S3 performance if you have significantly high numbers of GET requests?",
+    "id": 55
+  },
+  {
+    "Answers": [
+      "All file version IDs will be null because versioning must be enabled before uploading objects to 'bestbucketever'",
+      "There will be 1 version ID for file1, the version ID for file2 will be null and there will be 1 version ID for file3",
+      "The version ID for file1 will be null, there will be 2 version IDs for file2 and 1 version ID for file3",
+      "There will be 1 version ID for file1, there will be 2 version IDs for file2 and 1 version ID for file3"
+    ],
+    "Correct": [
+      "The version ID for file1 will be null, there will be 2 version IDs for file2 and 1 version ID for file3"
+    ],
+    "Question": "You decide to create a bucket on AWS S3 called 'bestbucketever' and then perform the following actions in the order that they are listed here.",
+    "id": 56
+  },
+  {
+    "Answers": [
+      "Use the multipart upload API for this object ",
+      "Contact support to increase your object size limit ",
+      "Use the large object upload API for this object ",
+      "None, Simple Storage Service objects are limited to 5 GB "
+    ],
+    "Correct": [
+      "Use the multipart upload API for this object "
+    ],
+    "Question": "Your application is trying to upload a 6 GB file to Simple Storage Service and receive a \"Your proposed upload exceeds the maximum allowed object size.\" error message. What is a possible solution for this? ",
+    "id": 57
+  },
+  {
+    "Answers": [
+      "us-east-1 uses eventual consistency and it can take time for an object to be readable in a bucket, so you will receive an HTTP 404 error",
+      "us-east-1 has read-after-write consistency, so you will be able to retrieve the object immediately",
+      "us-east-1 imposes a 1-second delay before new objects are readable, but after that, you will successfully retrieve the object",
+      "Objects in Amazon S3 do not become visible until they are replicated to a second region. You will receive an HTTP 404 error"
+    ],
+    "Correct": [
+      "us-east-1 has read-after-write consistency, so you will be able to retrieve the object immediately"
+    ],
+    "Question": "You successfully upload an item to the us-east-1 region. You then immediately make another API call and attempt to read the object. What will happen?",
+    "id": 58
+  },
+  {
+    "Answers": [
+      "1000",
+      "50",
+      "150",
+      "100"
+    ],
+    "Correct": [
+      "100"
+    ],
+    "Question": "What is the maximum number of S3 buckets allowed per AWS account (by default)?",
+    "id": 59
+  },
+  {
+    "Answers": [
+      "Enable CORS Configuration",
+      "None of these are correct",
+      "Move the object to another bucket",
+      "Disable Public Object Permissions"
+    ],
+    "Correct": [
+      "Enable CORS Configuration"
+    ],
+    "Question": "While hosting a website on yourcooldomain.com, your static JavaScript code attempts to include resources from an S3 bucket (you make a GET request to an amazonaws.com URL) but instead of loading in the resources an error that appears in the Chrome Developer tools. How might you solve the problem?",
+    "id": 60
+  },
+  {
+    "Answers": [
+      "ACLs can be attached to S3 objects or S3 Buckets",
+      "Bucket Policies are Written in JSON and ACLs are written in XML",
+      "Bucket Policies and ACLs are written in JSON",
+      "Bucket policies are only attached to s3 buckets, ACLs are only attached to s3 objects"
+    ],
+    "Correct": [
+      "ACLs can be attached to S3 objects or S3 Buckets"
+    ],
+    "Question": "Both ACLs and Bucket Policies can be used to grant access to S3 buckets. Which of the following statements are true about ACLs and Bucket policies?",
+    "id": 61
+  },
+  {
+    "Answers": [
+      "In a lifecycle configuration, S3 Standard supports transitioning objects to any storage class.",
+      "Any storage class can transition to Glacier or Deep Archive.",
+      "Standard-IA does not allow objects to be transferred to another class before 30 days without incurring a cost.",
+      "You can transition any storage class to S3 Standard"
+    ],
+    "Correct": [
+      "Any storage class can transition to Glacier or Deep Archive."
+    ],
+    "Question": "Which of the following statements are true?",
+    "id": 62
+  },
+  {
+    "Answers": [
+      "amz-server-side-encryption",
+      "x-amz-server-side-encryption",
+      "AES256",
+      "server-side-encryption"
+    ],
+    "Correct": [
+      "x-amz-server-side-encryption"
+    ],
+    "Question": "Which of the following request headers, when specified in an API call, will cause an object to be SSE?",
+    "id": 63
+  },
+  {
+    "Answers": [
+      "Resources",
+      "Outputs",
+      "Mappings",
+      "Parameters"
+    ],
+    "Correct": [
+      "Resources"
+    ],
+    "Problem": "id",
+    "Question": "Which of these sections of a CloudFormation template (Template Description, Template Version, Parameters, Resources, Mappings, Outputs), is the only one required for a CloudFormation template to work?",
+    "id": 64
+  },
+  {
+    "Answers": [
+      "Image",
+      "Video",
+      "Object Data and MetaData",
+      "Object Data"
+    ],
+    "Correct": [
+      "Object Data and MetaData"
+    ],
+    "Question": "In Amazon S3, what do objects consist of?",
+    "id": 65
+  },
+  {
+    "Answers": [
+      "The user will get an exception",
+      "It will override the existing the key pair",
+      "Key pairs cannot be created using AWS SDK",
+      "You can create multiple key-pair using the same name"
+    ],
+    "Correct": [
+      "The user will get an exception"
+    ],
+    "Question": "A user wants to launch an EC2 Instance for testing and tries to create a new EC2 Key pair also with name \"test.\" But the test key pair is already present. What among the following options can happen?",
+    "id": 66
+  },
+  {
+    "Answers": [
+      "TRUE",
+      "FALSE"
+    ],
+    "Correct": [
+      "TRUE"
+    ],
+    "Question": "Does Amazon DynamoDB remain available when you ask it to scale up or down by changing the provisioned throughput?",
+    "id": 67
+  },
+  {
+    "Answers": [
+      "Role",
+      "AWS SDK",
+      "Policy",
+      "Group"
+    ],
+    "Correct": [
+      "Policy"
+    ],
+    "Question": "How do you grant an IAM user access to AWS Elastic Beanstalk?",
+    "id": 68
+  },
+  {
+    "Answers": [
+      "UpdateKey",
+      "ChangeKey",
+      "UpdateAccessKey",
+      "ModifyKey"
+    ],
+    "Correct": [
+      "UpdateAccessKey"
+    ],
+    "Question": "Which API do you need to use to disable or reenable an access key?",
+    "id": 69
+  },
+  {
+    "Answers": [
+      "CD event",
+      "eb events",
+      "eb logs",
+      "eb open"
+    ],
+    "Correct": [
+      "eb events"
+    ],
+    "Question": "Which command is used to view the Elastic Beanstalk events that are using AWS CLI?",
+    "id": 70
+  },
+  {
+    "Answers": [
+      "Role",
+      "Policy",
+      "Access Key and Secret Access Key",
+      "AWS STS"
+    ],
+    "Correct": [
+      "AWS STS"
+    ],
+    "Question": "Company XYZ wants to implement a temporary credential for its users with limited access. How can they achieve this?",
+    "id": 71
+  },
+  {
+    "Answers": [
+      "Email and security token based",
+      "Push Notification and Email based",
+      "Security Token and SMS based",
+      "SMS and Push notification based"
+    ],
+    "Correct": [
+      "Security Token and SMS based"
+    ],
+    "Question": "What type of MFA (Multi-Factor Authentication) is supported in AWS ?",
+    "id": 72
+  },
+  {
+    "Answers": [
+      "storage",
+      "Data Transfer in",
+      "Ec2 Charge",
+      "Data Transfer out"
+    ],
+    "Correct": [
+      "Ec2 Charge"
+    ],
+    "Question": "Amazon S3 charge is NOT based on which of the following options?",
+    "id": 73
+  },
+  {
+    "Answers": [
+      "SendMessage",
+      "SaveMessage",
+      "ReceiveMessage",
+      "DeleteMessage"
+    ],
+    "Correct": [
+      "SaveMessage"
+    ],
+    "Question": "Which of the following APIs is NOT required to get started with Amazon SQS?",
+    "id": 74
+  },
+  {
+    "Answers": [
+      "Only A can be accessed",
+      "Both of them can be accessed",
+      "Only C can be accessed",
+      "None of them can be accessed"
+    ],
+    "Correct": [
+      "None of them can be accessed"
+    ],
+    "Question": "In AWS account, there are three workflows: workflow A, workflow B, and workflow A contains an order placed in Delhi, C contains an order placed in Mumbai. Can B access the data of A and C?",
+    "id": 75
+  },
+  {
+    "Answers": [
+      "<15 minutes",
+      "<5 minutes",
+      "<10 minutes",
+      "<20 minutes"
+    ],
+    "Correct": [
+      "<15 minutes"
+    ],
+    "Question": "What is the timeline for AWS Enterprise type support plan while dealing with a critical case ?",
+    "id": 76
+  },
+  {
+    "Answers": [
+      "Yes",
+      "No. None of them can be accessed"
+    ],
+    "Correct": [
+      "Yes"
+    ],
+    "Question": "Can you use Alias records with your sub-domains?",
+    "id": 77
+  },
+  {
+    "Answers": [
+      "HTTPS and SMS",
+      "SMS and Email",
+      "ELB and FTP",
+      "All of the above."
+    ],
+    "Correct": [
+      "ELB and FTP"
+    ],
+    "Question": "Which of the following are NOT valid protocols in SNS?",
+    "id": 78
+  },
+  {
+    "Answers": [
+      "CloudWatch and CloudFormation",
+      "CloudWatch, CloudFormation, and Lambda",
+      "CloudWatch, CloudFormation, and CloudTrail",
+      "CloudFormation, CloudTrail, and Lambda"
+    ],
+    "Correct": [
+      "CloudWatch, CloudFormation, and CloudTrail"
+    ],
+    "Question": "What are the management tool services offered by AWS?",
+    "id": 79
+  },
+  {
+    "Answers": [
+      "5",
+      "100",
+      "10",
+      "1"
+    ],
+    "Correct": [
+      "5"
+    ],
+    "Question": "How many trails can you create per region using AWS Cloud Trail?",
+    "id": 80
+  },
+  {
+    "Answers": [
+      "10 weeks",
+      "1 week",
+      "2 weeks",
+      "3 weeks"
+    ],
+    "Correct": [
+      "2 weeks"
+    ],
+    "Question": "How long is metrics stored in Amazon Cloud Watch ?",
+    "id": 81
+  },
+  {
+    "Answers": [
+      "2510",
+      "2340",
+      "6510",
+      "1433"
+    ],
+    "Correct": [
+      "1433"
+    ],
+    "Question": "What is the default port of Microsoft SQL Server database in RDS?",
+    "id": 82
+  },
+  {
+    "Answers": [
+      "ability to manage an unrestricted variety of data types.",
+      "provision for modeling complex relationships.",
+      "capacity to meet the demands of a changing environment.",
+      "support of multiple development environments."
+    ],
+    "Correct": [
+      "support of multiple development environments."
+    ],
+    "Question": "The MAJOR advantage of a component-based development approach is the",
+    "id": 83
+  },
+  {
+    "Answers": [
+      "There is no limit",
+      "3.5 terabytes",
+      "4 terabytes",
+      "5 terabytes"
+    ],
+    "Correct": [
+      "5 terabytes"
+    ],
+    "Question": "What is the maximum size of a single S3 object?",
+    "id": 84
+  },
+  {
+    "Answers": [
+      "comply with regulatory requirements.",
+      "provide a basis for drawing reasonable conclusions.",
+      "ensure complete audit coverage.",
+      "perform the audit according to the defined scope."
+    ],
+    "Correct": [
+      "provide a basis for drawing reasonable conclusions."
+    ],
+    "Question": "The MOST important reason for an IS auditor to obtain sufficient and appropriate audit evidence is to:",
+    "id": 85
+  },
+  {
+    "Answers": [
+      "EC2 Instance charge",
+      "EMR Charge",
+      "S3, EBS Charge",
+      "Combination of A, B, C"
+    ],
+    "Correct": [
+      "Combination of A, B, C"
+    ],
+    "Question": "How is the AWS EMR bill calculated?",
+    "id": 86
+  },
+  {
+    "Answers": [
+      "RDS",
+      "DynamoDB",
+      "DMS",
+      "EMR"
+    ],
+    "Correct": [
+      "EMR"
+    ],
+    "Question": "Which is NOT an AWS Database service?",
+    "id": 87
+  },
+  {
+    "Answers": [
+      "Specify the region",
+      "Allow for eventual consistency",
+      "Use the full ID of the resource",
+      "Use none of the IDs of the resource"
+    ],
+    "Correct": [
+      "Specify the region"
+    ],
+    "Question": "When a user gets this error, \"Client.InvalidInstanceID.NotFound,\" what does it indicate?",
+    "id": 88
+  },
+  {
+    "Answers": [
+      "Cost Optimization",
+      "Quality",
+      "Performance",
+      "Security and fault tolerance"
+    ],
+    "Correct": [
+      "Quality"
+    ],
+    "Question": "Which is NOT a part of AWS Trusted Advisor?",
+    "id": 89
+  },
+  {
+    "Answers": [
+      "AllocateInstance",
+      "CreateImage",
+      "BundleInstance",
+      "ami-register-image"
+    ],
+    "Correct": [
+      "BundleInstance"
+    ],
+    "Question": "Which API call is used to Bundle an Amazon instance store-backed Windows instance? Choose the correct answer from the options below",
+    "id": 90
+  },
+  {
+    "Answers": [
+      "A default deny",
+      "An explicit deny",
+      "An allow",
+      "An explicit allow"
+    ],
+    "Correct": [
+      "A default deny"
+    ],
+    "Question": "As per the IAM decision logic, what is the first step of access permissions for any resource in AWS? Choose the correct answer from the options below",
+    "id": 91
+  },
+  {
+    "Answers": [
+      "Create a dead letter queue",
+      "Set the message size to 256KB",
+      "Set the ReceiveMessageWaitTimeSeconds property of the queue to 0 seconds",
+      "Set the ReceiveMessageWaitTimeSeconds property of the queue to 20 seconds"
+    ],
+    "Correct": [
+      "Set the ReceiveMessageWaitTimeSeconds property of the queue to 20 seconds"
+    ],
+    "Question": "An IT admin has enabled long polling in their SQS queue. What must be done for long polling to be enabled in SQS? Choose the correct answer from the options below",
+    "id": 92
+  },
+  {
+    "Answers": [
+      "ACL",
+      "SWF Roles",
+      "IAM",
+      "None of the above"
+    ],
+    "Correct": [
+      "IAM"
+    ],
+    "Question": "What in AWS can be used to restrict access to SWF?",
+    "id": 93
+  },
+  {
+    "Answers": [
+      "True",
+      "False"
+    ],
+    "Correct": [
+      "True"
+    ],
+    "Question": "A Global Secondary Index can have a different partition key and sort key from those of its base table. ",
+    "id": 94
+  },
+  {
+    "Answers": [
+      "True",
+      "False"
+    ],
+    "Correct": [
+      "True"
+    ],
+    "Question": "Can a global secondary index create at the same time as the table creation?",
+    "id": 95
+  },
+  {
+    "Answers": [
+      "Expressions",
+      "Conditions",
+      "Query API",
+      "Scan API"
+    ],
+    "Correct": [
+      "Expressions"
+    ],
+    "Question": "What can be used in DynamoDB as a part of the Query API call for the filtration of results based on the primary keys\u2019 values? Choose an answer from the options below",
+    "id": 96
+  },
+  {
+    "Answers": [
+      "1 KB",
+      "4 KB",
+      "2 KB",
+      "8 KB"
+    ],
+    "Correct": [
+      "1 KB"
+    ],
+    "Question": "What is the max size of an item that corresponds to a single write capacity unit? (While creating an index or table in Amazon DynamoDB, it is required to specify the capacity requirements for the read and write activity)?.\\\u05deChoose an answer from the options below.",
+    "id": 97
+  },
+  {
+    "Answers": [
+      "Fn::GetAtt",
+      "Fn::Combine",
+      "Fn::Join",
+      "Fn::Select"
+    ],
+    "Correct": [
+      "Fn::Join"
+    ],
+    "Question": "Which of the below functions is used in Cloudformation to append a set of values into a single value? Choose an answer from the options below",
+    "id": 98
+  },
+  {
+    "Answers": [
+      "Fn::GetAtt",
+      "Fn::Combine",
+      "Fn::Join",
+      "Fn::Select"
+    ],
+    "Correct": [
+      "Fn::Select"
+    ],
+    "Question": "Which of the below functions is used in Cloudformation to retrieve an object from a set of objects? Choose an answer from the options below",
+    "id": 99
+  },
+  {
+    "Answers": [
+      "100",
+      "50",
+      "1000",
+      "150"
+    ],
+    "Correct": [
+      "100"
+    ],
+    "Question": "An administrator is getting an error while trying to create a new bucket in S3? You feel that bucket limit has been crossed. What is the bucket limit per account in AWS? Choose the correct answer from the options below",
+    "id": 100
+  },
+  {
+    "Answers": [
+      "True",
+      "False"
+    ],
+    "Correct": [
+      "True"
+    ],
+    "Question": "When a failure occurs during stack creation in Cloudformation, does a rollback occur?",
+    "id": 101
+  },
+  {
+    "Answers": [
+      "True",
+      "False"
+    ],
+    "Correct": [
+      "False"
+    ],
+    "Question": "Is the default visibility timeout for an SQS queue 1 minute?",
+    "id": 102
+  },
+  {
+    "Answers": [
+      "CORS Configuration",
+      "Public Object Permissions",
+      "Public ACL Permissions",
+      "None of the above"
+    ],
+    "Correct": [
+      "CORS Configuration"
+    ],
+    "Question": "What is used in S3 to enable client web applications that are loaded in one domain to interact with resources of the different domain? Choose the correct answer from the options below",
+    "id": 103
+  },
+  {
+    "Answers": [
+      "Pause the RDS activities from CLI until it is required in the future",
+      "Stop the RDS instance",
+      "Create a snapshot of RDS to launch in the future and terminate the instance now",
+      "Change the instance size to micro"
+    ],
+    "Correct": [
+      "Create a snapshot of RDS to launch in the future and terminate the instance now"
+    ],
+    "Question": "A user is running a MySQL RDS instance. The user wil not use the DB for the next 3 months.\nHow can the user save costs?",
+    "id": 104
+  },
+  {
+    "Answers": [
+      "$0.05 per hour",
+      "$0.10 per hour",
+      "$0.03 per hour",
+      "$0.15 per hour"
+    ],
+    "Correct": [
+      "$0.05 per hour"
+    ],
+    "Question": "In DynamoDB, if you create a table and request 10 units of write capacity and 200 units of read\ncapacity of provisioned throughput, how much would you be charged in US East (NorthernVirginia) Region?",
+    "id": 105
+  },
+  {
+    "Answers": [
+      "Bil ing commences when Amazon EC2 AMI instance is completely up and bil ing ends as soon as the instance starts to shutdown.",
+      "Bil ing commences when Amazon EC2 initiates the boot sequence of an AMI instance and bil ing ends when the instance shuts down.",
+      "Bil ing only commences only after 1 hour of uptime and bil ing ends when the instance terminates.",
+      "Bil ing commences when Amazon EC2 initiates the boot sequence of an AMI instance and bil ing ends as soon as the instance starts to shutdown."
+    ],
+    "Correct": [
+      "Bil ing commences when Amazon EC2 initiates the boot sequence of an AMI instance and bil ing ends when the instance shuts down."
+    ],
+    "Question": "You have been doing a lot of testing of your VPC Network by deliberately failing EC2 instances\nto test whether instances are failing over properly. Your customer who wil be paying the AWS\nbil for all this asks you if he being charged for all these instances. You try to explain to him how\nthe bil ing works on EC2 instances to the best of your knowledge. What would be an appropriate\nresponse to give to the customer in regards to this?",
+    "id": 106
+  },
+  {
+    "Answers": [
+      "True. For specific availability zones only.",
+      "False",
+      "True. For specific regions only",
+      "True. For all regions"
+    ],
+    "Correct": [
+      "True. For all regions"
+    ],
+    "Question": "AWS Elastic Load Balancer supports SSL termination.",
+    "id": 107
+  },
+  {
+    "Answers": [
+      "The user can add the sixth instance on the fly.",
+      "The user must stop the ELB and add the sixth instance.",
+      "The user can add the instance and change the ELB config file.",
+      "The ELB can only have a maximum of five instances."
+    ],
+    "Correct": [
+      "The user can add the sixth instance on the fly."
+    ],
+    "Question": "A user has launched five instances with ELB. How can the user add the sixth EC2 instance to ELB?",
+    "id": 108
+  },
+  {
+    "Answers": [
+      "Create IAM roles based on the permission and assign users to each role",
+      "Create IAM users and provide individual permission to each",
+      "Create IAM groups based on the permission and assign IAM users to the groups",
+      "It is not possible to manage more than 100 IAM users with AWS"
+    ],
+    "Correct": [
+      "Create IAM groups based on the permission and assign IAM users to the groups"
+    ],
+    "Question": "An organization has 500 employees. The organization wants to set up AWS access for each department. Which of the below mentioned options is a possible solution?",
+    "id": 109
+  },
+  {
+    "Answers": [
+      "From 120 secs up to 4 weeks",
+      "From 10 secs up to 7 days",
+      "From 60 secs up to 2 weeks",
+      "From 30 secs up to 1 week"
+    ],
+    "Correct": [
+      "From 60 secs up to 2 weeks"
+    ],
+    "Question": "How long can you keep your Amazon SQS messages in Amazon SQS queues?",
+    "id": 110
+  },
+  {
+    "Answers": [
+      "An Item should have at least two value sets, a primary key and another attribute.",
+      "An Item can have more than one attributes.",
+      "A primary key should be single-valued.",
+      "An attribute can have one or several other attributes."
+    ],
+    "Correct": [
+      "An Item can have more than one attributes."
+    ],
+    "Question": "In regard to DynamoDB, which of the following statements is correct?",
+    "id": 111
+  },
+  {
+    "Answers": [
+      "serve high-scale request workloads",
+      "low request pricing",
+      "high I/O performance of WebApp on EC2 instance",
+      "low-latency response times"
+    ],
+    "Correct": [
+      "high I/O performance of WebApp on EC2 instance"
+    ],
+    "Question": "Which one of the following statements is NOT an advantage of DyanamoDB being built on Solid State Drives:",
+    "id": 112
+  },
+  {
+    "Answers": [
+      "Apply the latest patch of OS and always keep it updated.",
+      "Allow only IAM users to connect with the EC2 instances with their own secret access key.",
+      "Disable the password based login for all the users. Al the users should use their own keys to connect with the instance securely.",
+      "Create a procedure to revoke the access rights of the individual user when they are not required to connect to EC2 instance anymore for the purpose of application configuration."
+    ],
+    "Correct": [
+      "Allow only IAM users to connect with the EC2 instances with their own secret access key."
+    ],
+    "Question": "An organization has hosted an application on the EC2 instances. There will be multiple users\nconnecting to the instance for setup and configuration of application. The organization is\nplanning to implement certain security best practices. Which of the below mentioned pointers\nwil not help the organization achieve better security arrangement?",
+    "id": 113
+  },
+  {
+    "Answers": [
+      "AWS Simple Workflow Service.",
+      "AWS Simple Queue Service.",
+      "Amazon Cognito",
+      "AWS Simple Email Service."
+    ],
+    "Correct": [
+      "AWS Simple Email Service."
+    ],
+    "Question": "A user is planning to make a mobile game which can be played online or offline and wil be\nhosted on EC2. The user wants to ensure that if someone breaks the highest score or they\nachieve some milestone they can inform all their colleagues through email. Which of the below\nmentioned AWS services helps achieve this goal?",
+    "id": 114
+  },
+  {
+    "Answers": [
+      "BatchWriteItem",
+      "DescribeTable",
+      "BatchGetItem",
+      "BatchDeleteItem"
+    ],
+    "Correct": [
+      "BatchDeleteItem"
+    ],
+    "Question": "Which one of the following operations is NOT a DynamoDB operation?",
+    "id": 115
+  },
+  {
+    "Answers": [
+      "No, scan is like Query operation",
+      "Yes",
+      "No, scan is strongly consistent by default",
+      "No, you can optionally request strongly consistent scan."
+    ],
+    "Correct": [
+      "Yes"
+    ],
+    "Question": "True or False: In DynamoDB, Scan operations are always eventual y consistent.",
+    "id": 116
+  },
+  {
+    "Answers": [
+      "Email",
+      "Message",
+      "SMTP",
+      "IMAP"
+    ],
+    "Correct": [
+      "Email"
+    ],
+    "Question": "Regarding Amazon SNS, when you want to subscribe to a topic and receive notifications to your email, in the Protocol drop-down box, you should select _______.",
+    "id": 117
+  },
+  {
+    "Answers": [
+      "Primary",
+      "Basic",
+      "Initial",
+      "Detailed"
+    ],
+    "Correct": [
+      "Basic"
+    ],
+    "Question": "In Amazon EC2, which of the following is the type of monitoring data for Amazon EBS volumes that is available automatically in 5-minute periods at no charge?",
+    "id": 118
+  },
+  {
+    "Answers": [
+      "DescribeTable",
+      "BatchGetItem",
+      "GetItem",
+      "TableName"
+    ],
+    "Correct": [
+      "DescribeTable"
+    ],
+    "Question": "In DynamoDB, to get a detailed listing of secondary indexes on a table, you can use the _____ action.",
+    "id": 119
+  },
+  {
+    "Answers": [
+      "The user can get information from the AWS console, by checking the Instance description under the State transition reason label",
+      "The user can get information from the AWS console, by checking the Instance description under the Instance Termination reason label",
+      "The user can get information from the AWS console, by checking the Instance description under the Instance Status Change reason label",
+      "It is not possible to find the details after the instance is terminated"
+    ],
+    "Correct": [
+      "The user can get information from the AWS console, by checking the Instance description under the State transition reason label"
+    ],
+    "Question": "A user has launched an EC2 instance. However, due to some reason the instance was terminated. If the user wants to find out the reason for termination, where can he find the details?",
+    "id": 120
+  },
+  {
+    "Answers": [
+      "Amazon SES",
+      "Amazon SWF",
+      "Amazon FPS",
+      "Amazon SNS"
+    ],
+    "Correct": [
+      "Amazon SWF"
+    ],
+    "Question": "___________ is a task coordination and state management service for cloud applications.",
+    "id": 121
+  },
+  {
+    "Answers": [
+      "False, hash-range key is another name for secondary index",
+      "False, it is optional",
+      "True",
+      "False, when you have Hash-Range key you cannot define Secondary index"
+    ],
+    "Correct": [
+      "False, it is optional"
+    ],
+    "Question": "When you create a table with a hash-and-range key, you must define one or more secondary indexes on that table.",
+    "id": 122
+  },
+  {
+    "Answers": [
+      "lista-listb-listc",
+      "list-a:list-b:list-c",
+      "list-c/list-b/list-a",
+      "list-a/list-b/list-c"
+    ],
+    "Correct": [
+      "list-a/list-b/list-c"
+    ],
+    "Problem": "id",
+    "Question": "What result would you expect from the Fn::Join function in the following line in a CloudFormation template?\n\"Fn::Join\" : [ \"/\", [ \"list-a\",\"list-b\",\"list-c\"] ]",
+    "id": 123
+  },
+  {
+    "Answers": [
+      "Store the database credentials in environment variables in an Amazon Machine Image (AMI). Rotate the credentials by replacing the AMI.",
+      "Store the database credentials in AWS Systems Manager Parameter Store. Configure Parameter Store to automatically rotate the credentials.",
+      "Store the database credentials in environment variables on the EC2 instances. Rotate the credentials by relaunching the EC2 instances.",
+      "Store the database credentials in AWS Secrets Manager. Configure Secrets Manager to automatically rotate the credentials."
+    ],
+    "Correct": [
+      "Store the database credentials in AWS Secrets Manager. Configure Secrets Manager to automatically rotate the credentials."
+    ],
+    "Problem": "Correct not list",
+    "Question": "A company is migrating a legacy application to Amazon EC2. The application uses a user name and password stored in the source code to connect to a MySQL database. The database will be migrated to an Amazon RDS for MySQL DB instance. As part of the migration, the company wants to implement a secure way to store and automatically rotate the database credentials. Which approach meets these requirements?",
+    "id": 124
+  },
+  {
+    "Answers": [
+      "Create an AWS AppSync schema and corresponding APIs. Use an Amazon DynamoDB table as the data store.",
+      "Create a WebSocket API in Amazon API Gateway. Use an AWS Lambda function as the backend and an Amazon DynamoDB table as the data store.",
+      "Create an AWS Elastic Beanstalk application backed by an Amazon RDS database. Configure the application to allow long-lived TCP/IP sockets.",
+      "Create a GraphQL endpoint in Amazon API Gateway. Use an Amazon DynamoDB table as the data store.",
+      "Enable WebSocket on Amazon CloudFront. Use an AWS Lambda function as the origin and an Amazon Aurora DB cluster as the data store."
+    ],
+    "Correct": [
+      "Create an AWS AppSync schema and corresponding APIs. Use an Amazon DynamoDB table as the data store.",
+      "Create a WebSocket API in Amazon API Gateway. Use an AWS Lambda function as the backend and an Amazon DynamoDB table as the data store."
+    ],
+    "Question": "A developer is designing a web application that allows the users to post comments and receive nearreal-time feedback. Which architectures meet these requirements? (Select TWO.)",
+    "id": 125
+  },
+  {
+    "Answers": [
+      "Use Amazon Cognito to provide the sign-up and sign-in functionality.",
+      "Use AWS IAM to provide the sign-up and sign-in functionality.",
+      "Configure an AWS Config rule to make the API call triggered by the post-authentication event.",
+      "Invoke an Amazon API Gateway method to make the API call triggered by the post-authentication event.",
+      "Execute an AWS Lambda function to make the API call triggered by the post-authentication event"
+    ],
+    "Correct": [
+      "Use Amazon Cognito to provide the sign-up and sign-in functionality.",
+      "Execute an AWS Lambda function to make the API call triggered by the post-authentication event"
+    ],
+    "Question": "A developer is adding sign-up and sign-in functionality to an application. The application is required to make an API call to a custom analytics solution to log user sign-in events. Which combination of actions should the developer take to satisfy these requirements? (Select TWO.)",
+    "id": 126
+  },
+  {
+    "Answers": [
+      "Create an IAM permission policy and attach it to each IAM user. Set the APIs method authorization type to AWS_IAM. Use Signature Version 4 to sign the API requests.",
+      "Create an Amazon Cognito user pool and add each IAM user to the pool. Set the method authorization type for the APIs to COGNITO_USER_POOLS. Authenticate using the IAM credentials in Amazon Cognito and add the ID token to the request headers.",
+      "Create an Amazon Cognito identity pool and add each IAM user to the pool. Set the method authorization type for the APIs to COGNITO_USER_POOLS. Authenticate using the IAM credentials in Amazon Cognito and add the access token to the request headers.",
+      "Create a resource policy for the APIs that allows access for each IAM user only.",
+      "Create an Amazon Cognito authorizer for the APIs that allows access for each IAM user only. Set the method authorization type for the APIs to COGNITO_USER_POOLS."
+    ],
+    "Correct": [
+      "Create an IAM permission policy and attach it to each IAM user. Set the APIs method authorization type to AWS_IAM. Use Signature Version 4 to sign the API requests.",
+      "Create a resource policy for the APIs that allows access for each IAM user only."
+    ],
+    "Question": "A company is using Amazon API Gateway for its REST APIs in an AWS account. The security team wants to allow only IAM users from another AWS account to access the APIs. Which combination of actions should the security team take to satisfy these requirements? (Select TWO.)",
+    "id": 127
+  },
+  {
+    "Answers": [
+      "Create a Lambda execution role using AWS IAM. Attach the IAM policy to the role. Assign the Lambda execution role to the Lambda function.",
+      "Create a Lambda execution user using AWS IAM. Attach the IAM policy to the user. Assign the Lambda execution user to the Lambda function.",
+      "Create a Lambda execution role using AWS IAM. Attach the IAM policy to the role. Store the IAM role as an environment variable in the Lambda function.",
+      "Create a Lambda execution user using AWS IAM. Attach the IAM policy to the user. Store the IAM user credentials as environment variables in the Lambda function."
+    ],
+    "Correct": [
+      "Create a Lambda execution role using AWS IAM. Attach the IAM policy to the role. Assign the Lambda execution role to the Lambda function."
+    ],
+    "Problem": "Correct not list",
+    "Question": "A developer is building an application that transforms text files to .pdf files. The text files are written to a source Amazon S3 bucket by a separate application. The developer wants to read the files as they arrive in Amazon S3 and convert them to .pdf files using AWS Lambda. The developer has written an IAM policy to allow access to Amazon S3 and Amazon CloudWatch Logs. Which actions should the developer take to ensure that the Lambda function has the correct permissions?",
+    "id": 128
+  },
+  {
+    "Answers": [
+      "Create a snapshot of the database in the us-west-1 Region. Copy the snapshot to the us-east-1 Region and specify a KMS key in the us-east-1 Region. Restore the database from the copied snapshot.",
+      "Create an unencrypted snapshot of the database in the us-west-1 Region. Copy the snapshot to the useast-1 Region. Restore the database from the copied snapshot and enable encryption using the KMS key from the us-east-1 Region.",
+      "Disable encryption on the database. Create a snapshot of the database in the us-west-1 Region. Copy the snapshot to the us-east-1 Region. Restore the database from the copied snapshot.",
+      "In the us-east-1 Region, choose to restore the latest automated backup of the database from the us-west- 1 Region. Enable encryption using a KMS key in the us-east-1 Region."
+    ],
+    "Correct": [
+      "Create a snapshot of the database in the us-west-1 Region. Copy the snapshot to the us-east-1 Region and specify a KMS key in the us-east-1 Region. Restore the database from the copied snapshot."
+    ],
+    "Problem": "Correct not list",
+    "Question": "A company has AWS workloads in multiple geographical locations. A developer has created an Amazon Aurora database in the us-west-1 Region. The database is encrypted using a customer-managed AWS KMS key. Now the developer wants to create the same encrypted database in the us-east-1 Region. Which approach should the developer take to accomplish this task?",
+    "id": 129
+  },
+  {
+    "Answers": [
+      "record_value = db.query(\"UPDATE Records SET Details = {1} WHERE ID == {0}\", \\nrecord_key, record_value) cache.set \\n(record_key, record_value)",
+      "record_value = cache.get(record_key) \\nif (record_value == NULL)\\nrecord_value = db.query(\"SELECT Details FROM Records WHERE ID == {0}\",\\nrecord_key)\\ncache.set (record_key, record_value)",
+      "record_value = cache.get (record_key)\\ndb.query(\"UPDATE Records SET Details = {1} WHERE ID == {0}\", record_key,\\nrecord_value)",
+      "record_value = db.query(\"SELECT Details FROM Records WHERE ID == {0}\",\\nrecord_key)\\nif (record_value != NULL)\\ncache.set (record_key, record_value)"
+    ],
+    "Correct": [
+      "record_value = cache.get(record_key) \\nif (record_value == NULL)\\nrecord_value = db.query(\"SELECT Details FROM Records WHERE ID == {0}\",\\nrecord_key)\\ncache.set (record_key, record_value)"
+    ],
+    "Problem": "Correct not list",
+    "Question": "A developer is adding Amazon ElastiCache for Memcached to a company's existing record storage application to reduce the load on the database and increase performance. The developer has decided to use lazy loading based on an analysis of common record handling patterns. Which pseudocode example would correctly implement lazy loading?",
+    "id": 130
+  },
+  {
+    "Answers": [
+      "Configure a cron job on each instance to measure the response time and update a log file stored in an Amazon S3 bucket every minute. Use an Amazon S3 event notification to trigger an AWS Lambda function that reads the log file and writes new entries to an Amazon Elasticsearch Service (Amazon ES) cluster. Visualize the results in a Kibana dashboard. Configure Amazon ES to send an alert to an Amazon SNS topic when the response time exceeds a threshold.",
+      "Configure the application to write the response times to the system log. Install and configure the Amazon Inspector agent to continually read the logs and send the response times to Amazon EventBridge. View the metrics graphs in the EventBridge console. Configure an EventBridge custom rule to send an Amazon SNS notification when the average of the response time metric exceeds the threshold.",
+      "Configure the application to write the response times to a log file. Install and configure the Amazon CloudWatch agent on the instances to stream the application log to CloudWatch Logs. Create a metric filter of the response time from the log. View the metrics graphs in the CloudWatch console. Create a CloudWatch alarm to send an Amazon SNS notification when the average of the response time metric exceeds the threshold.",
+      "Install and configure the AWS Systems Manager Agent on the instances to monitor the response time and send it to Amazon CloudWatch as a custom metric. View the metrics graphs in Amazon QuickSight. Create a CloudWatch alarm to send an Amazon SNS notification when the average of the response time metric exceeds the threshold."
+    ],
+    "Correct": [
+      "Configure the application to write the response times to a log file. Install and configure the Amazon CloudWatch agent on the instances to stream the application log to CloudWatch Logs. Create a metric filter of the response time from the log. View the metrics graphs in the CloudWatch console. Create a CloudWatch alarm to send an Amazon SNS notification when the average of the response time metric exceeds the threshold."
+    ],
+    "Problem": "Correct not list",
+    "Question": "A developer wants to track the performance of an application that runs on a fleet of Amazon EC2 instances. The developer wants to view and track statistics across the fleet, such as the average and maximum request latency. The developer would like to be notified immediately if the average response time exceeds a threshold. Which solution meets these requirements?",
+    "id": 131
+  },
+  {
+    "Answers": [
+      "aws cloudformation describe-stack-resources",
+      "aws cloudformation describe-stacks",
+      "aws cloudformation list-stacks",
+      "aws cloudformation create-stack"
+    ],
+    "Correct": [
+      "aws cloudformation describe-stacks"
+    ],
+    "Problem": "id",
+    "Question": "Which AWS CLI commands lists all current stacks in your CloudFormation service?",
+    "id": 132
+  },
+  {
+    "Answers": [
+      "Store the database credentials in environment variables in an Amazon Machine Image (AMI). Rotate the credentials by replacing the AMI.",
+      "Store the database credentials in AWS Systems Manager Parameter Store. Configure Parameter Store to automatically rotate the credentials.",
+      "Store the database credentials in environment variables on the EC2 instances. Rotate the credentials by relaunching the EC2 instances.",
+      "Store the database credentials in AWS Secrets Manager. Configure Secrets Manager to automatically rotate the credentials."
+    ],
+    "Correct": [
+      "Store the database credentials in AWS Secrets Manager. Configure Secrets Manager to automatically rotate the credentials."
+    ],
+    "Question": "A company is migrating a legacy application to Amazon EC2. The application uses a user name and password stored in the source code to connect to a MySQL database. The database will be migrated to an Amazon RDS for MySQL DB instance. As part of the migration, the company wants to implement a secure way to store and automatically rotate the database credentials. Which approach meets these requirements?",
+    "id": 133
+  },
+  {
+    "Answers": [
+      "Create an AWS AppSync schema and corresponding APIs. Use an Amazon DynamoDB table as the data store.",
+      "Create a WebSocket API in Amazon API Gateway. Use an AWS Lambda function as the backend and an Amazon DynamoDB table as the data store.",
+      "Create an AWS Elastic Beanstalk application backed by an Amazon RDS database. Configure the application to allow long-lived TCP/IP sockets.",
+      "Create a GraphQL endpoint in Amazon API Gateway. Use an Amazon DynamoDB table as the data store.",
+      "Enable WebSocket on Amazon CloudFront. Use an AWS Lambda function as the origin and an Amazon Aurora DB cluster as the data store."
+    ],
+    "Correct": [
+      "Create an AWS AppSync schema and corresponding APIs. Use an Amazon DynamoDB table as the data store.",
+      "Create a WebSocket API in Amazon API Gateway. Use an AWS Lambda function as the backend and an Amazon DynamoDB table as the data store."
+    ],
+    "Question": "A developer is designing a web application that allows the users to post comments and receive nearreal-time feedback. Which architectures meet these requirements? (Select TWO.)",
+    "id": 134
+  },
+  {
+    "Answers": [
+      "Use Amazon Cognito to provide the sign-up and sign-in functionality.",
+      "Use AWS IAM to provide the sign-up and sign-in functionality.",
+      "Configure an AWS Config rule to make the API call triggered by the post-authentication event.",
+      "Invoke an Amazon API Gateway method to make the API call triggered by the post-authentication event.",
+      "Execute an AWS Lambda function to make the API call triggered by the post-authentication event"
+    ],
+    "Correct": [
+      "Use Amazon Cognito to provide the sign-up and sign-in functionality.",
+      "Execute an AWS Lambda function to make the API call triggered by the post-authentication event"
+    ],
+    "Question": "A developer is adding sign-up and sign-in functionality to an application. The application is required to make an API call to a custom analytics solution to log user sign-in events. Which combination of actions should the developer take to satisfy these requirements? (Select TWO.)",
+    "id": 135
+  },
+  {
+    "Answers": [
+      "Create an IAM permission policy and attach it to each IAM user. Set the APIs method authorization type to AWS_IAM. Use Signature Version 4 to sign the API requests.",
+      "Create an Amazon Cognito user pool and add each IAM user to the pool. Set the method authorization type for the APIs to COGNITO_USER_POOLS. Authenticate using the IAM credentials in Amazon Cognito and add the ID token to the request headers.",
+      "Create an Amazon Cognito identity pool and add each IAM user to the pool. Set the method authorization type for the APIs to COGNITO_USER_POOLS. Authenticate using the IAM credentials in Amazon Cognito and add the access token to the request headers.",
+      "Create a resource policy for the APIs that allows access for each IAM user only.",
+      "Create an Amazon Cognito authorizer for the APIs that allows access for each IAM user only. Set the method authorization type for the APIs to COGNITO_USER_POOLS."
+    ],
+    "Correct": [
+      "Create an IAM permission policy and attach it to each IAM user. Set the APIs method authorization type to AWS_IAM. Use Signature Version 4 to sign the API requests.",
+      "Create a resource policy for the APIs that allows access for each IAM user only."
+    ],
+    "Question": "A company is using Amazon API Gateway for its REST APIs in an AWS account. The security team wants to allow only IAM users from another AWS account to access the APIs. Which combination of actions should the security team take to satisfy these requirements? (Select TWO.)",
+    "id": 136
+  },
+  {
+    "Answers": [
+      "Create a Lambda execution role using AWS IAM. Attach the IAM policy to the role. Assign the Lambda execution role to the Lambda function.",
+      "Create a Lambda execution user using AWS IAM. Attach the IAM policy to the user. Assign the Lambda execution user to the Lambda function.",
+      "Create a Lambda execution role using AWS IAM. Attach the IAM policy to the role. Store the IAM role as an environment variable in the Lambda function.",
+      "Create a Lambda execution user using AWS IAM. Attach the IAM policy to the user. Store the IAM user credentials as environment variables in the Lambda function."
+    ],
+    "Correct": [
+      "Create a Lambda execution role using AWS IAM. Attach the IAM policy to the role. Assign the Lambda execution role to the Lambda function."
+    ],
+    "Question": "A developer is building an application that transforms text files to .pdf files. The text files are written to a source Amazon S3 bucket by a separate application. The developer wants to read the files as they arrive in Amazon S3 and convert them to .pdf files using AWS Lambda. The developer has written an IAM policy to allow access to Amazon S3 and Amazon CloudWatch Logs. Which actions should the developer take to ensure that the Lambda function has the correct permissions?",
+    "id": 137
+  },
+  {
+    "Answers": [
+      "Create a snapshot of the database in the us-west-1 Region. Copy the snapshot to the us-east-1 Region and specify a KMS key in the us-east-1 Region. Restore the database from the copied snapshot.",
+      "Create an unencrypted snapshot of the database in the us-west-1 Region. Copy the snapshot to the useast-1 Region. Restore the database from the copied snapshot and enable encryption using the KMS key from the us-east-1 Region.",
+      "Disable encryption on the database. Create a snapshot of the database in the us-west-1 Region. Copy the snapshot to the us-east-1 Region. Restore the database from the copied snapshot.",
+      "In the us-east-1 Region, choose to restore the latest automated backup of the database from the us-west- 1 Region. Enable encryption using a KMS key in the us-east-1 Region."
+    ],
+    "Correct": [
+      "Create a snapshot of the database in the us-west-1 Region. Copy the snapshot to the us-east-1 Region and specify a KMS key in the us-east-1 Region. Restore the database from the copied snapshot."
+    ],
+    "Question": "A company has AWS workloads in multiple geographical locations. A developer has created an Amazon Aurora database in the us-west-1 Region. The database is encrypted using a customer-managed AWS KMS key. Now the developer wants to create the same encrypted database in the us-east-1 Region. Which approach should the developer take to accomplish this task?",
+    "id": 138
+  },
+  {
+    "Answers": [
+      "record_value = db.query(\"UPDATE Records SET Details = {1} WHERE ID == {0}\", \\nrecord_key, record_value) cache.set \\n(record_key, record_value)",
+      "record_value = cache.get(record_key) \\nif (record_value == NULL)\\nrecord_value = db.query(\"SELECT Details FROM Records WHERE ID == {0}\",\\nrecord_key)\\ncache.set (record_key, record_value)",
+      "record_value = cache.get (record_key)\\ndb.query(\"UPDATE Records SET Details = {1} WHERE ID == {0}\", record_key,\\nrecord_value)",
+      "record_value = db.query(\"SELECT Details FROM Records WHERE ID == {0}\",\\nrecord_key)\\nif (record_value != NULL)\\ncache.set (record_key, record_value)"
+    ],
+    "Correct": [
+      "record_value = cache.get(record_key) \\nif (record_value == NULL)\\nrecord_value = db.query(\"SELECT Details FROM Records WHERE ID == {0}\",\\nrecord_key)\\ncache.set (record_key, record_value)"
+    ],
+    "Question": "A developer is adding Amazon ElastiCache for Memcached to a company's existing record storage application to reduce the load on the database and increase performance. The developer has decided to use lazy loading based on an analysis of common record handling patterns. Which pseudocode example would correctly implement lazy loading?",
+    "id": 139
+  },
+  {
+    "Answers": [
+      "Configure a cron job on each instance to measure the response time and update a log file stored in an Amazon S3 bucket every minute. Use an Amazon S3 event notification to trigger an AWS Lambda function that reads the log file and writes new entries to an Amazon Elasticsearch Service (Amazon ES) cluster. Visualize the results in a Kibana dashboard. Configure Amazon ES to send an alert to an Amazon SNS topic when the response time exceeds a threshold.",
+      "Configure the application to write the response times to the system log. Install and configure the Amazon Inspector agent to continually read the logs and send the response times to Amazon EventBridge. View the metrics graphs in the EventBridge console. Configure an EventBridge custom rule to send an Amazon SNS notification when the average of the response time metric exceeds the threshold.",
+      "Configure the application to write the response times to a log file. Install and configure the Amazon CloudWatch agent on the instances to stream the application log to CloudWatch Logs. Create a metric filter of the response time from the log. View the metrics graphs in the CloudWatch console. Create a CloudWatch alarm to send an Amazon SNS notification when the average of the response time metric exceeds the threshold.",
+      "Install and configure the AWS Systems Manager Agent on the instances to monitor the response time and send it to Amazon CloudWatch as a custom metric. View the metrics graphs in Amazon QuickSight. Create a CloudWatch alarm to send an Amazon SNS notification when the average of the response time metric exceeds the threshold."
+    ],
+    "Correct": [
+      "Configure the application to write the response times to a log file. Install and configure the Amazon CloudWatch agent on the instances to stream the application log to CloudWatch Logs. Create a metric filter of the response time from the log. View the metrics graphs in the CloudWatch console. Create a CloudWatch alarm to send an Amazon SNS notification when the average of the response time metric exceeds the threshold."
+    ],
+    "Question": "A developer wants to track the performance of an application that runs on a fleet of Amazon EC2 instances. The developer wants to view and track statistics across the fleet, such as the average and maximum request latency. The developer would like to be notified immediately if the average response time exceeds a threshold. Which solution meets these requirements?",
+    "id": 140
+  },
+  {
+    "Answers": [
+      "Rollback",
+      "The stack continues creating and the failed resource is ignored",
+      "Delete",
+      "Undo"
+    ],
+    "Correct": [
+      "Rollback"
+    ],
+    "Problem": "id",
+    "Question": "What is the default behavior of a CloudFormation stack if the creation of one resource fails?",
+    "id": 141
+  },
+  {
+    "Answers": [
+      "Pause the RDS actMties from CLI until it is required in the future",
+      "Stop the RDS instance",
+      "Create a snapshot of RDS to launch in the future and terminate the instance now",
+      "Change the instance size to micro"
+    ],
+    "Correct": [
+      "Create a snapshot of RDS to launch in the future and terminate the instance now"
+    ],
+    "Question": "A user is running a MySQL RDS instance. The user will not use the DB for the next 3 months. How can the user save costs?",
+    "id": 142
+  },
+  {
+    "Answers": [
+      "An Item should have at least two value sets, a primary key and another attribute.",
+      "An Item can have more than one attributes.",
+      "A primary key should be single-valued.",
+      "An attribute can have one or several other attribute"
+    ],
+    "Correct": [
+      "An Item can have more than one attributes."
+    ],
+    "Question": "In regard to DynamoDB, which of the following statements is correct?",
+    "id": 143
+  },
+  {
+    "Answers": [
+      "BatchWrite|tem",
+      "DescribeTabIe",
+      "BatchGetItem",
+      "BatchDeIeteItem"
+    ],
+    "Correct": [
+      "BatchDeIeteItem"
+    ],
+    "Question": "Which one of the following operations is NOT a DynamoDB operation?",
+    "id": 144
+  },
+  {
+    "Answers": [
+      "DescribeTabIe",
+      "BatchGetItem",
+      "Getltem",
+      "TabIeName"
+    ],
+    "Correct": [
+      "DescribeTabIe"
+    ],
+    "Question": "In DynamoDB, to get a detailed listing of secondary indexes on a table, you can use the action.",
+    "id": 145
+  },
+  {
+    "Answers": [
+      "The user can get information from the AWS console, by checking the Instance description under the State transition reason label",
+      "The user can get information from the AWS console, by checking the Instance description under the Instance Termination reason label",
+      "The user can get information from the AWS console, by checking the Instance description under the Instance Status Change reason label",
+      "It is not possible to find the details after the instance is terminated"
+    ],
+    "Correct": [
+      "The user can get information from the AWS console, by checking the Instance description under the State transition reason label"
+    ],
+    "Question": "A user has launched an EC2 instance. However, due to some reason the instance was terminated. If the user wants to find out the reason for termination, where can he find the details?",
+    "id": 146
+  },
+  {
+    "Answers": [
+      "In the security group, open port 22 for IP 1020.30.40/0",
+      "In the security group, open port 22 for IP 10.20.30.40/32",
+      "In the security group, open port 22 for IP 10.20.30.40/24",
+      "In the security group, open port 22 for IP 10.20.30.40"
+    ],
+    "Correct": [
+      "In the security group, open port 22 for IP 10.20.30.40/32"
+    ],
+    "Question": "A user is accessing an EC2 instance on the SSH port for IP 10.20.30.40. Which one is a secure way to configure that the instance can be accessed only from this IP?",
+    "id": 147
+  },
+  {
+    "Answers": [
+      "CIoudWatch",
+      "S3",
+      "AutoScaIing",
+      "AWS EC2 instances"
+    ],
+    "Correct": [
+      "S3"
+    ],
+    "Question": "A user is planning to host a scalable dynamic web application on AWS. Which of the services may not be required by the user to achieve automated scalability?",
+    "id": 148
+  },
+  {
+    "Answers": [
+      "Arrays",
+      "String",
+      "Binary",
+      "Number Set"
+    ],
+    "Correct": [
+      "Arrays"
+    ],
+    "Question": "Which one of the following data types does Amazon DynamoDB not support?",
+    "id": 149
+  },
+  {
+    "Answers": [
+      "Automated backup",
+      "Automated scaling to manage a higher load",
+      "Automated failure detection and recovery",
+      "Automated software patching"
+    ],
+    "Correct": [
+      "Automated scaling to manage a higher load"
+    ],
+    "Question": "A user plans to use RDS as a managed DB platform. Which of the below mentioned features is not supported by RDS?",
+    "id": 150
+  },
+  {
+    "Answers": [
+      "No",
+      "Ye",
+      "Queue names must be unique within an AWS account and you cannot use hyphens (-) and underscores (_)",
+      "Queue names are limited to 80 characters and queue names must be unique within an AWS account"
+    ],
+    "Correct": [
+      "Queue names must be unique within an AWS account and you cannot use hyphens (-) and underscores (_)"
+    ],
+    "Question": "Regarding Amazon SQS, are there restrictions on the names of Amazon SQS queues?",
+    "id": 151
+  },
+  {
+    "Answers": [
+      "Yes, always",
+      "No",
+      "Yes, if configured with the Auto Scaling group",
+      "Yes, if configured with the Launch Config"
+    ],
+    "Correct": [
+      "Yes, if configured with the Auto Scaling group"
+    ],
+    "Question": "Can a user get a notification of each instance start / terminate configured with Auto Scaling?",
+    "id": 152
+  },
+  {
+    "Answers": [
+      "Launch a VPC instance with two network interface",
+      "Assign a separate security group to each and AWS will assign a separate public IP to them.",
+      "Launch VPC with two separate subnets and make the instance a part of both the subnets.",
+      "Launch a VPC instance with two network interface",
+      "Assign a separate security group and elastic IP to them.",
+      "Launch a VPC with ELB such that it redirects requests to separate VPC instances of the public subne"
+    ],
+    "Correct": [
+      "Launch VPC with two separate subnets and make the instance a part of both the subnets."
+    ],
+    "Question": "A user is planning to host a web server as well as an app server on a single EC2 instance which is a part of the public subnet of a VPC. How can the user setup to have two separate public IPs and separate security groups for both the application as well as the web server?",
+    "id": 153
+  },
+  {
+    "Answers": [
+      "Amazon Redshift",
+      "Amazon SimpIeDB",
+      "Amazon DynamoDB",
+      "Amazon RDS"
+    ],
+    "Correct": [
+      "Amazon DynamoDB"
+    ],
+    "Question": "An online gaming site asked you if you can deploy a database that is a fast, highly scalable NoSQL database service in AWS for a new site that he wants to build. Which database should you recommend?",
+    "id": 154
+  },
+  {
+    "Answers": [
+      "Handler",
+      "Decider",
+      "Cordinator",
+      "Worker"
+    ],
+    "Correct": [
+      "Decider"
+    ],
+    "Question": "Regarding Amazon SWF, the coordination logic in a workflow is contained in a software program called a",
+    "id": 155
+  },
+  {
+    "Answers": [
+      "Approving",
+      "Implementing",
+      "Authorizing",
+      "It is not possible to assign a single group to multiple DB instances"
+    ],
+    "Correct": [
+      "Authorizing"
+    ],
+    "Question": "A user has attached one RDS security group with 5 RDS instances. The user has changed the ingress rule for the security group. What will be the initial status of the ingress rule?",
+    "id": 156
+  },
+  {
+    "Answers": [
+      "Yes, not more than 1,000 writes/second or 1,000 reads/second",
+      "No",
+      "Yes, not more than 10,000 writes/second or 10,000 reads/second",
+      "No, but If you wish to exceed throughput rates of 10,000 writes/second or 10,000 reads/second, you must first contact AWS."
+    ],
+    "Correct": [
+      "No, but If you wish to exceed throughput rates of 10,000 writes/second or 10,000 reads/second, you must first contact AWS."
+    ],
+    "Question": "Is there a limit to how much throughput you can get out of a single table in DynamoDB?",
+    "id": 157
+  },
+  {
+    "Answers": [
+      "the AWS Toolkit for Eclipse",
+      "the AWS Toolkit for Visual Studio",
+      "the AWS Toolkit for JVM",
+      "the AWS Toolkit for Netbeans"
+    ],
+    "Correct": [
+      "the AWS Toolkit for Eclipse"
+    ],
+    "Question": "In AWS Elastic Beanstalk, you can update your deployed application even while it is part of a running environment. For a Java application, you can also use to update your deployed application.",
+    "id": 158
+  },
+  {
+    "Answers": [
+      "Amazon SQS is for single-threaded sending or receMng speeds.",
+      "Amazon SQS is a non-distributed queuing system.",
+      "Amazon SQS is a distributed queuing system that is optimized for horizontal scalability, not for single-threaded sending or receMng speeds.",
+      "Amazon SQS is a distributed queuing system that is optimized for vertical scalability and for single-threaded sending or receMng speeds."
+    ],
+    "Correct": [
+      "Amazon SQS is a distributed queuing system that is optimized for horizontal scalability, not for single-threaded sending or receMng speeds."
+    ],
+    "Question": "You have a number of image files to encode. In an Amazon SQS worker queue, you create an Amazon SQS message for each file specifying the command (jpegencode) and the location of the file in Amazon S3. Which of the following statements best describes the functionality of Amazon SQS?",
+    "id": 159
+  },
+  {
+    "Answers": [
+      "Select Subnet",
+      "Select IAM",
+      "Select ENI",
+      "Select VPC"
+    ],
+    "Correct": [
+      "Select Subnet"
+    ],
+    "Question": "A user is creating an ELB with VPC. Which of the following options is available as a part of the \"Add EC2 instances\" page?",
+    "id": 160
+  },
+  {
+    "Answers": [
+      "While creating a policy provide the region as a part of the resources",
+      "Create an IAM user in the US West region and give access to EC2",
+      "Create an IAM policy and define the region in the condition",
+      "It is not possible to provide access based on the region"
+    ],
+    "Correct": [
+      "Create an IAM policy and define the region in the condition"
+    ],
+    "Question": "An account owner has created an IAM user with the name examkiller. The account owner wants to give EC2 access of only the US West region to that IAM user. How can the owner configure this?",
+    "id": 161
+  },
+  {
+    "Answers": [
+      "Availability Zone",
+      "Region",
+      "DB subnet group",
+      "Database port"
+    ],
+    "Correct": [
+      "Availability Zone"
+    ],
+    "Question": "A user is launching an AWS RDS instance with MySQL. The user wants to enable the Nlulti AZ feature. Which of the below mentioned parameters will not be allowed to configure by RDS?",
+    "id": 162
+  },
+  {
+    "Answers": [
+      "8 KB",
+      "2 KB",
+      "16 KB",
+      "4 KB"
+    ],
+    "Correct": [
+      "8 KB"
+    ],
+    "Question": "When using Amazon SQS how much data can you store in a message?",
+    "id": 163
+  },
+  {
+    "Answers": [
+      "An index with a hash and range key that can be different from those on the table.",
+      "An index that has the same range key as the table, but a different hash key",
+      "An index that has the same hash key and range key as the table",
+      "An index that has the same hash key as the table, but a different range key"
+    ],
+    "Correct": [
+      "An index with a hash and range key that can be different from those on the table."
+    ],
+    "Question": "In regard to DynamoDB, what is the Global secondary index?",
+    "id": 164
+  },
+  {
+    "Answers": [
+      "Enable MFA for prMleged users",
+      "Create indMdual IAM users",
+      "Keep rotating your secure access credentials at regular intervals",
+      "Create strong access key and secret access key and attach to the root account"
+    ],
+    "Correct": [
+      "Create strong access key and secret access key and attach to the root account"
+    ],
+    "Question": "Which of the below mentioned options is not a best practice to securely manage the AWS access credentials?",
+    "id": 165
+  },
+  {
+    "Answers": [
+      "By identifying a user by his unique id",
+      "By using unique cryptography",
+      "Amazon SQS queue has a configurable visibility timeout.",
+      "MuItipIe readers can't access the same message queue"
+    ],
+    "Correct": [
+      "Amazon SQS queue has a configurable visibility timeout."
+    ],
+    "Question": "How does Amazon SQS allow multiple readers to access the same message queue without losing messages or processing them many times?",
+    "id": 166
+  },
+  {
+    "Answers": [
+      "AWS SES",
+      "Email JSON",
+      "AWS SQS",
+      "HTTP"
+    ],
+    "Correct": [
+      "AWS SES"
+    ],
+    "Question": "A user is trying to understand AWS SNS. To which of the below mentioned end points is SNS unable to send a notification?",
+    "id": 167
+  },
+  {
+    "Answers": [
+      "xvd[a-e]",
+      "/mnt/sd[b-e]",
+      "xvd[f-p]",
+      "/dev/sda1"
+    ],
+    "Correct": [
+      "xvd[f-p]"
+    ],
+    "Question": "Which of the following device names is recommended for an EBS volume that can be attached to an Amazon EC2 Instance running Windows?",
+    "id": 168
+  },
+  {
+    "Answers": [
+      "The instance must be in a running stat",
+      "It is required to stop the instance to attach volume",
+      "The AZ for the instance and volume are different",
+      "The instance is from an instance store backed AMI",
+      "The instance has enabled the volume attach protection"
+    ],
+    "Correct": [
+      "It is required to stop the instance to attach volume"
+    ],
+    "Question": "A user has created a blank EBS volume in the US-East-1 region. The user is unable to attach the volume to a running instance in the same region. What could be the possible reason for this?",
+    "id": 169
+  },
+  {
+    "Answers": [
+      "AWS Simple Notification Service.",
+      "AWS Simple Queue Service.",
+      "AWS Mobile Communication Service.",
+      "AWS Simple Email Servic"
+    ],
+    "Correct": [
+      "AWS Simple Notification Service."
+    ],
+    "Question": "A user is planning to host a mobile game on EC2 which sends notifications to active users on either high score or the addition of new features. The user should get this notification when he is online on his mobile device. Which of the below mentioned AWS services can help achieve this functionality?",
+    "id": 170
+  },
+  {
+    "Answers": [
+      "Grant least prMleges to the indMdual user",
+      "Grant all higher prMleges to the group",
+      "Grant less prMleges for user, but higher prMleges for the group",
+      "Grant more prMleges to the user, but least prMleges to the group"
+    ],
+    "Correct": [
+      "Grant least prMleges to the indMdual user"
+    ],
+    "Question": "A user is creating multiple IAM users. What advice should be given to him to enhance the security?",
+    "id": 171
+  },
+  {
+    "Answers": [
+      "At least twice",
+      "Exactly once",
+      "As many times as you want",
+      "At least once"
+    ],
+    "Correct": [
+      "At least once"
+    ],
+    "Question": "In regards to Amazon SQS how many times will you receive each message?",
+    "id": 172
+  },
+  {
+    "Answers": [
+      "High availability",
+      "Scalability",
+      "MS SQL does not support Multi AZ",
+      "Disaster recovery"
+    ],
+    "Correct": [
+      "MS SQL does not support Multi AZ"
+    ],
+    "Question": "A user has setup Multi AZ with the MS SQL RDS instance. Which of the below mentioned functionalities can be achieved by the user?",
+    "id": 173
+  },
+  {
+    "Answers": [
+      "Since both the volume and the instance are in the same region, the user can attach the volume",
+      "Use the volume migrate function to move the volume from one AZ to another and attach to the instance",
+      "Take a snapshot of the volum",
+      "Create a new volume in the USEast-1a and attach that to the instance",
+      "Use the volume replicate function to create a new volume in the US-East-1a and attach that to the volume"
+    ],
+    "Correct": [
+      "Take a snapshot of the volum"
+    ],
+    "Question": "A user has created an EBS instance in the US-East-1a AZ. The user has a volume of 30 GB in the US-East-1 b zone. How can the user attach the volume to an instance?",
+    "id": 174
+  },
+  {
+    "Answers": [
+      "Provided the original volume has set the change size attribute to true",
+      "Yes",
+      "Provided the snapshot has the modify size attribute set as true",
+      "No"
+    ],
+    "Correct": [
+      "Yes"
+    ],
+    "Question": "A user is creating a new EBS volume from an existing snapshot. The snapshot size shows 10 GB. Can the user create a volume of 30 GB from that snapshot?",
+    "id": 175
+  },
+  {
+    "Answers": [
+      "AWS CIoudFormation",
+      "AWS Elastic Beanstalk",
+      "AWS OpsWorks",
+      "Amazon Glacier"
+    ],
+    "Correct": [
+      "AWS CIoudFormation"
+    ],
+    "Question": "can be used to bootstrap both the Chef Server and Chef Client software on your EC2 instances.",
+    "id": 176
+  },
+  {
+    "Answers": [
+      "ec2-allocate-address",
+      "ec2-attach-internet-gateway",
+      "ec2-associate-route-table",
+      "ec2-allocate-interface"
+    ],
+    "Correct": [
+      "ec2-allocate-interface"
+    ],
+    "Question": "You cannot access your AWS console, so you revert to using the CLI that you are not familiar with. Which of the following commands is not a valid CLI command for EC2 instances?",
+    "id": 177
+  },
+  {
+    "Answers": [
+      "Storing mission critical data Files",
+      "Storing infrequently used log files",
+      "Storing a video file which is not reproducible",
+      "Storing image thumbnails"
+    ],
+    "Correct": [
+      "Storing image thumbnails"
+    ],
+    "Question": "Which of the below mentioned options can be a good use case for storing content in AWS RRS?",
+    "id": 178
+  },
+  {
+    "Answers": [
+      "The user will be charged for volume and instance only when the instance is running",
+      "The user will be charged for the volume even if the instance is stopped",
+      "The user will be charged only for the instance running cost",
+      "The user will not be charged for the volume if the instance is stopped"
+    ],
+    "Correct": [
+      "The user will be charged for the volume even if the instance is stopped"
+    ],
+    "Question": "A user is using an EBS backed instance. Which of the below mentioned statements is true?",
+    "id": 179
+  },
+  {
+    "Answers": [
+      "It will return \"coIor=white\"",
+      "It will return \"coIor=red\"",
+      "It will return an error saying that the object was not found",
+      "It may return either \"coIor=red\" or \"color=white\" i.",
+      "any of the value"
+    ],
+    "Correct": [
+      "It may return either \"coIor=red\" or \"color=white\" i."
+    ],
+    "Question": "A user has an S3 object in the US Standard region with the content \"coIor=red\". The user updates the object with the content as \"coIor=\"white\". If the user tries to read the value 1 minute after it was uploaded, what will S3 return?",
+    "id": 180
+  },
+  {
+    "Answers": [
+      "The user must create EBS within the same VPC and then attach it to a running instance.",
+      "The user can create EBS in the same zone as the subnet of instance and attach that EBS to instance.",
+      "It is not possible to attach an EBS to an instance running in VPC until the instance is stopped.",
+      "The user can specify the same subnet while creating EBS and then attach it to a running instanc"
+    ],
+    "Correct": [
+      "The user can create EBS in the same zone as the subnet of instance and attach that EBS to instance."
+    ],
+    "Question": "A user is planning to use EBS for his DB requirement. The user already has an EC2 instance running in the VPC private subnet. How can the user attach the EBS volume to a running instance?",
+    "id": 181
+  },
+  {
+    "Answers": [
+      "50",
+      "10",
+      "5",
+      "25"
+    ],
+    "Correct": [
+      "10"
+    ],
+    "Question": "What is the maximum number of tags that a user can assign to an EC2 instance?",
+    "id": 182
+  },
+  {
+    "Answers": [
+      "Set the lVIessageRetentionPeriod attribute using the SetQueueAttributes method",
+      "Using a Lambda function",
+      "You can'",
+      "It is set to 14 days and cannot be changed",
+      "You need to request it from AWS"
+    ],
+    "Correct": [
+      "Set the lVIessageRetentionPeriod attribute using the SetQueueAttributes method"
+    ],
+    "Question": "How do you configure SQS to support longer message retention?",
+    "id": 183
+  },
+  {
+    "Answers": [
+      "No, neither increment nor decrement operations.",
+      "Only increment, since decrement are inherently impossible with DynamoDB's data model.",
+      "Only decrement, since increment are inherently impossible with DynamoDB's data model.",
+      "Yes, both increment and decrement operation"
+    ],
+    "Correct": [
+      "Yes, both increment and decrement operation"
+    ],
+    "Question": "Does Amazon DynamoDB support both increment and decrement atomic operations?",
+    "id": 184
+  },
+  {
+    "Answers": [
+      "\"Items\", with Keys and one or more Attribute; and \"Attribute\", with Name and Value.",
+      "\"Database\", which is a set of \"TabIes\", which is a set of \"Items\", which is a set of \"Attributes\".",
+      "\"TabIe\", a collection of Items; \"Items\", with Keys and one or more Attribute; and \"Attribute\", with Name and Value.",
+      "\"Database\", a collection of Tables; \"TabIes\", with Keys and one or more Attribute; and \"Attribute\", with Name and Value."
+    ],
+    "Correct": [
+      "\"TabIe\", a collection of Items; \"Items\", with Keys and one or more Attribute; and \"Attribute\", with Name and Value."
+    ],
+    "Question": "What is the data model of DynamoDB?",
+    "id": 185
+  },
+  {
+    "Answers": [
+      "AWS Simple Notification Service",
+      "AWS Simple Workflow",
+      "AWS Simple Query Service",
+      "AWS Simple Queue Service"
+    ],
+    "Correct": [
+      "AWS Simple Queue Service"
+    ],
+    "Question": "A user has developed an application which is required to send the data to a NoSQL database. The user wants to decouple the data sending such that the application keeps processing and sending data but does not wait for an acknowledgement of DB. Which of the below mentioned applications helps in this scenario?",
+    "id": 186
+  },
+  {
+    "Answers": [
+      "Run a cyclic check on the device for data consistency",
+      "Create a file system of the volume",
+      "No step is require",
+      "The user can directly mount the device",
+      "Resize the volume as per the original snapshot size"
+    ],
+    "Correct": [
+      "Create a file system of the volume"
+    ],
+    "Question": "A user has created a new raw EBS volume. The user mounts the volume on the instance to which it is attached. Which of the below mentioned options is a required step before the user can mount the volume?",
+    "id": 187
+  },
+  {
+    "Answers": [
+      "https:// 111122223333.signin.aws.amazon.com/conso|e/",
+      "https:// signin.aws.amazon.com/consoIe/",
+      "https://signin.aws.amazon.com/111122223333/conso|e/",
+      "https://signin.aws.amazon.com/console/111122223333/"
+    ],
+    "Correct": [
+      "https:// 111122223333.signin.aws.amazon.com/conso|e/"
+    ],
+    "Question": "ExamKiIIer (with AWS account ID 111122223333) has created 50 IAM users for its orgAMzation\u2019s employees. What will be the AWS console URL for these associates?",
+    "id": 188
+  },
+  {
+    "Answers": [
+      "ELB DNS",
+      "IP address",
+      "Security group",
+      "ELB IP"
+    ],
+    "Correct": [
+      "IP address"
+    ],
+    "Question": "A user is setting up an Elastic Load BaIancer(ELB). Which of the below parameters should the user consider so as the instance gets registered with the ELB?",
+    "id": 189
+  },
+  {
+    "Answers": [
+      "\"adjustment=-50\" (type is PercentChangeInCapacity)",
+      "\"adjustment=3\" (type is ExactCapacity)",
+      "\"adjustment=-1\" (type is ChangeInCapacity)",
+      "\"adjustment=-8\" (type is ExactCapacity)"
+    ],
+    "Correct": [
+      "\"adjustment=-8\" (type is ExactCapacity)"
+    ],
+    "Question": "The user has configured AutoScaIing based on the dynamic policy. Which of the following is not the right command to specify a change in capacity as a part of the policy?",
+    "id": 190
+  },
+  {
+    "Answers": [
+      "you need to upload each file separately",
+      "you need to create each file and path",
+      "you need to upload a source bundle",
+      "you need to create each file"
+    ],
+    "Correct": [
+      "you need to upload a source bundle"
+    ],
+    "Question": "When you use the AWS Elastic Beanstalk console to deploy a new application .",
+    "id": 191
+  },
+  {
+    "Answers": [
+      "Data transfer",
+      "RDS Cloudwatch metrics",
+      "Data storage",
+      "I/O requests per month"
+    ],
+    "Correct": [
+      "RDS Cloudwatch metrics"
+    ],
+    "Question": "A user is planning to use the AWS RDS with MySQL. Which of the below mentioned services the user is not going to pay?",
+    "id": 192
+  },
+  {
+    "Answers": [
+      "False, AWS CIoudFormation does not support Microsoft Windows.",
+      "False, Amazon doesn't support Microsoft Windows.",
+      "False, you cannot create Windows stacks.",
+      "True"
+    ],
+    "Correct": [
+      "True"
+    ],
+    "Question": "True or False: AWS CIoudFormation allows you to create Microsoft Windows stacks.",
+    "id": 193
+  },
+  {
+    "Answers": [
+      "Hash secondary index",
+      "Local secondary index",
+      "Hash Primary Key",
+      "Global secondary index"
+    ],
+    "Correct": [
+      "Hash secondary index"
+    ],
+    "Question": "Which of the following solutions is not supported by DynamoDB:",
+    "id": 194
+  },
+  {
+    "Answers": [
+      "Amazon Linux AMI, Windows Server 2003 R2 AMI or the Windows Server 2008 R2 AMI",
+      "Amazon Linux AMI only",
+      "Amazon Linux AMI or the Windows Server 2008 R2 AMI",
+      "Windows Sewer 2008 R2 AMI only"
+    ],
+    "Correct": [
+      "Amazon Linux AMI or the Windows Server 2008 R2 AMI"
+    ],
+    "Question": "Which OS does the current version of AWS Elastic Beanstalk use?",
+    "id": 195
+  },
+  {
+    "Answers": [
+      "Take the snapshot of the volume when the instance is stopped",
+      "Stripe multiple volumes attached to the same instance",
+      "Create an AMI from the attached volume",
+      "Attach multiple volumes to the same instance"
+    ],
+    "Correct": [
+      "Create an AMI from the attached volume"
+    ],
+    "Question": "A user is creating an EBS volume. He asks for your advice. Which advice mentioned below should you not give to the user for creating an EBS volume?",
+    "id": 196
+  },
+  {
+    "Answers": [
+      "Amazon Storage Gateway",
+      "Amazon Glacier",
+      "Amazon EC2",
+      "Amazon S3"
+    ],
+    "Correct": [
+      "Amazon S3"
+    ],
+    "Question": "AWS Elastic Beanstalk stores your application files and optionally server log files in .",
+    "id": 197
+  },
+  {
+    "Answers": [
+      "You can associate multiple subnets with the same Route Table.",
+      "You can associate multiple subnets with the same Route Table, but you can't associate a subnet with only one Route Table.",
+      "You can't associate multiple subnets with the same Route Table.",
+      "None of thes"
+    ],
+    "Correct": [
+      "You can associate multiple subnets with the same Route Table."
+    ],
+    "Question": "In regards to VPC, select the correct statement:",
+    "id": 198
+  },
+  {
+    "Answers": [
+      "/dev/sda1",
+      "/dev/sd[b-e]",
+      "xvd[a-e]",
+      "/dev/sd[f-p][1 -6]"
+    ],
+    "Correct": [
+      "/dev/sda1"
+    ],
+    "Question": "Which of the following device names is reserved for the root device for Linux instances of Amazon EC2?",
+    "id": 199
+  },
+  {
+    "Answers": [
+      "Bind the IP address with a sticky cookie",
+      "Create a cookie at the application level to set at ELB",
+      "Use session synchronization with ELB",
+      "Let ELB generate a cookie for a specified duration"
+    ],
+    "Correct": [
+      "Let ELB generate a cookie for a specified duration"
+    ],
+    "Question": "A user has hosted a website on AWS and uses ELB to load balance the multiple instances. The user application does not have any cookie management. How can the user bind the session of the requestor with a particular instance?",
+    "id": 200
+  },
+  {
+    "Answers": [
+      "Error document",
+      "Conditional error on object name",
+      "Index document",
+      "Conditional redirection on object name"
+    ],
+    "Correct": [
+      "Conditional error on object name"
+    ],
+    "Question": "A user is enabling a static website hosting on an S3 bucket. Which of the below mentioned parameters cannot be configured by the user?",
+    "id": 201
+  },
+  {
+    "Answers": [
+      "Markers B.Tags",
+      "Hash keys",
+      "Events"
+    ],
+    "Correct": [
+      "Markers B.Tags"
+    ],
+    "Question": "Regarding Amazon SWF, at times you might want to record information in the workflow history of a workflow execution that is specific to your use case. enable you to record information in the workflow execution history that you can use for any custom or scenario-specific purpose.",
+    "id": 202
+  },
+  {
+    "Answers": [
+      "Cost per provisioned write units",
+      "Cost per provisioned read units",
+      "Storage cost",
+      "I/O usage within the same Region"
+    ],
+    "Correct": [
+      "I/O usage within the same Region"
+    ],
+    "Question": "In regard to DynamoDB, for which one of the following parameters does Amazon not charge you?",
+    "id": 203
+  },
+  {
+    "Answers": [
+      "No",
+      "Yes, only if the instance size is smaller than large size",
+      "Yes, provided it is a single zone implementation",
+      "Yes, always"
+    ],
+    "Correct": [
+      "Yes, provided it is a single zone implementation"
+    ],
+    "Question": "A user has configured an automated backup between 5 AM _ 5:30 AM for the MySQL RDS DB. Will the performance of RDS get frozen momentarily during a backup?",
+    "id": 204
+  },
+  {
+    "Answers": [
+      "Open the port for an ELB static IP in the EC2 security group",
+      "Configure the security group of EC2, which allows access to the ELB source security group",
+      "Configure the EC2 instance so that it only listens on the ELB port",
+      "Configure the security group of EC2, which allows access only to the ELB listener"
+    ],
+    "Correct": [
+      "Configure the security group of EC2, which allows access to the ELB source security group"
+    ],
+    "Question": "A user has configured a website and launched it using the Apache web server on port 80. The user is using ELB with the EC2 instances for Load Balancing. What should the user do to ensure that the EC2 instances accept requests only from ELB?",
+    "id": 205
+  },
+  {
+    "Answers": [
+      "Deploy a NAT instance into the public subnet.",
+      "Modify the routing table for the public subnet",
+      "Configure a publically routable IP Address In the host OS of the fourth instance.",
+      "Assign an Elastic IP address to the fourth instanc"
+    ],
+    "Correct": [
+      "Assign an Elastic IP address to the fourth instanc"
+    ],
+    "Question": "You have an environment that consists of a public subnet using Amazon VPC and 3 instances that are running in this subnet. These three instances can successfully communicate with other hosts on the Internet. You launch a fourth instance in the same subnet, using the same AMI and security group configuration you used for the others, but find that this instance cannot be accessed from the Internet. What should you do to enable internet access?",
+    "id": 206
+  },
+  {
+    "Answers": [
+      "Attach the volume to an instance using EC2's SSL interface.",
+      "Write the data randomly instead of sequentially.",
+      "Use an encrypted file system on top of the BBS volume.",
+      "Encrypt the volume using the S3 server-side encryption service.",
+      "Create an IAM policy that restricts read and write access to the volum"
+    ],
+    "Correct": [
+      "Use an encrypted file system on top of the BBS volume."
+    ],
+    "Question": "How can you secure data at rest on an EBS volume?",
+    "id": 207
+  },
+  {
+    "Answers": [
+      "User ID, where the application has many different users.",
+      "Status Code where most status codes are the same",
+      "Device ID, where one is by far more popular than all the others.",
+      "Game Type, where there are three possible game types"
+    ],
+    "Correct": [
+      "User ID, where the application has many different users."
+    ],
+    "Question": "Which of the following is an example of a good DynamoDB hash key schema for provisioned throughput efficiency?",
+    "id": 208
+  },
+  {
+    "Answers": [
+      "SWF tasks are assigned once and never duplicated",
+      "SWF requires an S3 bucket for workflow storage",
+      "SWF workflow executions can last up to a year",
+      "SWF triggers SNS notifications on task assignment",
+      "SWF uses deciders and workers to complete tasks",
+      "SWF requires atleast 1 EC2 instance per domain"
+    ],
+    "Correct": [
+      "SWF tasks are assigned once and never duplicated",
+      "SWF workflow executions can last up to a year",
+      "SWF uses deciders and workers to complete tasks"
+    ],
+    "Question": "Which of the following statements about SWF are true? Choose 3 answers",
+    "id": 209
+  },
+  {
+    "Answers": [
+      "By default, all requests are denied",
+      "An explicit allow overrides an explicit deny",
+      "An explicit allow overrides default deny.",
+      "An explicit deny does not override an explicit allow",
+      "By default, all request are allowed"
+    ],
+    "Correct": [
+      "By default, all requests are denied",
+      "An explicit allow overrides default deny."
+    ],
+    "Question": "Which of the following are correct statements with policy evaluation logic in AWS Identity and Access Management? Choose 2 answers",
+    "id": 210
+  },
+  {
+    "Answers": [
+      "0 seconds",
+      "1 hour",
+      "1 day",
+      "forever",
+      "30 seconds"
+    ],
+    "Correct": [
+      "30 seconds"
+    ],
+    "Question": "If a message is retrieved from a queue in Amazon SQS, how long is the message inaccessible to other users by default?",
+    "id": 211
+  },
+  {
+    "Answers": [
+      "x-amz-storage-class",
+      "Content-MD5",
+      "x-amz-security-token",
+      "x-amz-server-side-encryption"
+    ],
+    "Correct": [
+      "x-amz-server-side-encryption"
+    ],
+    "Question": "When uploading an object, what request header can be explicitly specified in a request to Amazon S3 to encrypt object data when saved on the server side?",
+    "id": 212
+  },
+  {
+    "Answers": [
+      "TopicAm",
+      "Subject",
+      "Destination",
+      "Format",
+      "Message F.Language"
+    ],
+    "Correct": [
+      "TopicAm",
+      "Subject",
+      "Message F.Language"
+    ],
+    "Question": "Which of the following are valid arguments for an SNS Publish request? Choose 3 answers",
+    "id": 213
+  },
+  {
+    "Answers": [
+      "Query the appropriate Amazon CIoudWatch metric.",
+      "Use ipconfig or ifconfig command.",
+      "Query the local instance userdata.",
+      "Query the local instance metadat"
+    ],
+    "Correct": [
+      "Query the local instance metadat"
+    ],
+    "Question": "How can software determine the public and private IP addresses of the Amazon EC2 instance that it is running on?",
+    "id": 214
+  },
+  {
+    "Answers": [
+      "Create an IAM User that allows write access to the DynamoDB table.",
+      "Add an IAM Role to a running EC2 instance.",
+      "Add an IAM User to a running EC2 Instance.",
+      "Launch an EC2 Instance with the IAM Role included in the launch configuration.",
+      "Create an IAM Role that allows write access to the DynamoDB table.",
+      "Launch an EC2 Instance with the IAM User included in the launch configuration."
+    ],
+    "Correct": [
+      "Launch an EC2 Instance with the IAM Role included in the launch configuration.",
+      "Create an IAM Role that allows write access to the DynamoDB table."
+    ],
+    "Question": "Which of the following items are required to allow an application deployed on an EC2 instance to write data to a DynamoDB table? Assume that no security Keys are allowed to be stored on the EC2 instance. Choose 2 answers",
+    "id": 215
+  },
+  {
+    "Answers": [
+      "None, Simple Storage Service objects are limited to 5 GB",
+      "Use the multi-part upload API for this object",
+      "Use the large object upload API for this object",
+      "Contact support to increase your object size limit",
+      "Upload to a different region"
+    ],
+    "Correct": [
+      "Use the multi-part upload API for this object"
+    ],
+    "Question": "Your application is trying to upload a 6 GB file to Simple Storage Service and receive a \"Your proposed upload exceeds the maximum allowed object size.\" error message. What is a possible solution for this?",
+    "id": 216
+  },
+  {
+    "Answers": [
+      "US-STANDARD uses eventual consistency and it can take time for an object to be readable in a bucket",
+      "Objects in Amazon S3 do not become visible until they are replicated to a second region.",
+      "US-STANDARD imposes a 1 second delay before new objects are readable.",
+      "You exceeded the bucket object limit, and once this limit is raised the object will be visible."
+    ],
+    "Correct": [
+      "US-STANDARD uses eventual consistency and it can take time for an object to be readable in a bucket"
+    ],
+    "Question": "You attempt to store an object in the US-STANDARD region in Amazon S3, and receive a confirmation that it has been successfully stored. You then immediately make another API call and attempt to read this object. S3 tells you that the object does not exist What could explain this behavior?",
+    "id": 217
+  },
+  {
+    "Answers": [
+      "Sequential",
+      "instancelD_Iog-HH-DD-NIM-YYYY",
+      "instancelD_Iog-YYYY-NIM-DD-HH",
+      "HH-DD-NINI-YYYY-Iog_instanceID",
+      "YYYY-MM-DD-HH-|og_instance|D"
+    ],
+    "Correct": [
+      "YYYY-MM-DD-HH-|og_instance|D"
+    ],
+    "Question": "If an application is storing hourly log files from thousands of instances from a high traffic web site, which naming scheme would give optimal performance on S3?",
+    "id": 218
+  },
+  {
+    "Answers": [
+      "Store photos on an EBS volume ofthe web server",
+      "Remove public read access and use signed URLs with expiry dates.",
+      "Use C|oudFront distributions for static content.",
+      "Block the IPs of the offending websites in Security Group"
+    ],
+    "Correct": [
+      "Remove public read access and use signed URLs with expiry dates."
+    ],
+    "Question": "You run an ad-supported photo sharing website using S3 to serve photos to visitors of your site. At some point you find out that other sites have been linking to the photos on your site, causing loss to your business. What is an effective method to mitigate this?",
+    "id": 219
+  },
+  {
+    "Answers": [
+      "There is no limit",
+      "1",
+      "5",
+      "25"
+    ],
+    "Correct": [
+      "25"
+    ],
+    "Question": "How many secondary indexes (global and local combined) are allowed per table? (by default)",
+    "id": 220
+  },
+  {
+    "Answers": [
+      "282",
+      "256",
+      "126",
+      "255"
+    ],
+    "Correct": [
+      "256"
+    ],
+    "Question": "How many tables can an AWS account have per region?",
+    "id": 221
+  },
+  {
+    "Answers": [
+      "Local secondary indexes are only formed for data stored in the specific region.",
+      "A local secondary index must have the same partition key as the main table",
+      "A global secondary index must have the same partition key as the main table",
+      "The global secondary index is not region specific"
+    ],
+    "Correct": [
+      "A local secondary index must have the same partition key as the main table"
+    ],
+    "Question": "What is one key difference between a global secondary index and a local secondary index?",
+    "id": 222
+  },
+  {
+    "Answers": [
+      "150",
+      "250",
+      "125",
+      "50"
+    ],
+    "Correct": [
+      "250"
+    ],
+    "Question": "Company B is using strongly consistent reads to request 50 items per second from their customer table. Each item is 20KB in size. What throughput would be required to efficiently handle the request?",
+    "id": 223
+  },
+  {
+    "Answers": [
+      "BatchItem",
+      "GetItem",
+      "BatchGetItem",
+      "ChunkGetItem"
+    ],
+    "Correct": [
+      "BatchGetItem"
+    ],
+    "Question": "Which API call can be used to retrieve up to 100 items at a time or 16 MB of data from a DynamoDB table?",
+    "id": 224
+  },
+  {
+    "Answers": [
+      "Anytime as long as it is done with the AWS console",
+      "Only at table creation time",
+      "Anytime during or after the table creation process",
+      "Anytime but a request to AWS support is required so they do it for you"
+    ],
+    "Correct": [
+      "Anytime during or after the table creation process"
+    ],
+    "Question": "When can you add a global secondary index to a table?",
+    "id": 225
+  },
+  {
+    "Answers": [
+      "A query returns only the items matching the primary key",
+      "A query efficiently searches using the partition key and an optional sort key",
+      "A query allows strongly consistent reads by default",
+      "A query can't be used unless supplied with a partition key"
+    ],
+    "Correct": [
+      "A query allows strongly consistent reads by default"
+    ],
+    "Question": "Which of the following is <em>NOT</em> a characteristic of a default DynamoDB query operation?",
+    "id": 226
+  },
+  {
+    "Answers": [
+      "1",
+      "10",
+      "15",
+      "20"
+    ],
+    "Correct": [
+      "20"
+    ],
+    "Question": "How many global secondary indexes are allowed per table? (by default)",
+    "id": 227
+  },
+  {
+    "Answers": [
+      "It can store petabytes of data",
+      "It provides faster internet speeds",
+      "It uses read replicas",
+      "It can store the results of frequent or highly-taxing queries"
+    ],
+    "Correct": [
+      "It can store the results of frequent or highly-taxing queries"
+    ],
+    "Question": "How can using ElastiCache help to improve database performance?",
+    "id": 228
+  },
+  {
+    "Answers": [
+      "Redshift",
+      "ElastiCache",
+      "DynamoDB",
+      "RDS"
+    ],
+    "Correct": [
+      "Redshift"
+    ],
+    "Question": "What database service offers petabyte-scale data warehousing?",
+    "id": 229
+  },
+  {
+    "Answers": [
+      "Improves performance of the primary database by taking workload from it",
+      "Allows you to scale RDS usage with demand",
+      "Allows both reads and writes",
+      "Automatic failover in the case of Availability Zone service failures"
+    ],
+    "Correct": [
+      "Improves performance of the primary database by taking workload from it",
+      "Allows you to scale RDS usage with demand",
+      "Automatic failover in the case of Availability Zone service failures"
+    ],
+    "Question": "What are three benefits of using RDS read replicas? choose 3",
+    "id": 230
+  },
+  {
+    "Answers": [
+      "Every time the underlying database is written to or updated the cache is updated with the new information.",
+      "Every miss to the cache is counted and when a specific number is reached a full copy of the database is migrated to the cache",
+      "A specific amount of time is set before the data in the cache is marked as expired. After expiration, a request for expired data will be made through to the backing database.",
+      "Data is added to the cache when a cache miss occurs (when there is no data in the cache and the request must go to the database for that data)"
+    ],
+    "Correct": [
+      "Data is added to the cache when a cache miss occurs (when there is no data in the cache and the request must go to the database for that data)"
+    ],
+    "Question": "Which of the following best describes the Lazy Loading caching strategy?",
+    "id": 231
+  },
+  {
+    "Answers": [
+      "Redis and Memcached",
+      "Redis and DynamoDB",
+      "RDS and DynamoDB",
+      "Memcached and EnCache"
+    ],
+    "Correct": [
+      "Redis and Memcached"
+    ],
+    "Question": "What are the \"engine\" options for ElastiCache?",
+    "id": 232
+  },
+  {
+    "Answers": [
+      "Slack Messages",
+      "SMS (text message)",
+      "HTTP/HTTPS",
+      "AWS Lambda"
+    ],
+    "Correct": [
+      "Slack Messages"
+    ],
+    "Question": "SNS message can be sent to different kinds of endpoints. Which of these is NOT currently a supported endpoint?",
+    "id": 233
+  },
+  {
+    "Answers": [
+      "Request Credentials from Mobile Platforms, so that each device has the correct access control policies to access the SNS publisher.",
+      "Create a Platform Application Object which will connect all of the mobile devices with your app to the correct SNS topic.",
+      "Request a Token from Mobile Platforms, so that each device has the correct access control policies to access the SNS publisher.",
+      "Get a set of credentials in order to be able to connect to the push notification service you are trying to setup."
+    ],
+    "Correct": [
+      "Get a set of credentials in order to be able to connect to the push notification service you are trying to setup."
+    ],
+    "Question": "You have just set up a push notification service to send a message to an app installed on a device with the Apple Push Notification Service. It seems to work fine. You now want to send a message to an app installed on devices for multiple platforms, those being the Apple Push Notification Service(APNS) and Google Cloud Messaging for Android (GCM). What do you need to do first for this to be successful?",
+    "id": 234
+  },
+  {
+    "Answers": [
+      "Activate the S3 pipeline feature to send notifications to another AWS service - in this case, select SNS.",
+      "Use AWS Lambda to receive events from the S3 bucket and then use the Publish API action to send them to the SNS topic.",
+      "Attach an IAM role to the S3 bucket to send messages to SNS.",
+      "Configure S3 to publish an event directly to SNS.",
+      "You could technically do this, but it's more complicated than you need to do."
+    ],
+    "Correct": [
+      "Configure S3 to publish an event directly to SNS."
+    ],
+    "Question": "What is the simplest way to enable an S3 bucket to be able to send messages to your SNS topic?",
+    "id": 235
+  },
+  {
+    "Answers": [
+      "AWS Services (S3 Events, CloudWatch alarms, Lambda Functions)",
+      "An HTTP endpoint that processes SNS notifications and then passes the data along to an internal database.",
+      "An EC2 service that sends messages to SNS using the Publish API action",
+      "An email address that gets the notifications from SNS then publishes them internally."
+    ],
+    "Correct": [
+      "AWS Services (S3 Events, CloudWatch alarms, Lambda Functions)",
+      "An EC2 service that sends messages to SNS using the Publish API action"
+    ],
+    "Question": "Which of these options is a good example of an SNS publisher? choose 2",
+    "id": 236
+  },
+  {
+    "Answers": [
+      "Subscribe",
+      "SendMessage",
+      "Push",
+      "Publish"
+    ],
+    "Correct": [
+      "Publish"
+    ],
+    "Question": "Which of these is an API action you would use to send messages to a topic?",
+    "id": 237
+  },
+  {
+    "Answers": [
+      "None of these are correct",
+      "SQS allows time-critical messages to be sent through a push mechanism eliminating the need to poll for data",
+      "SQS is used by distributed applications and can be used to decouple sending and receiving components without requiring each application component to be concurrently available",
+      "SQS is the only method available that interacts with workers"
+    ],
+    "Correct": [
+      "SQS is used by distributed applications and can be used to decouple sending and receiving components without requiring each application component to be concurrently available"
+    ],
+    "Question": "What is the main advantage of using Amazon SQS?",
+    "id": 238
+  },
+  {
+    "Answers": [
+      "128KB",
+      "16KB",
+      "64KB",
+      "256KB"
+    ],
+    "Correct": [
+      "256KB"
+    ],
+    "Question": "Amazon SQS max message size is ____.",
+    "id": 239
+  },
+  {
+    "Answers": [
+      "Set the imaging queue VisibilityTimeout attribute to 20 seconds",
+      "Set the imaging queue MessageRetentionPeriod attribute to 20 seconds",
+      "Set the imaging queue ReceiveMessageWaitTimeSeconds Attribute to 20 seconds",
+      "Set the DelaySeconds parameter of a message to 20 seconds"
+    ],
+    "Correct": [
+      "Set the imaging queue ReceiveMessageWaitTimeSeconds Attribute to 20 seconds"
+    ],
+    "Question": "Company B provides an online image recognition service and utilizes SQS to decouple system components for scalability. The SQS consumers poll the imaging queue as often as possible to keep end-to-end throughput as high as possible. However, Company B is realizing that polling in tight loops is burning CPU cycles and increasing costs with empty responses. How can Company B reduce the number empty responses?",
+    "id": 240
+  },
+  {
+    "Answers": [
+      "If long polling is enabled, then each poll only polls a subset of SQS servers; in order for all messages to be received, polling must continuously occur",
+      "The reader will listen to the queue until timeout",
+      "Increases costs because each request lasts longer",
+      "The reader will listen to the queue until a message is available or until timeout "
+    ],
+    "Correct": [
+      "The reader will listen to the queue until a message is available or until timeout "
+    ],
+    "Question": "Which of the following is true if long polling is enabled?",
+    "id": 241
+  },
+  {
+    "Answers": [
+      "Message order can be indeterminate - you're not guaranteed to get messages in the same order they were sent in ",
+      "Messages will be delivered exactly once and messages will be delivered in First in, First out order",
+      "Messages will be delivered exactly once and message delivery order is indeterminate",
+      "Messages can be delivered one or more times"
+    ],
+    "Correct": [
+      "Messages can be delivered one or more times"
+    ],
+    "Question": "Which of the following statements about SQS standard queues are true?",
+    "id": 242
+  },
+  {
+    "Answers": [
+      "Set the MaximumMessageSize attribute to 456KB",
+      "None of these are correct",
+      "Request an increase of the message limit by contacting Amazon",
+      "Store the data in S3 or DynamoDB and attach message instructions to the message for the worker to retrieve the data"
+    ],
+    "Correct": [
+      "Store the data in S3 or DynamoDB and attach message instructions to the message for the worker to retrieve the data"
+    ],
+    "Question": "Company B is using Amazon SQS to decouple their systems for scaleability. However, they need to send messages up to 400KB in size. What might Company B do in order to send more than 256KB of data?",
+    "id": 243
+  },
+  {
+    "Answers": [
+      "SWF attempts to deliver tasks/messages in order but does not guarantee delivery order",
+      "SWF does not guarantee the delivery order of messages/tasks",
+      "SWF guarantees delivery order of messages/tasks",
+      "SWF can deliver tasks in order only if the developer programmatically instructs the application to do so"
+    ],
+    "Correct": [
+      "SWF guarantees delivery order of messages/tasks"
+    ],
+    "Question": "Which is the most accurate statement in regards to the AWS SWF service?",
+    "id": 244
+  },
+  {
+    "Answers": [
+      "A specific snapshot of your API's resources  ",
+      "A specific snapshot of all of your API's settings, resources, and methods",
+      "A specific snapshot of your API's methods",
+      "A specific snapshot of your API's resources and methods",
+      "API Gateway Deployments are actually a snapshot of all the resources AND methods of your API.  "
+    ],
+    "Correct": [
+      "A specific snapshot of your API's resources and methods"
+    ],
+    "Question": "API Gateway Deployments are: select the most appropriate response.",
+    "id": 245
+  },
+  {
+    "Answers": [
+      "SAML",
+      "XML",
+      "YAML",
+      "JSON"
+    ],
+    "Correct": [
+      "JSON"
+    ],
+    "Question": "How are the state machines in AWS Step Functions defined?",
+    "id": 246
+  },
+  {
+    "Answers": [
+      "An existing stage",
+      "A new stage",
+      "You can not update an API in API Gateway; it must be deleted and recreated.",
+      "You must snapshot the original API then redeploy to an existing stage.",
+      "Incorrect.  When you update an API in an API Gateway deploy, you must redeploy the API to either a new or existing stage.  Snapshotting is not needed to update an API in API Gateway."
+    ],
+    "Correct": [
+      "An existing stage",
+      "A new stage"
+    ],
+    "Question": "When you update an API in an API Gateway deploy, you must redeploy the API to what?  (Choose 2)",
+    "id": 247
+  },
+  {
+    "Answers": [
+      "1 year",
+      "14 days ",
+      "24 hours",
+      "3 days"
+    ],
+    "Correct": [
+      "1 year"
+    ],
+    "Question": "A SWF workflow task or task execution can live up to how long?",
+    "id": 248
+  },
+  {
+    "Answers": [
+      "Passing parameters to API actions of other services",
+      "Activities",
+      "An AWS Lambda Function Integration",
+      "An EC2 Integration ",
+      "A decider program that is written in the language of the developer's choice",
+      "A visual workflow created in the SWF visual workflow editor",
+      "A JSON-defined state machine that contains states within it to select the next step to take",
+      "SWF outsources all decisions to human deciders through the AWS Mechanical Turk service."
+    ],
+    "Correct": [
+      "Passing parameters to API actions of other services"
+    ],
+    "Question": "How does SWF make decisions?",
+    "id": 249
+  },
+  {
+    "Answers": [
+      "AWS Simple Queue Service",
+      "AWS API Gateway",
+      "AWS Simple Workflow Service (SWF)",
+      "AWS Step Functions"
+    ],
+    "Correct": [
+      "AWS Step Functions"
+    ],
+    "Question": "Visual workflows are automatically created when working with which AWS service?",
+    "id": 250
+  },
+  {
+    "Answers": [
+      "A specific snapshot of your resources and methods",
+      "A specific group of resource configuration settings",
+      "A snapshot of your API including methods, integrations, models, mapping templates, and Lambda authorizers.",
+      "A specific snapshot of your resources"
+    ],
+    "Correct": [
+      "A snapshot of your API including methods, integrations, models, mapping templates, and Lambda authorizers."
+    ],
+    "Question": "An API Gateway Stage refers to:",
+    "id": 251
+  },
+  {
+    "Answers": [
+      "Only allowed HTTP methods (GET and POST)",
+      "Allowed HTTP methods (DELETE, GET, HEAD, OPTIONS, PATCH, POST, and PUT) and the AWS-provided ANY method as a catch-all",
+      "Only allowed HTTP methods (DELETE, GET, HEAD, OPTIONS, PATCH, POST, and PUT)",
+      "Only AWS HTTP methods (ANY, REMOVE, GRAB, TOP, SETS, CNHG, SEND, UPDT)"
+    ],
+    "Correct": [
+      "Allowed HTTP methods (DELETE, GET, HEAD, OPTIONS, PATCH, POST, and PUT) and the AWS-provided ANY method as a catch-all"
+    ],
+    "Question": "What are API Gateway methods?",
+    "id": 252
+  },
+  {
+    "Answers": [
+      "Forwarded to method handlers",
+      "Integration with other AWS Services",
+      "Existing HTTP endpoints",
+      "AWS Lambda",
+      "Close! The awsapigateway portion of the URL should actually be amazonaws! The URL should look like this:<br>    <a href=\"https://1a2sb3c4.execute-api.us-east-1.amazonaws.com/cars\" target=\"_blank\">https://1a2sb3c4.execute-api.us-east-1.amazonaws.com/cars</a>"
+    ],
+    "Correct": [
+      "AWS Lambda"
+    ],
+    "Question": "Which of the following could be an example of an API Gateway Resource URL for a <code>cars</code> resource?",
+    "id": 253
+  },
+  {
+    "Answers": [
+      "the-linux-academy",
+      "-the-linux-academy-",
+      "-thelinuxacademy",
+      "-the-linux-academy"
+    ],
+    "Correct": [
+      "the-linux-academy"
+    ],
+    "Question": "What value will the following example return in a CloudFormation Template?",
+    "id": 254
+  },
+  {
+    "Answers": [
+      "Contact AWS and request an increase",
+      "Make an API call",
+      "CloudFormation limit cannot be increased",
+      "Change Limit Settings in AWS CloudFormation Console"
+    ],
+    "Correct": [
+      "Contact AWS and request an increase"
+    ],
+    "Question": "You have reached your account limit for the number of CloudFormation stacks in a region. How do you increase your limit?",
+    "id": 255
+  },
+  {
+    "Answers": [
+      "DescribeStacks",
+      "GetTemplate",
+      "ListStackResources",
+      "DescribeStackResources"
+    ],
+    "Correct": [
+      "ListStackResources"
+    ],
+    "Question": "Which API call is used to list all resources that belong to a CloudFormation Stack?",
+    "id": 256
+  },
+  {
+    "Answers": [
+      "AWS KMS",
+      "AWS EC2",
+      "AWS IAM",
+      "AWS Systems Manager"
+    ],
+    "Correct": [
+      "AWS Systems Manager"
+    ],
+    "Question": "Parameter Store falls under what AWS service?",
+    "id": 257
+  },
+  {
+    "Answers": [
+      "License Codes",
+      "SSH Key Files",
+      "API Keys",
+      "Database Strings and Passwords"
+    ],
+    "Correct": [
+      "API Keys",
+      "License Codes",
+      "Database Strings and Passwords"
+    ],
+    "Question": "SSM Parameter Store is used to store information like: (choose 3)",
+    "id": 258
+  },
+  {
+    "Answers": [
+      "Monitor internal AWS API Actions to allow for review and compliance audits",
+      "Provide logging for services such as AWS Lambda",
+      "Integrate with external APIs to monitor them for compliance",
+      "Monitor various AWS services like EC2, S3, and ELBs"
+    ],
+    "Correct": [
+      "Provide logging for services such as AWS Lambda",
+      "Monitor various AWS services like EC2, S3, and ELBs"
+    ],
+    "Question": "The CloudWatch service is used to: (Choose 2)",
+    "id": 259
+  }
+]
