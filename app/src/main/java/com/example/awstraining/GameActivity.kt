@@ -48,7 +48,7 @@ class GameActivity : AppCompatActivity() {
                 }
             }
         }
-
+        myList = listOf()
 //        listOfQuestions = getDataFromJSON(assets, applicationContext).shuffled()
         var setMyList = listOfQuestions.shuffled().take(num_of_questions)
         myList = copyListEntirely(setMyList)
@@ -150,6 +150,12 @@ class GameActivity : AppCompatActivity() {
 //        startActivity(intent)
     }
 
+    override fun onBackPressed() {
+//        super.onBackPressed()
+//        myList = listOf()
+
+        this.finish()
+    }
     fun print_question(question: Question){
         Question2.text = question.q
         recycler_view_Answers.apply {
