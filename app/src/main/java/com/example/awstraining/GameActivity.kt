@@ -97,7 +97,7 @@ class GameActivity : AppCompatActivity() {
 //                                android:drawableEnd="@mipmap/ic_launcher_foreground"
 
                                 Question2.setOnClickListener {
-                                    getBackToPickLenght()
+                                    getBackToPickLength()
                                 }
                             } else {
                                 Question2.text = "Your score is $res \nTouch here to create a game of incorrect"
@@ -135,7 +135,7 @@ class GameActivity : AppCompatActivity() {
         }
         LocalBroadcastManager.getInstance(this).registerReceiver(receiver, IntentFilter("custom-message"))
     }
-    fun getBackToPickLenght(){
+    fun getBackToPickLength(){
 //        val intent = Intent(this, ExamListActivity::class.java)
 //        startActivity(intent)
         LocalBroadcastManager.getInstance(this).unregisterReceiver(receiver)
@@ -143,21 +143,12 @@ class GameActivity : AppCompatActivity() {
 //        this.onBackPressed()
     }
 
-
-    override fun onDestroy() {
-        super.onDestroy()
-//        var intent = Intent(this,ExamListActivity::class.java)
-//        startActivity(intent)
-    }
-
     override fun onBackPressed() {
-//        super.onBackPressed()
-//        myList = listOf()
-
-        this.finish()
+        getBackToPickLength()
     }
+
     fun print_question(question: Question){
-        Question2.text = question.q
+        Question2.text = "${current_question_index + 1}: ${question.q}"
         recycler_view_Answers.apply {
             layoutManager = LinearLayoutManager(this@GameActivity)
             adapter = AnswerAdapter(question.la)
