@@ -1,0 +1,794 @@
+[
+    {
+        "Answers": [
+            "It doesn't matter if the load is read or write-heavy, you need to increase the node size in order to have access to more resources.",
+            "Scale by increasing the node size.",
+            "Scale by adding read replicas to your cache cluster.",
+            "Scale horizontally: add more primary nodes to your Redis cluster."
+        ],
+        "Question": " You currently have Nginx webservers on EC2 instances which receive requests from your ELB. Those Nginx webservers return results from your PHP application. This application connects to an RDS database instance to read and write data. However, a few months ago, you realized that ElastiCache with Redis (cluster mode disabled) could reduce the load on your RDS database by caching some of the popular data. Fast-forward to today, and your ElastiCache Redis (cluster mode disabled) cluster is under a heavy read load and needs to scale. Which of these is the best way to scale your cluster?",
+        "id": 0,
+        "Correct": "Scale by adding read replicas to your cache cluster."
+    },
+    {
+        "Answers": [
+            "Verify Your Auto Scaling Group ",
+            "Create a Launch Configuration and Auto Scaling Group",
+            "Add to your Auto Scaling Group",
+            "Create an Auto Scaling Group"
+        ],
+        "Question": "What are the first 2 steps of using Amazon EC2 Auto Scaling?",
+        "id": 1,
+        "Correct": "Create a Launch Configuration and Auto Scaling Group"
+    },
+    {
+        "Answers": [
+            "You can customize your AWS deployments using JSON templates in CloudFormation.",
+            "You can't customize your AWS deployments using JSON templates in OpsWorks Stacks.",
+            "You can customize your AWS deployments using the Ruby programming language with OpsWorks stacks.",
+            "You can customize your AWS deployments using the Ruby programming language in CloudFormation."
+        ],
+        "Question": "Which of the following statements is not true?",
+        "id": 2,
+        "Correct": "You can customize your AWS deployments using the Ruby programming language in CloudFormation."
+    },
+    {
+        "Answers": [
+            "An application that you have running within AWS EC2",
+            "The global infrastructure that hosts the virtualization hypervisors",
+            "Remmeber your password to the Console",
+            "The operating systems' administrators group"
+        ],
+        "Question": "What option listed below is not your responsible for in the AWS Shared Responsibility Model?",
+        "id": 3,
+        "Correct": "The global infrastructure that hosts the virtualization hypervisors"
+    },
+    {
+        "Answers": [
+            "Use Amazon S3, which can be accessed by end users with signed URLs.",
+            "Spin up EC2 with ephemeral type storage to keep the cost down.",
+            "Attach an EBS volume to each 3of the EC2 servers where the files could be uploaded.",
+            "Create a Dropbox account to share your files."
+        ],
+        "Question": " Your company is setting up an application that is used to share files. Because these files are important to the sales team, the application must be highly available. Which AWS-specific storage option would you set up for low cost, reliability, and security?",
+        "id": 4,
+        "Correct": "Use Amazon S3, which can be accessed by end users with signed URLs."
+    },
+    {
+        "Answers": [
+            "You specified https:// in the ELB\u2019s URL, but the EC2 instances are not configured to listen on port 443.",
+            "The ELB\u2019s URL is not publicly accessible. You need to create an Alias record in Route 53 for the ELB.",
+            "You specified https:// in the ELB\u2019s URL, but the EC2 instances are not configured to listen on port 80.",
+            "You specified https:// in the ELB\u2019s URL, but the ELB is not configured to listen on port 443."
+        ],
+        "Question": "You see an increased load on an EC2 instance that is used as a web server. You decide to place the server behind an Elastic Load Balancer and deploy an additional instance to help meet this increased demand. You deploy the ELB, configure it to listen for traffic on port 80, bring up a second EC2 instance, move both instances behind the load balancer, and provide customers with the ELB\u2019s URL - https://mywebapp-1234567890.us-west-2.elb.amazonaws.com. You immediately begin receiving complaints that customers cannot connect to the web application via the ELB\u2019s URL. Why?",
+        "id": 5,
+        "Correct": "You specified https:// in the ELB\u2019s URL, but the ELB is not configured to listen on port 443."
+    },
+    {
+        "Answers": [
+            "Use S3 for static media or Use RDS for the database",
+            "Migrate the data to DynamoDB and configure relational mode",
+            "call an aws partner and ask for EC2 upgrade",
+            "Use EBS for the static media"
+        ],
+        "Question": "An application you manage currently runs in an on-premises datacenter. The application consists of three components all running on a single VMware virtual machine: an application, static media, and a MySQL based database. The application is not supported by the vendor using any NoSQL models, and you no longer have an active support agreement. The solution needs to be highly-available when moved into AWS.Which options below are appropriate given the information you have?",
+        "id": 6,
+        "Correct": "Use S3 for static media or Use RDS for the database"
+    },
+    {
+        "Answers": [
+            "DNS at the ELB level isn\u2019t updating to include the new instances",
+            "Users are using a firewall that is keeping them from initiating connections to the new instance which have different IP addresses. The ELB detects this and falls back to the instance that works",
+            "You have not enabled the correct routing rules to allow new instances",
+            "Your ELB is sending all the sessions to the old instance and not evenly sending sessions to all new instances that are spun up during Auto Scaling because of sticky sessions"
+        ],
+        "Question": "You have created an application that utilizes Auto Scaling behind an Elastic Load Balancer. You notice that user's sessions are not evenly distributed on the newly spun up instances. What could be a reason that your users' web sessions are stuck on one instance and not using others?",
+        "id": 7,
+        "Correct": "Your ELB is sending all the sessions to the old instance and not evenly sending sessions to all new instances that are spun up during Auto Scaling because of sticky sessions"
+    },
+    {
+        "Answers": [
+            "Storage failure on primary",
+            "Loss of availability in primary Availability Zone",
+            "Loss of network connectivity to primary",
+            "Region Outage"
+        ],
+        "Question": "Which of the following events is not mitigated by the RDS Multi AZ feature? (Choose all that apply)",
+        "id": 8,
+        "Correct": "Region Outage"
+    },
+    {
+        "Answers": [
+            "Document",
+            "Language",
+            "First In First Out",
+            "Policy"
+        ],
+        "Question": " In Auto Scaling, what set of instructions tells the Auto Scaling group how to respond to alarm messages?",
+        "id": 9,
+        "Correct": "Policy"
+    },
+    {
+        "Answers": [
+            "The choice to not use dedicated tenancy at the VPC level. ",
+            "A network access control list (NACL) entry denying port 22 outbound.",
+            "An IAM policy explicitly allowing a user the right to terminate all EC2 instances.",
+            "The host password."
+        ],
+        "Question": " Which of the following cannot be overridden at the EC2 instance level?",
+        "id": 10,
+        "Correct": "A network access control list (NACL) entry denying port 22 outbound."
+    },
+    {
+        "Answers": [
+            "You can use MFA to prevent accidental deletions of an object",
+            "Creating a bucket policy that prevents accidental deletions",
+            "Remove the ability for the user to delete",
+            "Enable versioning on the bucket"
+        ],
+        "Question": "You have multiple AWS users with access to an Amazon S3 bucket. These users need permission to add and delete objects. If you wanted to mitigate accidental deletions, what might you do?",
+        "id": 11,
+        "Correct": "Enable versioning on the bucket"
+    },
+    {
+        "Answers": [
+            "Upgrade the reserved instances that handle the typical load for the website to larger reserved instances during technology conference weeks.",
+            "Use A blend of reserved and on-demand instances to handle the increased load during the technology conference weeks.",
+            "Increase the desired number of instances in the Auto-Scaling group during technology conference weeks.",
+            "Pre-warm the Elastic Load Balancer prior to technology conference weeks if load testing tools show the need."
+        ],
+        "Question": "You manage a technology blog website on EC2 instances in an Auto Scaling group behind an Elastic Load Balancer. Traffic volume to the site is consistently low, except during several weeks of the year when major technology conferences are occurring, when traffic increases 300 percent. What is the best way to manage this environment?",
+        "id": 12,
+        "Correct": "Pre-warm the Elastic Load Balancer prior to technology conference weeks if load testing tools show the need."
+    },
+    {
+        "Answers": [
+            "Configure a route table and apply to subnets in Penguin1, destination 10.10.0.0/16 and a target of pcx-lavpcpeer",
+            "Configure a route table and apply to subnets in Penguin1, destination 10.20.0.0/16 and a target of pcx-lavpcpeer",
+            "Configure a route table and apply to subnets in Penguin2, destination 10.20.0.0/17 and a target of pcx-lavpcpeer",
+            "Configure a route table and apply to subnets in Penguin2, destination 10.10.0.0/16 and a target of pcx-lavpcpeer"
+        ],
+        "Question": "You are setting up a VPC peer between two VPC's - Penguin1 (10.10.0.0/16) and Penguin2 (10.20.0.0/17). The VPC peer is already created and uses the identifier `pcx-lavpcpeer'. Which of the following tasks should be performed to allow connectivity, assuming that all NACL and Security groups are configured already (select all that apply)",
+        "id": 13,
+        "Correct": "Configure a route table and apply to subnets in Penguin2, destination 10.10.0.0/16 and a target of pcx-lavpcpeer"
+    },
+    {
+        "Answers": [
+            "Coolbook",
+            "Metadata",
+            "Outputs",
+            "Intrinsic Functions"
+        ],
+        "Question": "What feature of CloudFormation allows the product to automatically size a deployment based on the region the template is being deployed into?",
+        "id": 14,
+        "Correct": "Intrinsic Functions"
+    },
+    {
+        "Answers": [
+            "Create a new LDAP server and authenticate to it.",
+            "Create a Direct Connect tunnel which will decrease latency, increase bandwidth, and authenticate faster.",
+            "If you don\u2019t already have a secure tunnel, create a VPN between your on-premises data center and AWS. You can then spin up a secondary LDAP server in AWS that replicates from the on-premises LDAP server. Authenticate against the secondary LDAP server.",
+            "You don\u2019t use LDAP to authenticate to your apps."
+        ],
+        "Question": " Your applications in AWS need to authenticate against LDAP credentials that are in your on-premises data center. You need low latency between the AWS app authenticating and your credentials. How can you achieve this?",
+        "id": 15,
+        "Correct": "If you don\u2019t already have a secure tunnel, create a VPN between your on-premises data center and AWS. You can then spin up a secondary LDAP server in AWS that replicates from the on-premises LDAP server. Authenticate against the secondary LDAP server."
+    },
+    {
+        "Answers": [
+            "Backup your data every day, off-site from AWS, to your on-premise data center\u2019s storage solution and manage the data backups with your existing backup solution.",
+            "Create EC2 instances with attached EBS volumes that replicate files daily to multiple EBS volumes on other instances, then clean up files older than 10 days on the primary EBS volume.",
+            "Using AWS is already elastic and highly available. Therefore, the need to setup lifecycle policies is already low cost and plenty of room for growth for your organization.",
+            "Set up an independent EBS volume where we can store daily backups and then copy these files over to S3, where we configure a bucket that has a lifecycle policy to archive files older than 10 days to AWS Glacier"
+        ],
+        "Question": "You have been tasked by your manager to build a tiered storage setup for database backups and their logs. These backups must be archived to a durable solution. After 10 days, the backups can then be archived to a lower priced storage tier. The data, however, must be retained for compliance policies. Which tiered storage solution would help you save cost, and still meet this compliance policy?",
+        "id": 16,
+        "Correct": "Set up an independent EBS volume where we can store daily backups and then copy these files over to S3, where we configure a bucket that has a lifecycle policy to archive files older than 10 days to AWS Glacier"
+    },
+    {
+        "Answers": [
+            "There is no single point of failure with this architecture. Don't change it.",
+            "You create and then attach a second Virtual Private Gateway, providing redundant VPN connectivity.",
+            "You create another Internet Gateway to provide redundant Internet connectivity.",
+            "You set up a secondary router in your private data center to establish another dual-tunnel VPN connection with your Virtual Private Gateway."
+        ],
+        "Question": "You configure a VPC with an Internet gateway that has a private and a public subnet, with each subnet in a different Availability Zone. The VPC also has a dual-tunnel VPN between the Virtual Private Gateway and the router in the private data center. You want to make sure you do not have a potential single point of failure in this design. What could you do to make sure we achieve this above environment?",
+        "id": 17,
+        "Correct": "You set up a secondary router in your private data center to establish another dual-tunnel VPN connection with your Virtual Private Gateway."
+    },
+    {
+        "Answers": [
+            "Nothing, since the 35-day maximum retention period for snapshots has expired.",
+            "Nothing, since the 35-day maximum retention period for automated backups has expired.",
+            "You can restore the database from the most recent automated backup of the database.",
+            "If you took a manual snapshot of the database, you can restore the database from that snapshot."
+        ],
+        "Question": "A colleague noticed that CloudWatch was reporting that there have not been any connections to one of your RDS MySQL databases for several months. You decided to terminate the database. Two months after the database was terminated, you get a phone call from a very upset user who needs information from that database to run end-of-year reports. What can you do?",
+        "id": 18,
+        "Correct": "If you took a manual snapshot of the database, you can restore the database from that snapshot."
+    },
+    {
+        "Answers": [
+            "Direct Connect connection",
+            "Secondary route table",
+            "Elastic IP Address",
+            "Secondary Network Interface"
+        ],
+        "Question": "What would we need to attach to a Bastion host for high availability in the event that the primary host went down and that we needed to send traffic to a secondary host?",
+        "id": 19,
+        "Correct": "Elastic IP Address"
+    },
+    {
+        "Answers": [
+            "Remove all unassigned Elastic IP addresses and create snapshots of all unused EBS volumes and terminate the volumes",
+            "Purchase a reserved instance based off of the utilization on the heavily under-utilized instance",
+            "Create a snapshot of RDS instances that have had 10 DB connections after 2 days and terminate the RDS instances",
+            "Reduce instance size for under-utilized instances or combined the instances and terminate the unused"
+        ],
+        "Question": "You've been tasked with optimizing costs in your company's AWS environment. After logging in, you discover that there are 3 unused elastic IP addresses, 6 RDS instances that have not had a DB connection for over 7 days, 5 instances that are running at an average CPU utilization of < 5% and one EC2 instance running at 80% utilization. Your company has not purchased any reserved instances but is highly concerned over AWS costs. As a SysOps administrator you know that you can easily help reduce costs and make the company happy again, select all of the statements below that you might do in order to optimize costs quickly.",
+        "id": 20,
+        "Correct": "Remove all unassigned Elastic IP addresses and create snapshots of all unused EBS volumes and terminate the volumes"
+    },
+    {
+        "Answers": [
+            "Yes, as long as all EC2 instances have a public IP.",
+            "Yes, as long as the VPCs\u2019 CIDR blocks don\u2019t overlap.",
+            "Yes, as long as the VPCs are in the same account.",
+            "Yes, as long as the VPC\u2019s are in the same region."
+        ],
+        "Question": "You manage EC2 instances in two different VPCs and you would like instances in both VPCs to be able to easily communicate with each other. You are considering using VPC peering. Will this work?",
+        "id": 21,
+        "Correct": "Yes, as long as the VPCs\u2019 CIDR blocks don\u2019t overlap."
+    },
+    {
+        "Answers": [
+            "Decrease the collection period to five minutes",
+            "Decrease the threshold CPU utilization percentage at which to deploy a new instance",
+            "Decrease the consecutive number of collection periods that must elapse before a new instance is deployed",
+            "Increase the minimum number of instances in the AutoScaling group "
+        ],
+        "Question": "You manage a social media website on EC2 instances in an Auto Scaling group. You have configured your Auto Scaling group to deploy one new EC2 instance when CPU utilization is greater than 90% for 3 consecutive periods of 10 minutes. You notice that between 6:00 pm and 10:00 pm every night, you see a gradual increase in traffic to your website. Although Auto Scaling launches several new instances every night, some users complain they are seeing timeouts when trying to load the index page during those hours. What is not a cost effective solution to this problem? .",
+        "id": 22,
+        "Correct": "Increase the minimum number of instances in the AutoScaling group "
+    },
+    {
+        "Answers": [
+            "Enable MFA on the root user for your AWS account and use IAM users rather than the root user for administrative tasks.",
+            "Use the default VPC provided by AWS for deploying your EC2 and RDS instances.",
+            "Enable MFA for all IAM user accounts that are used to execute automated scheduled tasks from EC2 instances.",
+            "Only store IAM user credentials on private AMIs. "
+        ],
+        "Question": "Which of the following is a security best practice for an AWS environment?",
+        "id": 23,
+        "Correct": "Enable MFA on the root user for your AWS account and use IAM users rather than the root user for administrative tasks."
+    },
+    {
+        "Answers": [
+            "Additional configurations are not required since they are scripts provided by AWS",
+            "Assign a role to the EC2 instance which will be sending custom metrics to CloudWatch",
+            "Create a user with access keys and secret access keys for the script to put the custom metrics onto CloudWatch",
+            "None of these"
+        ],
+        "Question": "In order to monitor operating system-level metrics such as disk usage, swap usage, and memory usage, you must install EC2 monitoring scripts. These scripts put custom metric data into Amazon CloudWatch. What do you need to do in order to give the instance permissions to put those custom metrics in CloudWatch?",
+        "id": 24,
+        "Correct": "Assign a role to the EC2 instance which will be sending custom metrics to CloudWatch"
+    },
+    {
+        "Answers": [
+            "Replication requires VPC peering between the regions, and you have overlapping CIDR blocks in the two VPCs.",
+            "Your RDS database is using an old version of PostgreSQL, which does not support cross-region replication.",
+            "AWS does not support RDS read replicas in different regions from the source database.",
+            "Synchronous replication between the two regions will suffer from high latency."
+        ],
+        "Question": "Your supervisor is concerned about losing read access to your RDS database in the unlikely event of an AWS regional failure. You design a plan to create a read replica of the database in another region, but your supervisor sees a problem with this plan. What problem does he see?",
+        "id": 25,
+        "Correct": "Your RDS database is using an old version of PostgreSQL, which does not support cross-region replication."
+    },
+    {
+        "Answers": [
+            "Use reserved instances for the instances needed to handle the load during the daytime hours",
+            "Increase the maximum number of instances in the AutoScaling group",
+            "Use reserved instances for the instances needed to handle the typical load during the night hours",
+            "Use reserved instances for the instances needed to handle the load during traffic spikes"
+        ],
+        "Question": "You manage a popular blog website on EC2 instances in an Auto Scaling group. You notice that between 8:00 am and 8:00 pm, you see a huge increase in traffic to your website. In addition, there are occasional random 1 to 2-hour spikes in traffic and some users are seeing timeouts when trying to load the index page during those spikes. What is the least cost-effective way to manage this Auto Scaling group?",
+        "id": 26,
+        "Correct": "Use reserved instances for the instances needed to handle the load during traffic spikes"
+    },
+    {
+        "Answers": [
+            "Configure a security group on the EC2 instance, add an inbound rule allowing traffic from 119.18.36.32/24 to connect to the instance-id, add a second rule denying all other traffic.",
+            "Configure a NACL on the subnet the EC2 instance is in. Add a rule for traffic from 119.18.36.32/32 to IP 203.0.113.128/32 allowing connections using tcp/22. Add another rule with a higher rule number DENYING all tcp/22 traffic from all sources.",
+            "Edit the NACL for the subnet the EC2 instance is is. Add a rule for traffic from 119.18.36.32/32 to the EC2 instance-id on port TCP/22, add a deny rule for ALL traffic from ALL sources with a higher rule number.",
+            "Configure a NACL on the subnet the EC2 instance is in. Add a rule for traffic from 119.18.36.32/32 to IP 203.0.113.128/32 allowing connections using tcp/22. Add another rule with a lower rule number DENYING all tcp/22 traffic from all sources."
+        ],
+        "Question": "One of your EC2 instances uses the public IP of 203.0.113.128. You are attempting to only allow connections to the instance using TCP port 22 (SSH) from a single IP address of your on-premises firewall, which uses the ip of 119.18.36.32. Which of the following options will allow connections from your on-premises firewall on port 22, but deny all other public traffic using SSH. (Choose one)",
+        "id": 27,
+        "Correct": "Configure a NACL on the subnet the EC2 instance is in. Add a rule for traffic from 119.18.36.32/32 to IP 203.0.113.128/32 allowing connections using tcp/22. Add another rule with a higher rule number DENYING all tcp/22 traffic from all sources."
+    },
+    {
+        "Answers": [
+            "Instance store volumes",
+            "io1 EBS storage",
+            "S3",
+            "gp2 EBS storage"
+        ],
+        "Question": "A game server is currently in the process of being migrated to AWS from an on-premises datacenter. One of the server requirements is that the storage it uses needs to be resilient against hardware failure and able to provide 50,000 IOPS. What storage type should you suggest?",
+        "id": 28,
+        "Correct": "io1 EBS storage"
+    },
+    {
+        "Answers": [
+            "None of these are correct",
+            "Change the IP address in your application.",
+            "Assign an elastic IP address to the EC2 instance, have a backup instance running. In the event of failure, move the Elastic IP from the primary instance to the backup instance.",
+            "You can\u2019t do this."
+        ],
+        "Question": " You are running an application that has an IP address assigned to the EC2 instance of the application. How might you apply high availability to the instance running that application in the future?",
+        "id": 29,
+        "Correct": "Assign an elastic IP address to the EC2 instance, have a backup instance running. In the event of failure, move the Elastic IP from the primary instance to the backup instance."
+    },
+    {
+        "Answers": [
+            "The Auto Scaling policy is not configured for multiple Availability Zones.",
+            "The ELB is not configured for that Availability Zone.",
+            "The Auto Scaling group is not configured for more than one Availability Zone.",
+            "The VPC is not configured for autoscaling into multiple subnets."
+        ],
+        "Question": "You have an Elastic Load Balancer (ELB) with an Auto Scaling group for your application. You also have 4 running instances, and you have Auto Scaling enabled. Some of those instances are running in one Availability Zone, and others are in a different Availability Zone. Some instances within one of the zones are not available to the ELB. What could be the cause?",
+        "id": 30,
+        "Correct": "The ELB is not configured for that Availability Zone."
+    },
+    {
+        "Answers": [
+            "Burstable performance gives you a baseline performance and CPU credits that allow you to burst above this baseline if needed.",
+            "There is no such thing as burstable performance. You get a pre-defined amount of resources with t2 instances.",
+            "Burstable performance runs at a baseline performance under low load to reduce cost but has the ability to burst in performance when needed, at a greater cost.",
+            "Burstable performance gives you a baseline performance and I/O credits that allow you to burst above this baseline if needed."
+        ],
+        "Question": "What best describes burstable performance for t2.micro instances?",
+        "id": 31,
+        "Correct": "Burstable performance gives you a baseline performance and CPU credits that allow you to burst above this baseline if needed."
+    },
+    {
+        "Answers": [
+            "Outputs",
+            "Description",
+            "Mappings",
+            "Resources"
+        ],
+        "Question": "What section of a CloudFormation template can we add configuration to that will allow us to automatically launch those resources in any region or instance family and size?",
+        "id": 32,
+        "Correct": "Mappings"
+    },
+    {
+        "Answers": [
+            "We can restore the data from a snapshot which is automatically created on instance termination by default",
+            "AWS has high availability so our data is still available",
+            "Create multiple EBS volumes and replicate the data between them",
+            "If we did not first take a snapshot of the EBS volume we will not be able to access the data after an instance termination because the volume was deleted"
+        ],
+        "Question": "We have terminated an instance which had a root EBS volume attached to it. What do we do now if we need to access the important data that was on this volume if we created this instance with the default storage options?",
+        "id": 33,
+        "Correct": "If we did not first take a snapshot of the EBS volume we will not be able to access the data after an instance termination because the volume was deleted"
+    },
+    {
+        "Answers": [
+            "Enable automated backups of the database.",
+            "Pre-warm the database before read requests occur.",
+            "Create read replicas of the database and offload some read requests to the read replicas.",
+            "Create snapshots of the database and offload read requests to the snapshots."
+        ],
+        "Question": "Your MySQL RDS instance is experiencing high levels of read requests during business hours and performance is being affected. You notice its backups are not being performed. What is the first step you can do to resolve this performance issue?",
+        "id": 34,
+        "Correct": "Enable automated backups of the database."
+    },
+    {
+        "Answers": [
+            "Automated EBS Volumes and Creating a Read Replica",
+            "Creating a Read Replica and Creating a Snapshot",
+            "Creating a Snapshot and  Pre-warm volumes",
+            "Pre-warm volumes and Automated EBS Volumes"
+        ],
+        "Question": "Which of the following will cause brief I/O suspension of an AWS RDS instance?",
+        "id": 35,
+        "Correct": "Creating a Read Replica and Creating a Snapshot"
+    },
+    {
+        "Answers": [
+            "Switch from Apache web server to Nginx for better SSL performance",
+            "Increase the instance size to have more CPU power",
+            "Offload the SSL cert to AWS ElastiCache",
+            "Offload the SSL cert from the EC2 instance and configure it on the Elastic Load Balancer"
+        ],
+        "Question": "You are running an EC2 instance serving a website with an SSL certificate. Your CPU utilization is constantly high. How might you resolve this issue?",
+        "id": 36,
+        "Correct": "Offload the SSL cert from the EC2 instance and configure it on the Elastic Load Balancer"
+    },
+    {
+        "Answers": [
+            "EC2",
+            "Amazon EMR",
+            "Elastic Beanstalk",
+            "RDS"
+        ],
+        "Question": "What AWS services doesn't give you access to the underlying operating system?",
+        "id": 37,
+        "Correct": "RDS"
+    },
+    {
+        "Answers": [
+            "Create an Auto Scaling group to ensure that you are not paying for instances that are not needed.",
+            "Remove the Elastic Load Balancer since the instances already have public IP addresses.",
+            "Use spot instances rather than on-demand instances.",
+            "Use reserved EC2 instances rather than on-demand instances."
+        ],
+        "Question": "You have been asked to maintain a small AWS environment consisting of five on-demand EC2 web server instances. Traffic from the Internet is distributed to these servers via an Elastic Load Balancer. Your supervisor is not pleased with a recent AWS bill. Assuming a consistent, moderately high load on the web servers, what option should you recommend to reduce the cost of this environment without negatively affecting availability?",
+        "id": 38,
+        "Correct": "Use reserved EC2 instances rather than on-demand instances."
+    },
+    {
+        "Answers": [
+            "Point the application to the Multi-AZ failover instance",
+            "Create a read replica from the production instance and point the application to the read replica",
+            "In order to receive real-time information, the application must query the primary database",
+            "Copy the production instance and create a cron that dumps the RDS data into the secondary instance"
+        ],
+        "Question": "We need to run a business intelligence application against our production database. This application requires data from the database to be fairly up to date. How might we configure our RDS setup so that our application does not increase I/O load against our production database?",
+        "id": 39,
+        "Correct": "Create a read replica from the production instance and point the application to the read replica"
+    },
+    {
+        "Answers": [
+            "Terminate the instance and launch the instance with a different kernel",
+            "View the instance log and attempt to resolve any issues on the instance software",
+            "Stop and then start the instance so it can be launched on a new host",
+            "Reboot the instance so the instance can be launched on a new host"
+        ],
+        "Question": "One of your instances is not responding. After investigating you see that the system status checks indicate a problem. What would be the best method for attempting to fix a failing system status check?",
+        "id": 40,
+        "Correct": "Stop and then start the instance so it can be launched on a new host"
+    },
+    {
+        "Answers": [
+            "Identity Federation based on AWS STS using an AWS IAM policy for the respective S3 bucket",
+            "Set up S3 bucket policies with a conditional statement restricting IP address",
+            "Use ACLs to restrict the access to the selects AWS accounts",
+            "IAM user per every registered client with an IAM policy that grants S3 access to the respective bucket"
+        ],
+        "Question": " We have developed a mobile application that gets downloaded several hundred times a week. What authentication method should we enable for the mobile clients to access images that are stored in an AWS S3 bucket that provides us with the highest flexibility and rotates credentials?",
+        "id": 41,
+        "Correct": "Identity Federation based on AWS STS using an AWS IAM policy for the respective S3 bucket"
+    },
+    {
+        "Answers": [
+            "The new instances are not being added to the ELB in the process of the Auto Scale cooldown period.",
+            "The web app is using dynamic content features in Amazon CloudFront which is keeping our connections alive on the ELB.",
+            "The TTL is set too high on our ELB DNS.",
+            "The ELB is continuing to send the request to the web app with the previously established connections in the same backend instances rather than spreading them to the new instances."
+        ],
+        "Question": " We have a customer with a web application that uses cookie-based sessions to see if users are logged in. This uses the Amazon Elastic Load Balancer and Auto Scaling. When the load on the application increases, Auto Scaling launches new instances so that the load on the other instances does not increase too much. However, all of the existing users still experience slow response time. What could be the cause of this?",
+        "id": 42,
+        "Correct": "The ELB is continuing to send the request to the web app with the previously established connections in the same backend instances rather than spreading them to the new instances."
+    },
+    {
+        "Answers": [
+            "It will allow all access to the bucket mybucket",
+            "It will allow the user jeff from AWS account number 5555555555 all access to the bucket but deny everyone else all access to the bucket.",
+            "None of these are correct.",
+            "It will deny all access to objects in mybucket to everyone."
+        ],
+        "Question": "What is the result of the following bucket policy?{    \"Statement\": [         {            \"Sid\": \"Sid1\",            \"Action\": \"s3:*\",            \"Effect\": \"Allow\",            \"Resource\": \"arn:aws:s3:::mybucket/*\",            \"Principal\": {                {                    \"AWS\": [                        \"arn:aws:iam::5555555555:user/jeff\"                    ]                }            }        },       {            \"Sid\": \"Sid2\",            \"Action\": \"s3:*\",            \"Effect\": \"Deny\",            \"Resource\": \"arn:aws:s3:::mybucket/*\",            \"Principal\": {                \"AWS\": [                    \"*\"                ]            }        }    ]}",
+        "id": 43,
+        "Correct": "It will deny all access to objects in mybucket to everyone."
+    },
+    {
+        "Answers": [
+            "Response status check and Network status check",
+            "Kernel status check and Failed system status check",
+            "Software status check and Hardware status check",
+            "System status check and Instance status check"
+        ],
+        "Question": " What are the two different kinds of status checks involving Amazon EC2 instances?",
+        "id": 44,
+        "Correct": "System status check and Instance status check"
+    },
+    {
+        "Answers": [
+            "S3 buckets should be secured using NACLs",
+            "S3 buckets are initially only accessible by the AWS Account which creates them",
+            "S3 buckets are public by default, but can be secured using bucket policies (resource policies attached to the bucket)",
+            "S3 buckets placed inside a VPC are secured based on the security of that VPC"
+        ],
+        "Question": "Which of the following statements are true for S3 buckets? ",
+        "id": 45,
+        "Correct": "S3 buckets placed inside a VPC are secured based on the security of that VPC"
+    },
+    {
+        "Answers": [
+            "Clone the snapshot",
+            "Create a new volume from the snapshot, attach the volume to the EC2 instance, pre-warm the volume and mount it to the device",
+            "Attach the volume to the EC2 instance, create a snapshot and clone the data",
+            "Mount the device, create a volume from the snapshot, and mount the volume"
+        ],
+        "Question": "How would you restore an EBS snapshot to an EC2 instance?",
+        "id": 46,
+        "Correct": "Create a new volume from the snapshot, attach the volume to the EC2 instance, pre-warm the volume and mount it to the device"
+    },
+    {
+        "Answers": [
+            "It will allow access to all requests and actions to the mybucket bucket except for requests coming from the IP 50.97.0.0/32",
+            "It will deny all access to the S3 mybucket bucket except for requests coming from the IP range 50.97.0.*",
+            "It will alow all actions to the contents of mybucket for requests coming from IP 50.97.0.0.",
+            "It will deny all access all incoming S3 action requests"
+        ],
+        "Question": "What is the result of the following bucket policy? {    \"Statement\": [        {            \"Sid\": \"SID1\",            \"Effect\": \"Allow\",            \"Principal\": {                \"AWS\": \"*\"            },            \"Action\": \"s3:*\",            \"Resource\": \"arn:aws:s3:::mybucket/*\",            \"Condition\": {                \"IpAddress\": {                    \"aws:SourceIp\": \"50.97.0.0/32\"                }            }        }    ]}",
+        "id": 47,
+        "Correct": "It will alow all actions to the contents of mybucket for requests coming from IP 50.97.0.0."
+    },
+    {
+        "Answers": [
+            "This is not possible",
+            "Bastion host",
+            "Sneaker-net",
+            "VPN"
+        ],
+        "Question": "What sort of host might you set up in your AWS environment that can be used as a way to \u201chop\u201d into your environment to gain access to secure servers within a private subnet?",
+        "id": 48,
+        "Correct": "Bastion host"
+    },
+    {
+        "Answers": [
+            "The amount of memory being used",
+            "Network packets received on all network interfaces",
+            "How much disk space is available",
+            "The amount of swap space used"
+        ],
+        "Question": " Which of the following metrics get automatically reported to Amazon CloudWatch from Amazon EC2?",
+        "id": 49,
+        "Correct": "Network packets received on all network interfaces"
+    },
+    {
+        "Answers": [
+            "Increase your provisioned IOPS",
+            "Increase your instance size",
+            "You could establish a Direct Connect connection between your on-premises data center and AWS VPC",
+            "You can use multipart upload to speed up the upload process"
+        ],
+        "Question": "You are uploading 3 gigabytes of data every night to S3 from your on-premises data center. It takes 3 hours to upload and you are uploading it to Amazon S3. You are only using half of your available bandwidth through your internet provider. How might you decrease the amount of time to back up that 3GB of data from your on-premises data center to S3?",
+        "id": 50,
+        "Correct": "You can use multipart upload to speed up the upload process"
+    },
+    {
+        "Answers": [
+            "IAM users that allow access to AWS API that is assigned at launch",
+            "Attach the right IAM policy to the PEM file that you create on instance launch",
+            "Launch the EC2 instances using AWS IAM roles that allows API access for the instance",
+            "Pass the AWS credentials using User Data fields when the instances is launched"
+        ],
+        "Question": "You are running an application on an EC2 instance that needs access to stored images on Amazon S3. What would be the best practice for allowing API access from the EC2 instance to Amazon S3?",
+        "id": 51,
+        "Correct": "Launch the EC2 instances using AWS IAM roles that allows API access for the instance"
+    },
+    {
+        "Answers": [
+            "Increasing the size of the ElastiCache instance and Adding another node to the ElastiCache",
+            "Adding another node to the ElastiCache cluster and Restarting ElastiCache",
+            "Restarting ElastiCache and RDS for free",
+            "Increasing the size of memcached_connections_overhead parameter option"
+        ],
+        "Question": " You've created a CloudWatch alarm to monitor ElastiCache (memcached) evictions. The CloudWatch alarm begins to alert you that the number of evictions has surpassed your application's requirements. How might you go about resolving the high amount of evictions issue?",
+        "id": 52,
+        "Correct": "Increasing the size of the ElastiCache instance and Adding another node to the ElastiCache"
+    },
+    {
+        "Answers": [
+            "ALERT",
+            "ALARM",
+            "OK",
+            "INSUFFICIENT_DATA"
+        ],
+        "Question": " Which of the following is not a valid alarm statuses in CloudWatch?",
+        "id": 53,
+        "Correct": "ALERT"
+    },
+    {
+        "Answers": [
+            "You only lose data on the instances in the failing AZ since the data is sharded across instances which are across multiple availability zones",
+            "RDS automatically creates new RDS instances for you in a failover",
+            "RDS data gets backed up off-site",
+            "The DNS record of the DB instance changes from the primary to the standby DB instance"
+        ],
+        "Question": " What happens during a failover process in a Multi-AZ deployment with AWS RDS instance?",
+        "id": 54,
+        "Correct": "The DNS record of the DB instance changes from the primary to the standby DB instance"
+    },
+    {
+        "Answers": [
+            "Sending CPU Utilization metrics to CloudWatch",
+            "Automating backups of EBS volumes",
+            "Downloading software and updates from a repository to an EC2 instance",
+            "Automating backups of RDS databases"
+        ],
+        "Question": "A successful systems administrator does need to create a script for:",
+        "id": 55,
+        "Correct": "Downloading software and updates from a repository to an EC2 instance"
+    },
+    {
+        "Answers": [
+            "ElastiCache and Redshift",
+            "RDS",
+            "EC2 Instance Stores",
+            "EBS Volumes"
+        ],
+        "Question": "Which of the following services doestn't have support for automated backups? ",
+        "id": 56,
+        "Correct": "EC2 Instance Stores"
+    },
+    {
+        "Answers": [
+            "We can use Amazon CloudFront to cache database queries",
+            "We can cache our database queries with ElastiCache",
+            "We can create an RDS read-replica and redirect half of the database read requests to it",
+            "We can shard the database and distribute the load between shards"
+        ],
+        "Question": "We have a two-tiered application with the following components. We have an ELB, three web and application servers on EC2, and one MySQL RDS database. When our load grows, the database queries take longer and slow down the overall response time for the user request. Which option would we not choose to speed up performance?",
+        "id": 57,
+        "Correct": "We can use Amazon CloudFront to cache database queries"
+    },
+    {
+        "Answers": [
+            "You were using an EC2 instance with an instance store root volume so the instance was terminated upon reboot.",
+            "Changes made during OS patching caused a problem with the instance\u2019s NIC driver.",
+            "There were pending security group rule changes that deny ICMP that could only take effect after the instance was rebooted.",
+            "You were using EC2 Classic. The Instance\u2019s EIP address was released at reboot."
+        ],
+        "Question": "You patch the operating system on an EC2 instance and issue a reboot command from inside the instance\u2019s OS. After disconnecting from the instance and waiting several minutes, you notice that you still cannot successfully ping the instance\u2019s public IP address. What is the most likely reason for this?",
+        "id": 58,
+        "Correct": "Changes made during OS patching caused a problem with the instance\u2019s NIC driver."
+    },
+    {
+        "Answers": [
+            "Using Route 53 hosted zones, you can use all internal domain names' A record sets.",
+            "Create a new Route 53 hosted zone and forward your internal DNS queries out to the Internet.",
+            "Create secondary DNS servers on a Linux server and replicate from primary DNS servers on your on-premises",
+            "Create a DHCP option set, add your on-prem DNS servers to it, and replace the option set on your VPC with the newly-created option set."
+        ],
+        "Question": " You have decided to extend your on-site data center to Amazon Web Services by creating a VPC. You already have multiple DNS servers on-premises. You are using these DNS servers to host DNS records for your internal applications. You have a corporate security network policy that says that a DNS name for an internal application can only be resolved internally and never publicly over the internet. Your existing on-premises data center is already connected to your VPC using IPSec VPN.How can you setup your VPC to use your on-prem DNS servers?",
+        "id": 59,
+        "Correct": "Create a DHCP option set, add your on-prem DNS servers to it, and replace the option set on your VPC with the newly-created option set."
+    },
+    {
+        "Answers": [
+            "Confirm that the ALB is not in a multi-AZ configuration.",
+            "Configure an Amazon CloudFront distribution with the ALB as the origin.",
+            "Deploy a Network Load Balancer in front of the ALB.",
+            "Enable sticky sessions for the target group of EC2 instances."
+        ],
+        "Question": "A company is migrating a legacy web application from a single server to multiple Amazon EC2 instances behind an Application Load Balancer (ALB). After the migration, users report that they are frequently losing their sessions and are being prompted to log in again. Which action should be taken to resolve the issue reported by users?",
+        "id": 60,
+        "Correct": "Enable sticky sessions for the target group of EC2 instances."
+    },
+    {
+        "Answers": [
+            "Build a web scraper to monitor the Personal Health Dashboard. When new health events are detected,\nsend a notification to an Amazon SNS topic monitored by the entire team.",
+            "Create an Amazon CloudWatch Events event based off the AWS Health service and send a notification to an Amazon SNS topic monitored by the entire team.",
+            "Create an Amazon CloudWatch Events event that sends a notification to an Amazon SNS topic monitored by the entire team to remind the team to view the maintenance events on the Personal Health Dashboard.",
+            "Create an AWS Lambda function that continuously pings all EC2 instances to confirm their health. Alert the team if this check fails."
+        ],
+        "Question": "A SysOps team checks their AWS Personal Health Dashboard every week for upcoming AWS hardware\nmaintenance events. Recently, a team member was on vacation and the team missed an event, which\nresulted in an outage. The team wants a simple method to ensure that everyone is aware of upcoming\nevents without depending on an individual team member checking the dashboard.\nWhat should be done to address this?",
+        "id": 61,
+        "Correct": "Create an Amazon CloudWatch Events event based off the AWS Health service and send a notification to an Amazon SNS topic monitored by the entire team."
+    },
+    {
+        "Answers": [
+            "Within each account, create a custom routing table containing routes that point to the other account\u2019s\nvirtual private gateway.",
+            "Within each account, set up a NAT gateway in a public subnet in its respective VPC. Then, using the\npublic IP address from the NAT gateway, enable routing between the two VPCs.",
+            "From one account, configure a Site-to-Site VPN connection between the VPCs. Within each account, add routes in the VPC route tables that point to the CIDR block of the remote VPC.",
+            "From one account, create a VPC peering request. After an Administrator from the other account accepts\nthe request, add routes in the route tables for each VPC that point to the CIDR block of the peered VPC."
+        ],
+        "Question": "An application running in a VPC needs to access instances owned by a different account and running\nin a VPC in a different Region. For compliance purposes, the traffic must not traverse the public internet.\nHow should an Administrator configure network routing to meet these requirements?",
+        "id": 62,
+        "Correct": "From one account, create a VPC peering request. After an Administrator from the other account accepts\nthe request, add routes in the route tables for each VPC that point to the CIDR block of the peered VPC."
+    },
+    {
+        "Answers": [
+            "Create an IAM group for the application and attach a permissions policy with the necessary privileges.Add the EC2 instances to the IAM group",
+            "Create an IAM resource policy for the DynamoDB table that grants the necessary permissions to Amazon EC2.",
+            "Create an IAM role with the necessary privileges to access the DynamoDB table. Associate the role with\nthe EC2 instances.",
+            "Create an IAM user for the application and attach a permissions policy with the necessary privileges.\nGenerate an access key and embed the key in the application code."
+        ],
+        "Question": "An application running on Amazon EC2 instances needs to access data stored in an Amazon\nDynamoDB table.\nWhich solution will grant the application access to the table in the MOST secure manner?",
+        "id": 63,
+        "Correct": "Create an IAM role with the necessary privileges to access the DynamoDB table. Associate the role with\nthe EC2 instances."
+    },
+    {
+        "Answers": [
+            "Configure an Amazon CloudWatch Events scheduled event that triggers an AWS Lambda function\nthat backs up the S3 bucket prior to the nightly job. When bad objects are discovered, restore the\nbacked up version.",
+            "Create an S3 event on object creation that copies the object to an Amazon Elasticsearch Service\n(Amazon ES) cluster. When bad objects are discovered, retrieve the previous version from Amazon\nES.",
+            "Create an AWS Lambda function that copies the object to an S3 bucket owned by a different account.\nTrigger the function when new objects are created in S3. When bad objects are discovered, retrieve\nthe previous version from the other account.",
+            "Enable versioning on the S3 bucket. When bad objects are discovered, access previous versions with\nthe CLI or AWS Management Console."
+        ],
+        "Question": "A third-party service uploads objects to Amazon S3 every night. Occasionally, the service uploads an\nincorrectly formatted version of an object. In these cases, the SysOps Administrator needs to recover an\nolder version of the object.\nWhat is the MOST efficient way to recover the object without having to retrieve it from the remote\nservice?",
+        "id": 64,
+        "Correct": "Enable versioning on the S3 bucket. When bad objects are discovered, access previous versions with\nthe CLI or AWS Management Console."
+    },
+    {
+        "Answers": [
+            "Configuring network ACLs",
+            "Maintaining network infrastructure",
+            "Monitoring memory utilization",
+            "Patching the guest operating system"
+        ],
+        "Question": "According to the AWS shared responsibility model, for which of the following Amazon EC2 activities is\nAWS responsible? ",
+        "id": 65,
+        "Correct": "Maintaining network infrastructure"
+    },
+    {
+        "Answers": [
+            "Create a custom report using AWS Systems Manager inventory to identify unapproved AMIs.",
+            "Run Amazon Inspector on each EC2 instance and flag the instance if it is using unapproved AMIs.",
+            "Use an AWS Config rule to identify unapproved AMIs.",
+            "Use AWS Trusted Advisor to identify the EC2 workloads using unapproved AMIs."
+        ],
+        "Question": "A Security and Compliance team requires that all Amazon EC2 workloads use approved Amazon\nMachine Images (AMIs). A SysOps Administrator must implement a process to find EC2 instances\nlaunched from unapproved AMIs.\nWhich solution will meet these requirements?",
+        "id": 66,
+        "Correct": "Use an AWS Config rule to identify unapproved AMIs."
+    },
+    {
+        "Answers": [
+            "Install Amazon Inspector on Amazon EC2 instances to block the traffic.",
+            "Use AWS Lambda to analyze the web server logs, detect bot traffic, and block the IP addresses in\nthe security groups.",
+            "Use Amazon GuardDuty to protect the web servers from bots and scrapers.",
+            "Use AWS WAF rate-based blacklisting to block the traffic when it exceeds a threshold."
+        ],
+        "Question": "A SysOps Administrator observes a large number of rogue HTTP requests on an Application Load\nBalancer. The requests originate from various IP addresses. These requests cause increased server load\nand costs.\nWhat should the SysOps Administrator do to block this traffic?",
+        "id": 67,
+        "Correct": "Use AWS WAF rate-based blacklisting to block the traffic when it exceeds a threshold."
+    },
+    {
+        "Answers": [
+            "elbSG: allow port 80 and 443 from 0.0.0.0/0;\nec2SG: allow port 443 from elbSG;\nrdsSG: allow port 1521 from ec2SG.",
+            "elbSG: allow port 80 and 443 from 0.0.0.0/0;\nec2SG: allow port 80 and 443 from elbSG and rdsSG;\nrdsSG: allow port 1521 from ec2SG.",
+            "elbSG: allow port 80 and 443 from ec2SG;\nec2SG: allow port 80 and 443 from elbSG and rdsSG;\nrdsSG: allow port 1521 from ec2SG.",
+            "elbSG: allow port 80 and 443 from ec2SG;\nec2SG: allow port 443 from elbSG;\nrdsSG: allow port 1521 from elbSG."
+        ],
+        "Question": "A SysOps Administrator is implementing security group policies for a web application running on\nAWS. An Elastic Load Balancer connects to a fleet of Amazon EC2 instances that connect to an Amazon\nRDS database over port 1521. The security groups are named elbSG, ec2SG, and rdsSG, respectively.\nHow should these security groups be implemented?",
+        "id": 68,
+        "Correct": "elbSG: allow port 80 and 443 from 0.0.0.0/0;\nec2SG: allow port 443 from elbSG;\nrdsSG: allow port 1521 from ec2SG."
+    },
+    {
+        "Answers": [
+            "Purchase Reserved Instances.",
+            "Submit a request for a Spot block.",
+            "Submit a request for all Spot Instances.",
+            "Use a mixture of On-Demand and Spot Instances."
+        ],
+        "Question": " An ecommerce company wants to lower costs on its nightly jobs that aggregate the current day's\nsales and store the results in Amazon S3. The jobs run on multiple on-demand instances, and the jobs\ntake just under 2 hours to complete. The jobs can run at any time during the night. If the job fails for any\nreason, it needs to be started from the beginning.\nWhich solution is the MOST cost-effective based on these requirements?",
+        "id": 69,
+        "Correct": "Submit a request for a Spot block."
+    },
+    {
+        "Answers": [
+            "Monitoring memory utilization",
+            "Patching the guest operating system",
+            "Patching the hypervisor",
+            "Configuring network ACLs"
+        ],
+        "Question": "According to the AWS shared responsibility model, for which of the following Amazon EC2 activities is\nAWS responsible? ",
+        "id": 70,
+        "Correct": "Configuring network ACLs"
+    },
+    {
+        "Answers": [
+            "Remove all assigned Elastic IP addresses and create snapshots of all unused EBS volumes and terminate the volumes",
+            "Purchase a reserved instance based off of the utilization on the heavily under-utilized instance",
+            "Create a snapshot of RDS instances that have had 0 DB connections after 7 days and terminate the RDS instances",
+            "Reduce instance size for under-utilized instances or combined the instances and terminate the unused"
+        ],
+        "Question": "You've been tasked with optimizing costs in your company's AWS environment. After logging in, you discover that there are 3 unused elastic IP addresses, 6 RDS instances that have not had a DB connection for over 7 days, 5 instances that are running at an average CPU utilization of < 5% and one EC2 instance running at 80% utilization. Your company has not purchased any reserved instances but is highly concerned over AWS costs. As a SysOps administrator you know that you can easily help reduce costs and make the company happy again, select all of the statements below that you might do in order to optimize costs quickly.",
+        "id": 71,
+        "Correct": "Remove all assigned Elastic IP addresses and create snapshots of all unused EBS volumes and terminate the volumes"
+    }
+]
