@@ -1,5 +1,149 @@
 [
     {
+        "Question": "A corporate cloud security policy states that communication between the company's VPC and KMS\nmust travel entirely within the AWS network and not use public service endpoints.\nWhich combination of the following actions MOST satisfies this requirement? (Select TWO.)\n",
+        "Answers": [
+            "Add the aws:sourceVpce condition to the AWS KMS key policy referencing the company's VPC\nendpoint ID.\n",
+            "Remove the VPC internet gateway from the VPC and add a virtual private gateway to the VPC to prevent\ndirect, public internet connectivity.\n",
+            "Create a VPC endpoint for AWS KMS with private DNS enabled.\n",
+            "Use the KMS Import Key feature to securely transfer the AWS KMS key over a VPN.\n",
+            "Add the following condition to the AWS KMS key policy: \"aws:SourceIp\": \"10.0.0.0/16\".\n"
+        ],
+        "id": 0,
+        "Correct": [
+            "Add the aws:sourceVpce condition to the AWS KMS key policy referencing the company's VPC\nendpoint ID.\n",
+            "Create a VPC endpoint for AWS KMS with private DNS enabled.\n"
+        ]
+    },
+    {
+        "Question": "An application team is designing a solution with two applications. The security team wants the\napplications' logs to be captured in two different places, because one of the applications produces logs\nwith sensitive data.\nWhich solution meets the requirement with the LEAST risk and effort?\n",
+        "Answers": [
+            "Use Amazon CloudWatch Logs to capture all logs, write an AWS Lambda function that parses the log\nfile, and move sensitive data to a different log.\n",
+            "Use Amazon CloudWatch Logs with two log groups, with one for each application, and use an AWS IAM\npolicy to control access to the log groups, as required.\n",
+            "Aggregate logs into one file, then use Amazon CloudWatch Logs, and then design two CloudWatch\nmetric filters to filter sensitive data from the logs.\n",
+            "Add logic to the application that saves sensitive data logs on the Amazon EC2 instances' local storage,\nand write a batch script that logs into the Amazon EC2 instances and moves sensitive logs to a secure\nlocation.\n"
+        ],
+        "id": 1,
+        "Correct": [
+            "Use Amazon CloudWatch Logs with two log groups, with one for each application, and use an AWS IAM\npolicy to control access to the log groups, as required.\n"
+        ]
+    },
+    {
+        "Question": "A security engineer must set up security group rules for a three-tier application:\n\uf0b7 Presentation tier \u2013 Accessed by users over the web, protected by the security group\npresentation-sg\n\uf0b7 Logic tier \u2013 RESTful API accessed from the presentation tier through HTTPS, protected by the\nsecurity group logic-sg\n\uf0b7 Data tier \u2013 SQL Server database accessed over port 1433 from the logic tier, protected by the\nsecurity group data-sg\nWhich combination of the following security group rules will allow the application to be secure and\nfunctional? (Select THREE.)\n",
+        "Answers": [
+            "presentation-sg: Allow ports 80 and 443 from 0.0.0.0/0\n",
+            "data-sg: Allow port 1433 from presentation-sg\n",
+            "data-sg: Allow port 1433 from logic-sg\n",
+            "presentation-sg: Allow port 1433 from data-sg\n",
+            "logic-sg: Allow port 443 from presentation-sg\n",
+            "logic-sg: Allow port 443 from 0.0.0.0/0\n"
+        ],
+        "id": 2,
+        "Correct": [
+            "presentation-sg: Allow ports 80 and 443 from 0.0.0.0/0\n",
+            "data-sg: Allow port 1433 from logic-sg\n",
+            "logic-sg: Allow port 443 from presentation-sg\n"
+        ]
+    },
+    {
+        "Question": "A security engineer is working with a product team building a web application on AWS. The application\nuses Amazon S3 to host the static content, Amazon API Gateway to provide RESTful services, and\nAmazon DynamoDB as the backend data store. The users already exist in a directory that is exposed\nthrough a SAML identity provider.\nWhich combination of the following actions should the engineer take to enable users to be authenticated\ninto the web application and call APIs? (Select THREE).\n",
+        "Answers": [
+            "Create a custom authorization service using AWS Lambda.\n",
+            "Configure a SAML identity provider in Amazon Cognito to map attributes to the Amazon Cognito user\npool attributes.\n",
+            "Configure the SAML identity provider to add the Amazon Cognito user pool as a relying party.\n",
+            "Configure an Amazon Cognito identity pool to integrate with social login providers.\n",
+            "Update DynamoDB to store the user email addresses and passwords.\n",
+            "Update API Gateway to use an Amazon Cognito user pool authorizer.\n"
+        ],
+        "id": 3,
+        "Correct": [
+            "Configure a SAML identity provider in Amazon Cognito to map attributes to the Amazon Cognito user\npool attributes.\n",
+            "Configure the SAML identity provider to add the Amazon Cognito user pool as a relying party.\n",
+            "Update API Gateway to use an Amazon Cognito user pool authorizer.\n"
+        ]
+    },
+    {
+        "Question": "A company is hosting a web application on AWS and is using an Amazon S3 bucket to store images.\nUsers should have the ability to read objects in the bucket. A security engineer has written the following\nbucket policy to grant public read access:\n{\n\"ID\":\"Policy1502987489630\",\n\"Version\":\"2012-10-17\",\n\"Statement\":[\n{\n\"Sid\":\"Stmt1502987487640\",\n\"Action\":[\n\"s3:GetObject\",\n\"s3:GetObjectVersion\"\n],\n\"Effect\":\"Allow\",\n\"Resource\":\"arn:aws:s3:::appbucket\",\n\"Principal\":\"*\"\n}\n]\n}\nAttempts to read an object, however, receive the error: \"Action does not apply to any resource(s) in\nstatement.\u201d\nWhat should the engineer do to fix the error?\n",
+        "Answers": [
+            "Change the IAM permissions by applying PutBucketPolicy permissions.\n",
+            "Verify that the policy has the same name as the bucket name. If not, make it the same.\n",
+            "Change the resource section to \"arn:aws:s3:::appbucket/*\".\n",
+            "Add an s3:ListBucket action.\n"
+        ],
+        "id": 4,
+        "Correct": [
+            "Change the resource section to \"arn:aws:s3:::appbucket/*\".\n"
+        ]
+    },
+    {
+        "Question": "A company decides to place database hosts in its own VPC, and to set up VPC peering to different\nVPCs containing the application and web tiers. The application servers are unable to connect to the\ndatabase.\nWhich network troubleshooting steps should be taken to resolve the issue? (Select TWO.)\n",
+        "Answers": [
+            "Check to see if the application servers are in a private subnet or public subnet.\n",
+            "Check the route tables for the application server subnets for routes to the VPC peering connection.\n",
+            "Check the NACLs for the database subnets for rules that allow traffic from the internet.\n",
+            "Check the database security groups for rules that allow traffic from the application servers.\n",
+            "Check to see if the database VPC has an internet gateway.\n"
+        ],
+        "id": 5,
+        "Correct": [
+            "Check the route tables for the application server subnets for routes to the VPC peering connection.\n",
+            "Check the database security groups for rules that allow traffic from the application servers.\n"
+        ]
+    },
+    {
+        "Question": "When testing a new AWS Lambda function that retrieves items from an Amazon DynamoDB table, the\nsecurity engineer notices that the function was not logging any data to Amazon CloudWatch Logs.\nThe following policy was assigned to the role assumed by the Lambda function:\n{\n\"Version\": \"2012-10-17\",\n\"Statement\": [\n{\n\"Sid\": \"Dynamo-1234567\",\n\"Action\": [\n\"dynamodb:GetItem\"\n],\n\"Effect\": \"Allow\",\n\"Resource\": \"*\"\n}\n}\nWhich least-privilege policy addition would allow this function to log properly?\n",
+        "Answers": [
+            "{\n\"Sid\": \"Logging-12345\",\n\"Resource\": \"*\",\n\"Action\": [\n\"logs:*\"\n],\n\"Effect\": \"Allow\"\n}\n",
+            "{\n\"Sid\": \"Logging-12345\",\n\"Resource\": \"*\",\n\"Action\": [\n\"logs:CreateLogStream\"\n],\n\"Effect\": \"Allow\"\n}\n",
+            "{\n\"Sid\": \"Logging-12345\",\n\"Resource\": \"*\",\n\"Action\": [\n\"logs:CreateLogGroup\",\n\"logs:CreateLogStream\",\n\"logs:PutLogEvents\"\n],\n\"Effect\": \"Allow\"\n}\n",
+            "{\n\"Sid\": \"Logging-12345\",\n\"Resource\": \"*\",\n\"Action\": [\n\"logs:CreateLogGroup\",\n\"logs:CreateLogStream\",\n\"logs:DeleteLogGroup\",\n\"logs:DeleteLogStream\",\n\"logs:getLogEvents\",\n\"logs:PutLogEvents\"\n],\n\"Effect\": \"Allow\"\n}\n"
+        ],
+        "id": 6,
+        "Correct": [
+            "{\n\"Sid\": \"Logging-12345\",\n\"Resource\": \"*\",\n\"Action\": [\n\"logs:CreateLogGroup\",\n\"logs:CreateLogStream\",\n\"logs:PutLogEvents\"\n],\n\"Effect\": \"Allow\"\n}\n"
+        ]
+    },
+    {
+        "Question": "A company is building a data lake on Amazon S3. The data consists of millions of small files containing\nsensitive information. The security team has the following requirements for the architecture:\n\uf0b7 Data must be encrypted in transit.\n\uf0b7 Data must be encrypted at rest.\n\uf0b7 The bucket must be private, but if the bucket is accidentally made public, the data must remain\nconfidential.\nWhich combination of steps would meet the requirements? (Select TWO.)\n",
+        "Answers": [
+            "Enable AES-256 encryption using server-side encryption with Amazon S3-managed encryption keys\n(SSE-Son the S3 bucket.\n",
+            "Enable default encryption with server-side encryption with AWS KMS-managed keys (SSE-KMS) on the\nS3 bucket.\n",
+            "Add a bucket policy that includes a deny if a PutObject request does not\ninclude aws:SecureTransport.\n",
+            "Add a bucket policy with aws:SourceIp to allow uploads and downloads from the corporate intranet\nonly.\n",
+            "Enable Amazon Macie to monitor and act on changes to the data lake's S3 bucket.\n"
+        ],
+        "id": 7,
+        "Correct": [
+            "Enable default encryption with server-side encryption with AWS KMS-managed keys (SSE-KMS) on the\nS3 bucket.\n",
+            "Add a bucket policy that includes a deny if a PutObject request does not\ninclude aws:SecureTransport.\n"
+        ]
+    },
+    {
+        "Question": "A security engineer must ensure that all API calls are collected across all company accounts, and that\nthey are preserved online and are instantly available for analysis for 90 days. For compliance reasons,\nthis data must be restorable for 7 years.\nWhich steps must be taken to meet the retention needs in a scalable, cost-effective way?\n",
+        "Answers": [
+            "Enable AWS CloudTrail logging across all accounts to a centralized Amazon S3 bucket with versioning\nenabled. Set a lifecycle policy to move the data to Amazon Glacier daily, and expire the data after 90\ndays.\n",
+            "Enable AWS CloudTrail logging across all accounts to S3 buckets. Set a lifecycle policy to expire the data\nin each bucket after 7 years.\n",
+            "Enable AWS CloudTrail logging across all accounts to Amazon Glacier. Set a lifecycle policy to expire the\ndata after 7 years.\n",
+            "Enable AWS CloudTrail logging across all accounts to a centralized Amazon S3 bucket. Set a lifecycle\npolicy to move the data to Amazon Glacier after 90 days, and expire the data after 7 years.\n"
+        ],
+        "id": 8,
+        "Correct": [
+            "Enable AWS CloudTrail logging across all accounts to a centralized Amazon S3 bucket. Set a lifecycle\npolicy to move the data to Amazon Glacier after 90 days, and expire the data after 7 years.\n"
+        ]
+    },
+    {
+        "Question": "A security engineer has been informed that a user`s access key has been found on GitHub. The\nengineer must ensure that this access key cannot continue to be used, and must assess whether the\naccess key was used to perform any unauthorized activities.\nWhich steps must be taken to perform these tasks?\n",
+        "Answers": [
+            "Review the user's IAM permissions and delete any unrecognized or unauthorized resources.\n",
+            "Delete the user, review Amazon CloudWatch Logs in all regions, and report the abuse.\n",
+            "Delete or rotate the user`s key, review the AWS CloudTrail logs in all regions, and delete any\nunrecognized or unauthorized resources.\n",
+            "Instruct the user to remove the key from the GitHub submission, rotate keys, and re-deploy any instances\nthat were launched.\n"
+        ],
+        "id": 9,
+        "Correct": [
+            "Delete or rotate the user`s key, review the AWS CloudTrail logs in all regions, and delete any\nunrecognized or unauthorized resources.\n"
+        ]
+    },
+    {
         "Correct": [
             "Create an AWS Systems Manager Parameter Store secure string for each API key. Encrypt the secure strings using a customer-managed AWS KMS customer master key (CMK). Create an IAM role for each environment with permissions to the kms:decrypt action for the CMK and the ssm:getparameter action for the proper API key. Launch each Amazon EC2 instance with the proper IAM role.\n"
         ],
