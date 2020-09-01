@@ -8,7 +8,10 @@
       "None of the above   "
     ],
     "Question": " What is the term used to describe giving an AWS user only access to the exact services he/she needs to do the required job and nothing more?  ",
-    "id": 0
+    "id": 0,
+    "Correct": [
+      "The Principal of Least Privilege "
+    ]
   },
   {
     "Answer": 4,
@@ -19,7 +22,10 @@
       "A+B are correct "
     ],
     "Question": " When you create a S3 bucket, what rules must be followed regarding the bucket name?",
-    "id": 1
+    "id": 1,
+    "Correct": [
+      "A+B are correct "
+    ]
   },
   {
     "Answer": 3,
@@ -30,7 +36,10 @@
       "Create, start, stop, and terminate at any time.  "
     ],
     "Question": " What are the main benefits of On-Demand EC2 instances?",
-    "id": 2
+    "id": 2,
+    "Correct": [
+      "C.All Are correct "
+    ]
   },
   {
     "Answer": 1,
@@ -41,7 +50,10 @@
       "CloudTrail   "
     ],
     "Question": " What AWS service must you use if you want to configure an AWS bil ing alarm?   ",
-    "id": 3
+    "id": 3,
+    "Correct": [
+      "CloudWatch "
+    ]
   },
   {
     "Answer": 2,
@@ -52,7 +64,10 @@
       "Virtualization and Analytics "
     ],
     "Question": " What are some common uses of AWS?",
-    "id": 4
+    "id": 4,
+    "Correct": [
+      "All Are Correct "
+    ]
   },
   {
     "Answer": 1,
@@ -63,7 +78,10 @@
       "You can store up to 1 petabyte of data, then you are required to pay an additional fee.  "
     ],
     "Question": " How much data can you store in S3?  ",
-    "id": 5
+    "id": 5,
+    "Correct": [
+      "Storage capacity is virtual y unlimite"
+    ]
   },
   {
     "Answer": 3,
@@ -74,7 +92,10 @@
       "A CloudWatch bil ing alarm that triggers a CloudTrail notification to your email address.  "
     ],
     "Question": " You have just set up a brand new AWS account. You want to keep monthly bil ing under $100, but you are worried about going over that limit. What can you set up in order to be notified when the monthly bil  approaches $100?  ",
-    "id": 6
+    "id": 6,
+    "Correct": [
+      "A CloudWatch bil ing alarm that triggers an SNS notification to your email address. "
+    ]
   },
   {
     "Answer": 3,
@@ -85,7 +106,10 @@
       "None of the above.  "
     ],
     "Question": " What best describes the purpose of having many Availability Zones in each AWS region?  ",
-    "id": 7
+    "id": 7,
+    "Correct": [
+      "Multiple Availability Zones allow for duplicate and redundant compute, and data backups. "
+    ]
   },
   {
     "Answer": 1,
@@ -96,7 +120,10 @@
       "Auto Scaling and VPC "
     ],
     "Question": " What TWO services/features are required to have highly available and fault tolerant architecture in AWS? (Choose two)  ",
-    "id": 8
+    "id": 8,
+    "Correct": [
+      "Elastic Load Balancer and Auto Scaling "
+    ]
   },
   {
     "Answer": 3,
@@ -107,7 +134,10 @@
       "Al  of them have the same availability rating   "
     ],
     "Question": "0 Which S3 storage class has lowest object availability rating?  ",
-    "id": 9
+    "id": 9,
+    "Correct": [
+      "Infrequent Access "
+    ]
   },
   {
     "Answer": 2,
@@ -118,7 +148,10 @@
       "CloudWatch  "
     ],
     "Question": " Your company's upper management is getting very nervous about managing governance, compliance, and risk auditing in AWS. What service should you enable and inform upper management about?  ",
-    "id": 10
+    "id": 10,
+    "Correct": [
+      "CloudTrail "
+    ]
   },
   {
     "Answer": 2,
@@ -129,7 +162,10 @@
       "AWS Migration Cost Calculator  "
     ],
     "Question": "6 Big Cloud Jumbo Corp is beginning to explore migrating their entire on-premises data center to AWS. They are very concerned about how much it will cost once their entire I.T. infrastructure is running on AWS. What tool can you recommend so that they can estimate what the cost of using AWS may be?   ",
-    "id": 11
+    "id": 11,
+    "Correct": [
+      "AWS TCO Calculator "
+    ]
   },
   {
     "Answer": 3,
@@ -140,7 +176,10 @@
       "None of the above.  "
     ],
     "Question": "7 Kunal is managing an application running on an on-premises data center. What best describes the challenges he faces that someone using the AWS cloud does not?  ",
-    "id": 12
+    "id": 12,
+    "Correct": [
+      "Kunal must predict future growth, and scaling can be costly and time consuming. "
+    ]
   },
   {
     "Answer": 1,
@@ -151,7 +190,10 @@
       "Infrequent Access  "
     ],
     "Question": "8 What AWS storage class should be used for long-term, archival storage?  ",
-    "id": 13
+    "id": 13,
+    "Correct": [
+      "Glacier "
+    ]
   },
   {
     "Answer": 3,
@@ -162,7 +204,10 @@
       "None of the above.  "
     ],
     "Question": "9 Kim is managing a web application running on the AWS clouThe application is currently utilizing eight EC2 servers for its compute platform. Earlier today, two of those web servers crashed; however, none of her customer were effecteWhat has Kim done correctly in this scenario?  ",
-    "id": 14
+    "id": 14,
+    "Correct": [
+      "Properly build a fault tolerant system.  "
+    ]
   },
   {
     "Answer": 1,
@@ -173,7 +218,10 @@
       "Supports both document and key-value store data models.  "
     ],
     "Question": " What is not a benefit of DynamoDB?",
-    "id": 15
+    "id": 15,
+    "Correct": [
+      "Supports multiple known NoSQL database engines like MariaDB and Oracle NoSQL. "
+    ]
   },
   {
     "Answer": 3,
@@ -184,7 +232,10 @@
       "None of the above.  "
     ],
     "Question": "1 What best describes penetration testing?  ",
-    "id": 16
+    "id": 16,
+    "Correct": [
+      "Testing your own network/application for vulnerabilities. "
+    ]
   },
   {
     "Answer": 4,
@@ -195,7 +246,10 @@
       "All Are Correct"
     ],
     "Question": "2 Why would a company decide to use AWS over an on-premises data center? (Choose four)  ",
-    "id": 17
+    "id": 17,
+    "Correct": [
+      "All Are Correct"
+    ]
   },
   {
     "Answer": 1,
@@ -206,7 +260,10 @@
       "DynamoDB   "
     ],
     "Question": "7 John is working with a large data set, and he needs to import it into a relational database service. What AWS service will meet his needs?  ",
-    "id": 18
+    "id": 18,
+    "Correct": [
+      "RDS "
+    ]
   },
   {
     "Answer": 1,
@@ -217,7 +274,10 @@
       "Data Locations   "
     ],
     "Question": "8 Jeff is building a web application on AWS. He wants to make sure his application is highly available to his customers. What infrastructure components of the AWS cloud allow Jeff to accomplish this goal?",
-    "id": 19
+    "id": 19,
+    "Correct": [
+      "Availability Zones & Regions "
+    ]
   },
   {
     "Answer": 4,
@@ -228,7 +288,10 @@
       "None of the above "
     ],
     "Question": "9 What is AWS's serverless compute service?  ",
-    "id": 20
+    "id": 20,
+    "Correct": [
+      "None of the above "
+    ]
   },
   {
     "Answer": 2,
@@ -239,7 +302,10 @@
       "None of the above.  "
     ],
     "Question": "0 Stephen is having issues tracking how much compute capacity his application is using. Ideal y, he wants to track and have alarms for when CPU utilization goes over 70%. What should Stephen do to accomplish this?  ",
-    "id": 21
+    "id": 21,
+    "Correct": [
+      "Configure a CloudWatch alarm with an alarm threshold set to trigger when CPU utilization is greater than 70%. "
+    ]
   },
   {
     "Answer": 1,
@@ -250,7 +316,10 @@
       "99.999999999% Durability and 99.00% Availability   "
     ],
     "Question": "1 What is the availability and durability rating of S3 Standard Storage Class?  ",
-    "id": 22
+    "id": 22,
+    "Correct": [
+      "99.999999999% Durability and 99.99% Availability "
+    ]
   },
   {
     "Answer": 3,
@@ -261,7 +330,10 @@
       "None of the above. "
     ],
     "Question": "2 If you want to easily share a file with a friend, family or coworker, what AWS solution should you use?  ",
-    "id": 23
+    "id": 23,
+    "Correct": [
+      "Upload the object to S3 and share it via its object's S3 public object URL. "
+    ]
   },
   {
     "Answer": 1,
@@ -272,10 +344,13 @@
       "Elastic Load Balancing   "
     ],
     "Question": "2 The concept of elasticity is most closely associated with which of the following?  ",
-    "id": 24
+    "id": 24,
+    "Correct": [
+      "Auto Scaling "
+    ]
   },
   {
-    "Answer": "3",
+    "Answer": 3,
     "Answers": [
       "The storage class used for the objects store",
       "Encrypting data (objects) stored in S3. ",
@@ -283,7 +358,10 @@
       "The total size in gigabytes of all objects store "
     ],
     "Question": "Which of the following will effect how much you are charged for storing objects in S3?",
-    "id": 25
+    "id": 25,
+    "Correct": [
+      "1,4 are correct"
+    ]
   },
   {
     "Answer": 2,
@@ -294,7 +372,10 @@
       "Lambda   "
     ],
     "Question": "4 What endpoints are not possible to send messages to with Simple Notification Service?",
-    "id": 26
+    "id": 26,
+    "Correct": [
+      "FTP "
+    ]
   },
   {
     "Answer": 1,
@@ -305,7 +386,10 @@
       "Service for Simple Storage"
     ],
     "Question": "5 What does S3 stand for?   ",
-    "id": 27
+    "id": 27,
+    "Correct": [
+      "Simple Storage Service "
+    ]
   },
   {
     "Answer": 4,
@@ -316,7 +400,10 @@
       "None of the above.   "
     ],
     "Question": "Before moving and/or storing object in AWS Glacier, what considerations should you make regarding the data you want to store.   ",
-    "id": 28
+    "id": 28,
+    "Correct": [
+      "None of the above.   "
+    ]
   },
   {
     "Answer": 3,
@@ -327,7 +414,10 @@
       "DynamoDB   "
     ],
     "Question": "3 You are trying to organize and import (to AWS) gigabytes of data that are currently structured in JSON-like, name-value documents. What AWS service would best fit your needs?  ",
-    "id": 28
+    "id": 28,
+    "Correct": [
+      "RDS "
+    ]
   },
   {
     "Answer": 3,
@@ -338,7 +428,10 @@
       "None of the above.  "
     ],
     "Question": "4 What best describes what AWS is?  ",
-    "id": 29
+    "id": 29,
+    "Correct": [
+      "AWS is a cloud services provider. "
+    ]
   },
   {
     "Answer": 2,
@@ -349,7 +442,10 @@
       "You are locked in to either a one- or three-year pricing commitment.  "
     ],
     "Question": "5 What is one benefit AND one drawback of buying a reserved EC2 instance? ",
-    "id": 30
+    "id": 30,
+    "Correct": [
+      "Reserved instances can be purchased as a significant discount over on-demand instances. BUT you have a three years comitmnet  "
+    ]
   },
   {
     "Answer": 3,
@@ -360,7 +456,10 @@
       "Customers can permanently run enough instances to handle peak workloads.\n"
     ],
     "Question": "Why is AWS more economical than traditional data centers for applications with varying compute\nworkloads?\n ",
-    "id": 31
+    "id": 31,
+    "Correct": [
+      "Amazon EC2 instances can be launched on-demand when needed"
+    ]
   },
   {
     "Answer": 2,
@@ -371,7 +470,10 @@
       " Amazon AppStream 2.0"
     ],
     "Question": "Which AWS service would simplify migration of a database to AWS?",
-    "id": 32
+    "id": 32,
+    "Correct": [
+      "AWS Database Migration Service (AWS DMS)"
+    ]
   },
   {
     "Answer": 4,
@@ -382,7 +484,10 @@
       " AWS Config"
     ],
     "Question": " Which AWS offering enables customers to find, buy, and immediately start using software solutions in\ntheir AWS environment?",
-    "id": 33
+    "id": 33,
+    "Correct": [
+      " AWS Config"
+    ]
   },
   {
     "Answer": 4,
@@ -393,7 +498,10 @@
       " Amazon Virtual Private Cloud (Amazon VPC)"
     ],
     "Question": " Which AWS networking service enables a company to create a virtual network within AWS?\n ",
-    "id": 34
+    "id": 34,
+    "Correct": [
+      " Amazon Virtual Private Cloud (Amazon VPC)"
+    ]
   },
   {
     "Answer": 2,
@@ -404,7 +512,10 @@
       " Managing custom Amazon Machine Images (AMIs)"
     ],
     "Question": " Which of the following is AWS's responsibility under the AWS shared responsibility model?",
-    "id": 35
+    "id": 35,
+    "Correct": [
+      "Maintaining physical hardware"
+    ]
   },
   {
     "Answer": 2,
@@ -415,7 +526,10 @@
       " Amazon Virtual Private Cloud (Amazon VPC)"
     ],
     "Question": "Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency\ndelivery?",
-    "id": 36
+    "id": 36,
+    "Correct": [
+      " AWS edge locations"
+    ]
   },
   {
     "Answer": 3,
@@ -426,7 +540,10 @@
       "Enable AWS CloudTrail"
     ],
     "Question": "How would a system administrator add an additional layer of login security to a user's AWS\nManagement Console?",
-    "id": 37
+    "id": 37,
+    "Correct": [
+      "Enable Multi-Factor Authentication"
+    ]
   },
   {
     "Answer": 2,
@@ -437,7 +554,10 @@
       " Amazon CloudWatch"
     ],
     "Question": " Which service can identify the user that made the API call when an Amazon Elastic Compute Cloud\n(Amazon EC2) instance is terminated?",
-    "id": 38
+    "id": 38,
+    "Correct": [
+      " AWS X-Ray"
+    ]
   },
   {
     "Answer": 1,
@@ -448,7 +568,10 @@
       " Amazon Simple Notification Service (Amazon SNS)"
     ],
     "Question": "Which service would you use to send alerts based on Amazon CloudWatch alarms?  ",
-    "id": 39
+    "id": 39,
+    "Correct": [
+      " AWS CloudTrail"
+    ]
   },
   {
     "Answer": 4,
@@ -459,7 +582,10 @@
       "AWS Acceptable Use Policy"
     ],
     "Question": "Where can a customer find information about prohibited actions on AWS infrastructure?",
-    "id": 40
+    "id": 40,
+    "Correct": [
+      "AWS Acceptable Use Policy"
+    ]
   },
   {
     "Answer": 2,
@@ -470,7 +596,10 @@
       "it is backed by the very supportive Amazon support team"
     ],
     "Question": " Which of the following is not a benefit of EC2 comparing to physical servers?   ",
-    "id": 41
+    "id": 41,
+    "Correct": [
+      "Automatic automated backups"
+    ]
   },
   {
     "Answer": 1,
@@ -481,7 +610,10 @@
       "Regions"
     ],
     "Question": "Which components of the AWS infrastructure can be described as multiple, isolated locations within one geographic area",
-    "id": 42
+    "id": 42,
+    "Correct": [
+      "Availability Zones"
+    ]
   },
   {
     "Answer": 2,
@@ -492,7 +624,10 @@
       "A VPC acts as a physical firewall for your cloud infrastructure"
     ],
     "Question": "Which of the following statements is true of Amazon Virtual Private Clouds (VPC)?",
-    "id": 43
+    "id": 43,
+    "Correct": [
+      "You can create many subnets in a VPC, though fewer is recommended to limit complexity"
+    ]
   },
   {
     "Answer": 3,
@@ -503,7 +638,10 @@
       "Efficiency"
     ],
     "Question": "Which of the following terms refers to the power to scale computing resources up or down easily?",
-    "id": 44
+    "id": 44,
+    "Correct": [
+      "Elasticty"
+    ]
   },
   {
     "Answer": 3,
@@ -514,7 +652,10 @@
       "AWS Service Catalog"
     ],
     "Question": "A customer would like to design and build a new workload on AWS Cloud but does not have the \nAWS-related software technical expertise in-house. \nWhich of the following AWS programs can a customer take advantage of to achieve that outcome?",
-    "id": 45
+    "id": 45,
+    "Correct": [
+      "AWS Partner Network Consulting Partners"
+    ]
   },
   {
     "Answer": 1,
@@ -525,7 +666,10 @@
       "Implement elasticity."
     ],
     "Question": "Distributing workloads across multiple Availability Zones supports which cloud architecture design\nprinciple?",
-    "id": 46
+    "id": 46,
+    "Correct": [
+      " Implement automation."
+    ]
   },
   {
     "Answer": 1,
@@ -536,7 +680,10 @@
       "Amazon S3"
     ],
     "Question": "Which AWS services can host a Microsoft SQL Server database?",
-    "id": 47
+    "id": 47,
+    "Correct": [
+      "Amazon EC2"
+    ]
   },
   {
     "Answer": 1,
@@ -547,7 +694,10 @@
       "Detailed billing"
     ],
     "Question": "Which of the following inspects AWS environments to find opportunities that can save money for\nusers and also improve system performance?",
-    "id": 48
+    "id": 48,
+    "Correct": [
+      "AWS Cost Explorer"
+    ]
   },
   {
     "Answer": 3,
@@ -558,7 +708,10 @@
       "On-Demand Instances"
     ],
     "Question": "Which of the following Amazon EC2 pricing models allow customers to use existing server-bound\nsoftware licenses?",
-    "id": 49
+    "id": 49,
+    "Correct": [
+      "Dedicated Hosts"
+    ]
   },
   {
     "Answer": 4,
@@ -569,7 +722,10 @@
       "Pay-as-you-go pricing and Elasticity"
     ],
     "Question": "Which of the following Amazon EC2 pricing models allow customers to use existing server-bound\nsoftware licenses?",
-    "id": 50
+    "id": 50,
+    "Correct": [
+      "Pay-as-you-go pricing and Elasticity"
+    ]
   },
   {
     "Answer": 2,
@@ -580,7 +736,10 @@
       "AWS Health"
     ],
     "Question": "Which service enables risk auditing by continuously monitoring and logging account activity,including user actions in the AWS Management Console and AWS SDKs?",
-    "id": 51
+    "id": 51,
+    "Correct": [
+      "AWS CloudTrail"
+    ]
   },
   {
     "Answer": 1,
@@ -591,7 +750,10 @@
       "A durable storage system and object store"
     ],
     "Question": "Which of the following are characteristics of Amazon S3? (Select TWO.)",
-    "id": 52
+    "id": 52,
+    "Correct": [
+      "A global file system and object store"
+    ]
   },
   {
     "Answer": 1,
@@ -602,7 +764,10 @@
       "Amazon CloudWatch default metrics"
     ],
     "Question": "Which services can be used across hybrid AWS Cloud architectures?",
-    "id": 53
+    "id": 53,
+    "Correct": [
+      "Amazon Route 53 and Virtual Private Gateway"
+    ]
   },
   {
     "Answer": 1,
@@ -613,7 +778,10 @@
       "Software development"
     ],
     "Question": "What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO?",
-    "id": 54
+    "id": 54,
+    "Correct": [
+      "Project management"
+    ]
   },
   {
     "Answer": 1,
@@ -624,7 +792,10 @@
       "Amazon EC2 with Amazon Elastic Block Store (Amazon EBS)"
     ],
     "Question": "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for\nmaintenance and cost-saving purposes.\nWhich service should the company use?",
-    "id": 55
+    "id": 55,
+    "Correct": [
+      "Amazon Redshift"
+    ]
   },
   {
     "Answer": 2,
@@ -635,7 +806,10 @@
       "Edge locations contain regions."
     ],
     "Question": "Which of the following is a correct relationship between regions, Availability Zones, and edge\nlocations?",
-    "id": 56
+    "id": 56,
+    "Correct": [
+      "Regions contain Availability Zones."
+    ]
   },
   {
     "Answer": 3,
@@ -646,7 +820,10 @@
       "Cost Eliminator Cost allocation"
     ],
     "Question": "Which AWS tools assist with estimating costs?",
-    "id": 57
+    "id": 57,
+    "Correct": [
+      "AWS Total Cost of Ownership (TCO) Calculator and Cost allocation tags"
+    ]
   },
   {
     "Answer": 3,
@@ -654,10 +831,13 @@
       "Service limits increasing by default in all accounts",
       "A fixed discount on the monthly bill",
       "Potential volume discounts, as usage in all accounts is combined",
-      "The automatic extension of the master account�s AWS support plan to all accounts"
+      "The automatic extension of the master account\ufffds AWS support plan to all accounts"
     ],
     "Question": "Which of the following are advantages of AWS consolidated billing?",
-    "id": 58
+    "id": 58,
+    "Correct": [
+      "Potential volume discounts, as usage in all accounts is combined"
+    ]
   },
   {
     "Answer": 3,
@@ -668,7 +848,10 @@
       "Three-year, No Upfront, Convertible RI pricing"
     ],
     "Question": "Which of the following Reserved Instance (RI) pricing models provides the highest average savings\ncompared to On-Demand pricing?",
-    "id": 59
+    "id": 59,
+    "Correct": [
+      "Three-year, All Upfront, Standard RI pricing"
+    ]
   },
   {
     "Answer": 2,
@@ -679,7 +862,10 @@
       "Amazon Route 53"
     ],
     "Question": "You have an application composed of individual services.\nYou need to route a request to a service based on the \ncontent of the request. Which service should you use?",
-    "id": 60
+    "id": 60,
+    "Correct": [
+      "Elastic Load Balancer"
+    ]
   },
   {
     "Answer": 3,
@@ -690,7 +876,10 @@
       "Deploy an OS image"
     ],
     "Question": "What is the first step in getting started with AWS Lambda",
-    "id": 61
+    "id": 61,
+    "Correct": [
+      "Uplaod your code"
+    ]
   },
   {
     "Answer": 3,
@@ -701,7 +890,10 @@
       "Provides a common language for you to describe abd provision all the infrastructure resources in your cloud environment"
     ],
     "Question": "Which of the following statements best describes Amazon CloudFront",
-    "id": 62
+    "id": 62,
+    "Correct": [
+      "Speeds up the delivery of your content to viewers across the globe"
+    ]
   },
   {
     "Answer": 2,
@@ -712,7 +904,10 @@
       "Fault tolerance and Locally"
     ],
     "Question": "S3 storage classes are rated by what two metric categories?",
-    "id": 63
+    "id": 63,
+    "Correct": [
+      "Durability and Availability "
+    ]
   },
   {
     "Answer": 2,
@@ -723,7 +918,10 @@
       "None of the above."
     ],
     "Question": " 34 If an object is stored in the Standard S3 storage class and you want to move it to Glacier, what must you do in order to properly migrate it?   ",
-    "id": 64
+    "id": 64,
+    "Correct": [
+      "Create a lifecycle policy that wil  migrate it after a minimum of 30 days. "
+    ]
   },
   {
     "Answer": 3,
@@ -734,7 +932,10 @@
       "Magnetic Drive (MD)"
     ],
     "Question": " 35 What is the most common type of storage used for EC2 instances?  ",
-    "id": 65
+    "id": 65,
+    "Correct": [
+      "Elastic Block Store (EBS) "
+    ]
   },
   {
     "Answer": 2,
@@ -745,7 +946,10 @@
       "To act as an internet search engine."
     ],
     "Question": " 36 What AWS service has built-in DDoS mitigation? ",
-    "id": 66
+    "id": 66,
+    "Correct": [
+      "To convert common language domain names to IP addresses. "
+    ]
   },
   {
     "Answer": 3,
@@ -756,7 +960,10 @@
       "Your boss has not enabled proper bucket permissions."
     ],
     "Question": " 37 You have been tasked by your department head to upload a batch of files to an S3 bucket; however, when you select S3 on the AWS console, you see a notification stating that you do not have permission to access S3. What is the most probable cause of this error?  ",
-    "id": 67
+    "id": 67,
+    "Correct": [
+      "You do not have an S3 access policy attached to your IAM user. "
+    ]
   },
   {
     "Answer": 4,
@@ -767,7 +974,10 @@
       "All of the above"
     ],
     "Question": " 38 What are the benefits of AWS's Relational Database Service (RDS)?   ",
-    "id": 68
+    "id": 68,
+    "Correct": [
+      "All of the above"
+    ]
   },
   {
     "Answer": 4,
@@ -778,7 +988,10 @@
       "None of the above."
     ],
     "Question": " 39 Thomas is managing the access rights and credentials for all the employees that have access to his company's AWS account. This morning, his was notified that some of these accounts may have been compromised, and he now needs to change the password policy and re-generate a new password for all users. What AWS service does Thomas need to use in order to accomplish this?  ",
-    "id": 69
+    "id": 69,
+    "Correct": [
+      "None of the above."
+    ]
   },
   {
     "Answer": 1,
@@ -789,7 +1002,10 @@
       "Using Greek alphabet"
     ],
     "Question": "40 What are the primary benefits of using Lambda?    ",
-    "id": 70
+    "id": 70,
+    "Correct": [
+      "Pay for only the compute time you consume. "
+    ]
   },
   {
     "Answer": 3,
@@ -800,7 +1016,10 @@
       "Fast Access"
     ],
     "Question": " 41 If you have a set of frequently accessed files that are used on a daily basis, what S3 storage class should you store them in?  ",
-    "id": 71
+    "id": 71,
+    "Correct": [
+      "Standard "
+    ]
   },
   {
     "Answer": 4,
@@ -811,7 +1030,10 @@
       "All of the Above"
     ],
     "Question": " 42 Which of the following wil  effect price you pay for an EC2 instance?   ",
-    "id": 72
+    "id": 72,
+    "Correct": [
+      "All of the Above"
+    ]
   },
   {
     "Answer": 2,
@@ -822,7 +1044,10 @@
       "None of the above"
     ],
     "Question": "43 If you want in-depth details on how to create, manage, and attach IAM access policies to IAM users, in what AWS resource should you look?  ",
-    "id": 73
+    "id": 73,
+    "Correct": [
+      "AWS Service Documentation "
+    ]
   },
   {
     "Answer": 2,
@@ -833,7 +1058,10 @@
       "Look at the SNS logs."
     ],
     "Question": " 44 You notice that five of your 10 S3 buckets are no longer available in your account, and you assume that they have been deleteYou are unsure who may have deleted them, and no one is taking responsibility. What should you do to investigate and find out who deleted the S3 buckets?  ",
-    "id": 74
+    "id": 74,
+    "Correct": [
+      "Look at the CloudTrail logs. "
+    ]
   },
   {
     "Answer": 2,
@@ -844,7 +1072,10 @@
       "None of the above"
     ],
     "Question": " 45 What acts as an address (like a mailing address) for a web server located on a network?  ",
-    "id": 75
+    "id": 75,
+    "Correct": [
+      "IP Address "
+    ]
   },
   {
     "Answer": 4,
@@ -855,7 +1086,10 @@
       "None of the above"
     ],
     "Question": " 46 What services has built-in DDoS mitigation and/or protection?  ",
-    "id": 76
+    "id": 76,
+    "Correct": [
+      "None of the above"
+    ]
   },
   {
     "Answer": 4,
@@ -866,7 +1100,10 @@
       "All of the Above."
     ],
     "Question": "What should you do if you believe your AWS account has been compromised?   ",
-    "id": 77
+    "id": 77,
+    "Correct": [
+      "All of the Above."
+    ]
   },
   {
     "Answer": 3,
@@ -877,7 +1114,10 @@
       "They need Lego Blocks."
     ],
     "Question": " 48 Under what circumstances would someone want to use ElastiCache?   ",
-    "id": 78
+    "id": 78,
+    "Correct": [
+      "The need to improve the performance of their web application. "
+    ]
   },
   {
     "Answer": 1,
@@ -888,7 +1128,10 @@
       "Auto Sizing"
     ],
     "Question": " 49 Derek is running a web application and is noticing that he is paying for way more server capacity then is requireWhat AWS feature should Derek set up and configure to ensure that his application is automatically adding/removing server capacity to keep in line with the required demand?   ",
-    "id": 79
+    "id": 79,
+    "Correct": [
+      "Auto Scaling "
+    ]
   },
   {
     "Answer": 3,
@@ -899,7 +1142,10 @@
       "CloudCache"
     ],
     "Question": " 50 What AWS service uses Edge Locations for content caching?  ",
-    "id": 80
+    "id": 80,
+    "Correct": [
+      "CloudFront "
+    ]
   },
   {
     "Answer": 4,
@@ -910,7 +1156,10 @@
       "Domain Name System (DNS) service and Registration"
     ],
     "Question": " 51 What is the purpose of AWS's Route 53 service?   ",
-    "id": 81
+    "id": 81,
+    "Correct": [
+      "Domain Name System (DNS) service and Registration"
+    ]
   },
   {
     "Answer": 4,
@@ -921,7 +1170,10 @@
       "All of the Above"
     ],
     "Question": "What are the benefits of AWS Organizations?",
-    "id": 82
+    "id": 82,
+    "Correct": [
+      "All of the Above"
+    ]
   },
   {
     "Answer": 2,
@@ -932,7 +1184,10 @@
       "None of the above."
     ],
     "Question": " 53 What AWS service allows you to have your own private network in the AWS cloud?  ",
-    "id": 83
+    "id": 83,
+    "Correct": [
+      "Virtual Private Cloud (VPC) "
+    ]
   },
   {
     "Answer": 1,
@@ -943,7 +1198,10 @@
       "You are charged per second, based on an hourly rate, and there is a termination fee."
     ],
     "Question": " 54 If you are using an on-demand EC2 instance, how are you being charged for it?  ",
-    "id": 84
+    "id": 84,
+    "Correct": [
+      "You are charged per second, based on an hourly rate, and there are no termination fees. "
+    ]
   },
   {
     "Answer": 1,
@@ -954,7 +1212,10 @@
       "None of the above"
     ],
     "Question": " 55 Matt is working on a projects that involves converting an images format from .png to .jpg. Thousands of images have to be converted; however, time is not real y an issue and continual processing is not requireWhat type of EC2 buying option would be most cost-effective for Matt to use?  ",
-    "id": 85
+    "id": 85,
+    "Correct": [
+      "Spot "
+    ]
   },
   {
     "Answer": 4,
@@ -965,7 +1226,10 @@
       "Configure SNS notifications based on CloudWatch EC2 metric alarms."
     ],
     "Question": " 56 David is managing a web application running on dozens of EC2 servers. He is worried that if something goes wrong with one of the servers he wil  not know about it in a timely manner. What solution could you offer to help him keep updated on the status of his servers? ",
-    "id": 86
+    "id": 86,
+    "Correct": [
+      "Configure SNS notifications based on CloudWatch EC2 metric alarms."
+    ]
   },
   {
     "Answer": 3,
@@ -976,7 +1240,10 @@
       "RDS"
     ],
     "Question": " 57 What AWS database is primarily used to analyze data using standard SQL formatting with compatibility for your existing business intelligence tools?  ",
-    "id": 87
+    "id": 87,
+    "Correct": [
+      "Redshift "
+    ]
   },
   {
     "Answer": 3,
@@ -987,7 +1254,10 @@
       "Create a CDN using CloudCache, making sure the proper content is cached at Edge Locations closest to Japan."
     ],
     "Question": " 58 Tracy has created a web application, placing it's underlining infrastructure in the N. Virginia (US-East-1) region. After several months, Tracy notices that much of the traffic coming to her website is coming from Japan. What can Tracy do to (best) help reduce latency for her users in Japan?  ",
-    "id": 88
+    "id": 88,
+    "Correct": [
+      "Create a CDN using CloudFront, making sure the proper content is cached at Edge Locations closest to Japan. "
+    ]
   },
   {
     "Answer": 3,
@@ -998,7 +1268,10 @@
       "None of the above"
     ],
     "Question": " 59 What AWS service help you estimate the cost of using AWS vs. an on-premises data center? ",
-    "id": 89
+    "id": 89,
+    "Correct": [
+      "TCO Calculator "
+    ]
   },
   {
     "Answer": 2,
@@ -1009,7 +1282,10 @@
       "Auto Scaling"
     ],
     "Question": " 60 What AWS feature acts as a traffic distribution regulator, making sure each EC2 instance in a system get the same amount of traffic?  ",
-    "id": 90
+    "id": 90,
+    "Correct": [
+      "ELB "
+    ]
   },
   {
     "Answer": 1,
@@ -1020,7 +1296,10 @@
       "The ability for a system be accessible when you attempt to access it."
     ],
     "Question": " 61 What best describes the concept of fault tolerance?  ",
-    "id": 91
+    "id": 91,
+    "Correct": [
+      "The ability for a system to withstand a certain amount of failure and stil  remain functional. "
+    ]
   },
   {
     "Answer": 3,
@@ -1031,7 +1310,10 @@
       "None of the above."
     ],
     "Question": " 62 What best describes Amazon Web Services (AWS)?  ",
-    "id": 92
+    "id": 92,
+    "Correct": [
+      "AWS is a cloud services provider. "
+    ]
   },
   {
     "Answer": 2,
@@ -1042,7 +1324,10 @@
       "Fault tolerance, scalability, sometimes available, unlimited storage"
     ],
     "Question": " 63 What are the four primary benefits of using the cloud/AWS?  ",
-    "id": 93
+    "id": 93,
+    "Correct": [
+      "Fault tolerance, scalability, elasticity, and high availability. "
+    ]
   },
   {
     "Answer": 2,
@@ -1053,7 +1338,10 @@
       "A collection of DNS servers."
     ],
     "Question": " 64 What best describes an AWS region?  ",
-    "id": 94
+    "id": 94,
+    "Correct": [
+      "An isolated collection of AWS Availability Zones, of which there are many placed all around the worl"
+    ]
   },
   {
     "Answer": 2,
@@ -1064,7 +1352,10 @@
       "Your internet service provider"
     ],
     "Question": " 65 What best describes a simplified definition of the &quot;cloud&quot;?  ",
-    "id": 95
+    "id": 95,
+    "Correct": [
+      "A computer located somewhere else that you are utilizing in some capacity. "
+    ]
   },
   {
     "Answer": 2,
@@ -1075,7 +1366,10 @@
       "To act as an internet search engine."
     ],
     "Question": " 66 What is the purpose of a DNS server? ",
-    "id": 96
+    "id": 96,
+    "Correct": [
+      "To convert common language domain names to IP addresses. "
+    ]
   },
   {
     "Answer": 4,
@@ -1086,7 +1380,10 @@
       "The ability for a system be accessible when you attempt to access it."
     ],
     "Question": " 67 What best describes the concept of high availability?  ",
-    "id": 97
+    "id": 97,
+    "Correct": [
+      "The ability for a system be accessible when you attempt to access it."
+    ]
   },
   {
     "Answer": 2,
@@ -1097,7 +1394,10 @@
       "The ability for a system be accessible when you attempt to access it."
     ],
     "Question": "What best describes the concept of scalability?  ",
-    "id": 98
+    "id": 98,
+    "Correct": [
+      "The ability for a system to grow in size, capacity, and/or scope. "
+    ]
   },
   {
     "Answer": 3,
@@ -1108,7 +1408,10 @@
       "The ability for a system be accessible when you attempt to access it."
     ],
     "Question": "What best describes the concept of elasticity?  ",
-    "id": 99
+    "id": 99,
+    "Correct": [
+      "The ability for a system to grow and shrink based on deman"
+    ]
   },
   {
     "Answer": 1,
@@ -1119,7 +1422,10 @@
       "Amazon S3"
     ],
     "Question": "Which AWS services can host a Microsoft SQL Server database?",
-    "id": 100
+    "id": 100,
+    "Correct": [
+      "Amazon Relational Database Service(Amazon RDS)"
+    ]
   },
   {
     "Answer": 4,
@@ -1130,7 +1436,10 @@
       "Amazon S3"
     ],
     "Question": "Which AWS services can't host a Microsoft SQL Server database?",
-    "id": 101
+    "id": 101,
+    "Correct": [
+      "Amazon S3"
+    ]
   },
   {
     "Answer": 4,
@@ -1141,7 +1450,10 @@
       "They need in-memory data store service."
     ],
     "Question": " 48 Under what circumstances would someone want to use ElastiCache?",
-    "id": 78
+    "id": 78,
+    "Correct": [
+      "They need in-memory data store service."
+    ]
   },
   {
     "Answer": 4,
@@ -1152,7 +1464,10 @@
       "Run code without provisioning servers."
     ],
     "Question": "40 What are the primary benefits of using Lambda?    ",
-    "id": 70
+    "id": 70,
+    "Correct": [
+      "Run code without provisioning servers."
+    ]
   },
   {
     "Answer": 3,
@@ -1160,10 +1475,13 @@
       "Service limits increasing by default in all accounts",
       "A fixed discount on the monthly bill",
       "The ability to receive one bill for multiple accounts",
-      "The automatic extension of the master account�s AWS support plan to all accounts"
+      "The automatic extension of the master account\ufffds AWS support plan to all accounts"
     ],
     "Question": "Which of the following are advantages of AWS consolidated billing?",
-    "id": 58
+    "id": 58,
+    "Correct": [
+      "The ability to receive one bill for multiple accounts"
+    ]
   },
   {
     "Answer": 2,
@@ -1174,7 +1492,10 @@
       "S3"
     ],
     "Question": "What is not an AWS cloud storage option?",
-    "id": 102
+    "id": 102,
+    "Correct": [
+      "RedShift"
+    ]
   },
   {
     "Answer": 4,
@@ -1185,7 +1506,10 @@
       "All of the above"
     ],
     "Question": "What are the benefits of migrating to the cloud?",
-    "id": 103
+    "id": 103,
+    "Correct": [
+      "All of the above"
+    ]
   },
   {
     "Answer": 1,
@@ -1196,7 +1520,10 @@
       "Operational Excellence"
     ],
     "Question": " Which of the following is NOT a pillar of the AWS Well-Architected Framework? ",
-    "id" : 104
+    "id": 104,
+    "Correct": [
+      "Persistence"
+    ]
   },
   {
     "Answer": 2,
@@ -1207,7 +1534,10 @@
       "MFA"
     ],
     "Question": " Your web application requires temporary authorization to the AWS services. Which IAM entity should be used? ",
-    "id" : 105
+    "id": 105,
+    "Correct": [
+      "Role "
+    ]
   },
   {
     "Answer": 3,
@@ -1218,7 +1548,10 @@
       "Amazon Inspector"
     ],
     "Question": " Which of the following is a managed DDOS protection service?",
-    "id" : 106
+    "id": 106,
+    "Correct": [
+      "AWS Shield"
+    ]
   },
   {
     "Answer": 2,
@@ -1229,7 +1562,10 @@
       "A tool that helps customers estimate their monthly AWS bill more efficienlty"
     ],
     "Question": " Which of the following statements best describes AWS TrustedAdvisor?",
-    "id" : 107
+    "id": 107,
+    "Correct": [
+      "A tool that provides you real time guidance to help you provision your resources following AWS best practices"
+    ]
   },
   {
     "Answer": 1,
@@ -1240,7 +1576,10 @@
       "VPN Load Balancer"
     ],
     "Question": " You have an application composed of individual services and you \nneed to route a request to a service based on the content of the request. \nWhat type oh Load Balancer should you use?",
-    "id" : 108
+    "id": 108,
+    "Correct": [
+      "Application Load Balancer"
+    ]
   },
   {
     "Answer": 4,
@@ -1251,7 +1590,10 @@
       "Amazon CloudWatch"
     ],
     "Question": " Which service sends notifications or automatically makes changes \nto the resources being monitored based on the rules you established?",
-    "id" : 109
+    "id": 109,
+    "Correct": [
+      "Amazon CloudWatch"
+    ]
   },
   {
     "Answer": 3,
@@ -1262,7 +1604,10 @@
       "Multiple AWS Direct Connect (DX) gateways within a data center"
     ],
     "Question": " Which parts of the AWS infrastructure support increased resilience?",
-    "id" : 110
+    "id": 110,
+    "Correct": [
+      "Multiple Availabilty Zones within a Region"
+    ]
   },
   {
     "Answer": 3,
@@ -1273,7 +1618,10 @@
       "Amazon EFS"
     ],
     "Question": "Which service provides persistent block storage volumes for use with Amazon EC2 instances?",
-    "id" : 111
+    "id": 111,
+    "Correct": [
+      "Amazon EBS"
+    ]
   },
   {
     "Answer": 1,
@@ -1284,10 +1632,12 @@
       "Charged by speed of transfer"
     ],
     "Question": " How is storage typically priced on AWS Cloud",
-    "id" : 112
+    "id": 112,
+    "Correct": [
+      "Charged per GB"
+    ]
   },
   {
-
     "Answer": 2,
     "Answers": [
       "Automatically monitoring traffic to ensure that costs are kept beneath a specified threshold",
@@ -1296,7 +1646,10 @@
       "Automatically distributing traffic across multiple targets"
     ],
     "Question": "What is Elastic Load Balancing?",
-    "id" : 113
+    "id": 113,
+    "Correct": [
+      "Automatically stopping traffic when targets are overloaded"
+    ]
   },
   {
     "Answer": 2,
@@ -1307,7 +1660,10 @@
       "Secondary user name"
     ],
     "Question": " Which of the following is a best practice fpr adding an additional layer of security when logging into the AWS Management Console?",
-    "id" : 114
+    "id": 114,
+    "Correct": [
+      "MFA"
+    ]
   },
   {
     "Answer": 1,
@@ -1318,7 +1674,10 @@
       "Create six Amazon EC2 instances in different Availabilty Zones"
     ],
     "Question": "Users of your services are reporting latency. \nWith on-premises architecture you would notify your Administrator to launch another server to balance the load. How can this be automated using AWS",
-    "id" : 115
+    "id": 115,
+    "Correct": [
+      "Enable an Amazon CloudWatch alarm to trigger a scaling policy"
+    ]
   },
   {
     "Answer": 2,
@@ -1329,7 +1688,10 @@
       "Route the newsletters to an Amazon ElastiCache store"
     ],
     "Question": "You have been tasked with distributing a newsletter that will be pushed out to administrators by email. Which of the following is the best solution?",
-    "id" : 116
+    "id": 116,
+    "Correct": [
+      "Create a topic in Amazon SNS that administrators can subsribe to"
+    ]
   },
   {
     "Answer": 2,
@@ -1340,7 +1702,10 @@
       "AWS Cloud9"
     ],
     "Question": "Which of the following services provides you with data and actionable insights to monitor your applications, understand and respond to system-wide performance changes, optimize utilization and, get a unified view of operational health?",
-    "id" : 117
+    "id": 117,
+    "Correct": [
+      "Amazon CloudWatch"
+    ]
   },
   {
     "Answer": 1,
@@ -1351,7 +1716,10 @@
       "Security and encryption"
     ],
     "Question": " Which of the following use cases is not appropriate for Amazon CloudFront?",
-    "id" : 118
+    "id": 118,
+    "Correct": [
+      "Auto Scaling"
+    ]
   },
   {
     "Answer": 3,
@@ -1362,7 +1730,10 @@
       "Amazon Elastic Block Store (Amazon EBS)"
     ],
     "Question": "Which of the following AWS services has no additional charge associated with its use? (The resources provisioned within the service may incur costs",
-    "id" : 119
+    "id": 119,
+    "Correct": [
+      "AWS Identity and Access Management(IAM)"
+    ]
   },
   {
     "Answer": 2,
@@ -1373,7 +1744,10 @@
       "A cloud service solution that establishes private connectivity between AWS and your data center, office, or colocation environment"
     ],
     "Question": "What is Amazon Route 53?",
-    "id" : 120
+    "id": 120,
+    "Correct": [
+      "A highly available and scalable Domain Name System (DNS) web service"
+    ]
   },
   {
     "Answer": 2,
@@ -1384,7 +1758,10 @@
       "Quickly deploy MFA to multiple data centers"
     ],
     "Question": "Which of the following examples best demonstrates the agility that cloud computing offers",
-    "id" : 121
+    "id": 121,
+    "Correct": [
+      "Spin up servers in minutes, and shut down servers when you don't need them"
+    ]
   },
   {
     "Answer": 1,
@@ -1395,7 +1772,10 @@
       "Pay in advance"
     ],
     "Question": "Which of the following options describes the most common AWS billing model",
-    "id" : 122
+    "id": 122,
+    "Correct": [
+      "Pay as you go"
+    ]
   },
   {
     "Answer": 1,
@@ -1406,7 +1786,10 @@
       "AWS Cloud Map"
     ],
     "Question": "Which AWS service enables you to repeatedly and predictably resources to power your applications",
-    "id" : 123
+    "id": 123,
+    "Correct": [
+      "AWS CloudFormation"
+    ]
   },
   {
     "Answer": 1,
@@ -1417,7 +1800,10 @@
       "Performance effieicny"
     ],
     "Question": "Which of the pillars of the Well-Architected Framework is defined as the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures?",
-    "id" : 124
+    "id": 124,
+    "Correct": [
+      "Operational excellence"
+    ]
   },
   {
     "Answer": 2,
@@ -1428,7 +1814,10 @@
       "Migration"
     ],
     "Question": "Which category of services includes Amazon S3",
-    "id" : 125
+    "id": 125,
+    "Correct": [
+      "Storage"
+    ]
   },
   {
     "Answer": 3,
@@ -1439,7 +1828,10 @@
       "Fully independent development without parameters"
     ],
     "Question": "Which of the following components is included in the value proposition of the AWS Cloud?",
-    "id" : 126
+    "id": 126,
+    "Correct": [
+      "Massive economies of scale"
+    ]
   },
   {
     "Answer": 2,
@@ -1450,7 +1842,10 @@
       "Customer"
     ],
     "Question": "Who is responsible for security of the cloud according to the shared responsibilty model?",
-    "id" : 127
+    "id": 127,
+    "Correct": [
+      "AWS"
+    ]
   },
   {
     "Answer": 3,
@@ -1461,7 +1856,10 @@
       "Selecting an appropriate load balancing strategy for the network routers"
     ],
     "Question": "Which of the following tasks is the customer's responsibilty wheb creating Amazon VPC security groups?",
-    "id" : 128
+    "id": 128,
+    "Correct": [
+      "Adding rules regarding inbound traffic to the security group"
+    ]
   },
   {
     "Answer": 1,
@@ -1472,7 +1870,10 @@
       "Amazon EC2 Dedicated Instances"
     ],
     "Question": "Which of the following instance types provides you with a significant discount compared to On-Demand instance pricing?",
-    "id" : 129
+    "id": 129,
+    "Correct": [
+      "Amazon EC2 Reserved Instances"
+    ]
   },
   {
     "Answer": 2,
@@ -1483,7 +1884,10 @@
       "Amazon CloudWatch"
     ],
     "Question": "Your company is developing a critical application, and the security of the application is one of the top priorities. Which of the following AWS services will provide recommendations for security optimization for your infrastructure?",
-    "id" : 130
+    "id": 130,
+    "Correct": [
+      "AWS TrustedAdvisor"
+    ]
   },
   {
     "Answer": 2,
@@ -1494,7 +1898,10 @@
       "AWS Identity and Access Management"
     ],
     "Question": "Which AWS service is a managed DDOS protection service that safeguards applications running on AWS?",
-    "id" : 131
+    "id": 131,
+    "Correct": [
+      "AWS Shield"
+    ]
   },
   {
     "Answer": 2,
@@ -1505,7 +1912,10 @@
       "Availabilty of the third-party audit reptots"
     ],
     "Question": "Which of the following is a reponsibilty of the customer according to the shared responsibilty model?",
-    "id" : 132
+    "id": 132,
+    "Correct": [
+      "AWS IAM"
+    ]
   },
   {
     "Answer": 4,
@@ -1516,7 +1926,10 @@
       "Create an IAM group for each department, and assign IAM users to the groups"
     ],
     "Question": "A company has 70 employess divdied into 10 departments. The IT administrator wants to customize each department's access to AWS. Which of the following options is most appropriate?",
-    "id" : 133
+    "id": 133,
+    "Correct": [
+      "Create an IAM group for each department, and assign IAM users to the groups"
+    ]
   },
   {
     "Answer": 2,
@@ -1527,7 +1940,10 @@
       "Security of the Cloud"
     ],
     "Question": "Which of the following AWS concepts refers to \"Established best practice developed through lessons learned by working with customers\"",
-    "id" : 134
+    "id": 134,
+    "Correct": [
+      "Well-Architected Framework"
+    ]
   },
   {
     "Answer": 3,
@@ -1538,7 +1954,10 @@
       "Regions"
     ],
     "Question": "Which component of the AWS global infrastructure supports the caching of the content for faster access?",
-    "id" : 135
+    "id": 135,
+    "Correct": [
+      "Edge locations"
+    ]
   },
   {
     "Answer": 2,
@@ -1549,7 +1968,10 @@
       "Packages that enable access to AWS in a variety of programming languages"
     ],
     "Question": "Which of the following defines the AWS Command Line Interface(AWS CLI)?",
-    "id" : 136
+    "id": 136,
+    "Correct": [
+      "A suite of utilities that can be launched from a command program in Linux, macOS, or Windows"
+    ]
   },
   {
     "Answer": 3,
@@ -1560,85 +1982,11 @@
       "AWS CLI"
     ],
     "Question": "Which method would you use to access AWS services through an easy-to-use graphical interface?",
-    "id" : 137
+    "id": 137,
+    "Correct": [
+      "AWS Management Console"
+    ]
   },
-  {
-	"Answer": 4,
-	"Answers": [
-		"The ability to maintain operation during and/or after failure.",
-		"The ability to not only scale-out when required, but also reduce in size when required.",
-		"The ability to always be available and easily accessible.",
-		"The ability to easily scale up in size, capacity, and/or scope when required."      
-	],
-	"Question": "What is scalability?",
-	"id" : 138
-	},
-  {
-	"Answer": 4,
-	"Answers": [                                             
-		"AWS Regions, Data Center, AWS Global Infrastructure, and Availability Zones",
-		"Data Center, Availability Zones, AWS Regions, and AWS Global Infrastructure",
-		"Availability Zones, AWS Regions, Data Center, and AWS Global Infrastructure",
-		"AWS Global Infrastructure, AWS Regions, Availability Zones, and Data Center"      
-	],
-	"Question": "Which of these is an example of the hierarchy in the AWS global infrastructure from largest to smallest? Please select the most appropriate answer.",
-	"id" : 139
-	},
-	{
-	"Answer": 3,
-	"Answers": [                                             
-		"An Availability Zone is an Edge location",
-		"An Availability Zone is a Point of Presence.",
-		"An Availability Zone is an area containing datacenters in which AWS resources are available.",
-		"The physical building containing the physical hardware of AWS infrastructure"
-	],
-	"Question": "Which of these is descriptive of an Availability Zone?",
-	"id" : 140
-	},
-	{
-	"Answer": 1,
-	"Answers": [                                             
-		"AWS Lambda",
-		"AWS Route 53",
-		"VPC",
-		"S3"      
-		],
-	"Question": "Which of these is not an example of the AWS networking services",
-	"id" : 141
-	},
-	{
-	"Answer": 2,
-	"Answers": [                                             
-		"Personal Cloud",
-		"Hybrid Cloud",
-		"Public Cloud",
-		"Private Cloud"      
-	],
-	"Question": "The AWS Cloud is",
-	"id" : 142
-	},
-	{
-	"Answer": 2,
-	"Answers": [                                             
-		"Scalability differs in its ability to not only scale-out but to shrink back down resources based on-demand as well.",
-		" Elasticity differs in its ability to not only scale-out but to shrink back down resources based on-demand as well.",
-		"Elasticity is the ability to be available from many locations.",
-		"Elasticity is the ability to scale up in size, and/or scope of resources when required."      
-		],
-	"Question": "How does Elasticity differ from Scalability?",
-	"id" : 143
-	},
-	{
-	"Answer": 4,
-	"Answers": [                                             
-		"Fault-tolerant",
-		"Flexible and fault-tolerant",
-		"On-site infrastructure is publically accessible for modification",
-		"Cost-efficient, flexible, fault-tolerant, and highly available"      
-		],
-	"Question": "What are the characteristics of the AWS Cloud?",
-	"id" : 144
-	},
   {
     "Answer": 4,
     "Answers": [
@@ -1648,10 +1996,12 @@
       "The ability to easily scale up in size, capacity, and/or scope when required."
     ],
     "Question": "What is scalability?",
-    "id": 138
+    "id": 138,
+    "Correct": [
+      "The ability to easily scale up in size, capacity, and/or scope when required."
+    ]
   },
   {
-
     "Answer": 4,
     "Answers": [
       "AWS Regions, Data Center, AWS Global Infrastructure, and Availability Zones",
@@ -1660,7 +2010,10 @@
       "AWS Global Infrastructure, AWS Regions, Availability Zones, and Data Center"
     ],
     "Question": "Which of these is an example of the hierarchy in the AWS global infrastructure from largest to smallest? Please select the most appropriate answer.",
-    "id": 139
+    "id": 139,
+    "Correct": [
+      "AWS Global Infrastructure, AWS Regions, Availability Zones, and Data Center"
+    ]
   },
   {
     "Answer": 3,
@@ -1671,7 +2024,10 @@
       "The physical building containing the physical hardware of AWS infrastructure"
     ],
     "Question": "Which of these is descriptive of an Availability Zone?",
-    "id": 140
+    "id": 140,
+    "Correct": [
+      "An Availability Zone is an area containing datacenters in which AWS resources are available."
+    ]
   },
   {
     "Answer": 1,
@@ -1682,7 +2038,10 @@
       "S3"
     ],
     "Question": "Which of these is not an example of the AWS networking services",
-    "id": 141
+    "id": 141,
+    "Correct": [
+      "AWS Lambda"
+    ]
   },
   {
     "Answer": 2,
@@ -1693,7 +2052,10 @@
       "Private Cloud"
     ],
     "Question": "The AWS Cloud is",
-    "id": 142
+    "id": 142,
+    "Correct": [
+      "Hybrid Cloud"
+    ]
   },
   {
     "Answer": 2,
@@ -1704,7 +2066,10 @@
       "Elasticity is the ability to scale up in size, and/or scope of resources when required."
     ],
     "Question": "How does Elasticity differ from Scalability?",
-    "id": 143
+    "id": 143,
+    "Correct": [
+      " Elasticity differs in its ability to not only scale-out but to shrink back down resources based on-demand as well."
+    ]
   },
   {
     "Answer": 4,
@@ -1715,7 +2080,108 @@
       "Cost-efficient, flexible, fault-tolerant, and highly available"
     ],
     "Question": "What are the characteristics of the AWS Cloud?",
-    "id": 144
+    "id": 144,
+    "Correct": [
+      "Cost-efficient, flexible, fault-tolerant, and highly available"
+    ]
+  },
+  {
+    "Answer": 4,
+    "Answers": [
+      "The ability to maintain operation during and/or after failure.",
+      "The ability to not only scale-out when required, but also reduce in size when required.",
+      "The ability to always be available and easily accessible.",
+      "The ability to easily scale up in size, capacity, and/or scope when required."
+    ],
+    "Question": "What is scalability?",
+    "id": 138,
+    "Correct": [
+      "The ability to easily scale up in size, capacity, and/or scope when required."
+    ]
+  },
+  {
+    "Answer": 4,
+    "Answers": [
+      "AWS Regions, Data Center, AWS Global Infrastructure, and Availability Zones",
+      "Data Center, Availability Zones, AWS Regions, and AWS Global Infrastructure",
+      "Availability Zones, AWS Regions, Data Center, and AWS Global Infrastructure",
+      "AWS Global Infrastructure, AWS Regions, Availability Zones, and Data Center"
+    ],
+    "Question": "Which of these is an example of the hierarchy in the AWS global infrastructure from largest to smallest? Please select the most appropriate answer.",
+    "id": 139,
+    "Correct": [
+      "AWS Global Infrastructure, AWS Regions, Availability Zones, and Data Center"
+    ]
+  },
+  {
+    "Answer": 3,
+    "Answers": [
+      "An Availability Zone is an Edge location",
+      "An Availability Zone is a Point of Presence.",
+      "An Availability Zone is an area containing datacenters in which AWS resources are available.",
+      "The physical building containing the physical hardware of AWS infrastructure"
+    ],
+    "Question": "Which of these is descriptive of an Availability Zone?",
+    "id": 140,
+    "Correct": [
+      "An Availability Zone is an area containing datacenters in which AWS resources are available."
+    ]
+  },
+  {
+    "Answer": 1,
+    "Answers": [
+      "AWS Lambda",
+      "AWS Route 53",
+      "VPC",
+      "S3"
+    ],
+    "Question": "Which of these is not an example of the AWS networking services",
+    "id": 141,
+    "Correct": [
+      "AWS Lambda"
+    ]
+  },
+  {
+    "Answer": 2,
+    "Answers": [
+      "Personal Cloud",
+      "Hybrid Cloud",
+      "Public Cloud",
+      "Private Cloud"
+    ],
+    "Question": "The AWS Cloud is",
+    "id": 142,
+    "Correct": [
+      "Hybrid Cloud"
+    ]
+  },
+  {
+    "Answer": 2,
+    "Answers": [
+      "Scalability differs in its ability to not only scale-out but to shrink back down resources based on-demand as well.",
+      " Elasticity differs in its ability to not only scale-out but to shrink back down resources based on-demand as well.",
+      "Elasticity is the ability to be available from many locations.",
+      "Elasticity is the ability to scale up in size, and/or scope of resources when required."
+    ],
+    "Question": "How does Elasticity differ from Scalability?",
+    "id": 143,
+    "Correct": [
+      " Elasticity differs in its ability to not only scale-out but to shrink back down resources based on-demand as well."
+    ]
+  },
+  {
+    "Answer": 4,
+    "Answers": [
+      "Fault-tolerant",
+      "Flexible and fault-tolerant",
+      "On-site infrastructure is publically accessible for modification",
+      "Cost-efficient, flexible, fault-tolerant, and highly available"
+    ],
+    "Question": "What are the characteristics of the AWS Cloud?",
+    "id": 144,
+    "Correct": [
+      "Cost-efficient, flexible, fault-tolerant, and highly available"
+    ]
   },
   {
     "Answer": 3,
@@ -1726,7 +2192,10 @@
       "contract-based"
     ],
     "id": 145,
-    "Question": "AWS works on a _ pricing model."
+    "Question": "AWS works on a _ pricing model.",
+    "Correct": [
+      "pay-as-you-go"
+    ]
   },
   {
     "Answer": 4,
@@ -1737,7 +2206,10 @@
       "3 months"
     ],
     "id": 146,
-    "Question": "AWS Cost Explorer will forecast _ months of billing."
+    "Question": "AWS Cost Explorer will forecast _ months of billing.",
+    "Correct": [
+      "3 months"
+    ]
   },
   {
     "Answer": 3,
@@ -1748,7 +2220,10 @@
       "Basic and Developer"
     ],
     "id": 147,
-    "Question": "Which of the following types of AWS accounts have access to AWS Personal Health Dashboard?"
+    "Question": "Which of the following types of AWS accounts have access to AWS Personal Health Dashboard?",
+    "Correct": [
+      "Basic, Developer, Business, and Enterprise"
+    ]
   },
   {
     "Answer": 2,
@@ -1759,7 +2234,10 @@
       "Delete any resources that you do not remember creating."
     ],
     "id": 148,
-    "Question": "Which of the following guidelines should not be followed if an AWS account is compromised?"
+    "Question": "Which of the following guidelines should not be followed if an AWS account is compromised?",
+    "Correct": [
+      "Respond to any email about AWS account credentials."
+    ]
   },
   {
     "Answer": 3,
@@ -1770,7 +2248,10 @@
       "AWS Organizations"
     ],
     "id": 149,
-    "Question": "In this scenario, we want to calculate our anticipated bill, which of the following tools can accomplish this task?"
+    "Question": "In this scenario, we want to calculate our anticipated bill, which of the following tools can accomplish this task?",
+    "Correct": [
+      "AWS Simple Calculator"
+    ]
   },
   {
     "Answer": 2,
@@ -1781,7 +2262,10 @@
       "Basic"
     ],
     "id": 150,
-    "Question": "Which of the following type of AWS account receives the highest priority access to customer service and technical support?"
+    "Question": "Which of the following type of AWS account receives the highest priority access to customer service and technical support?",
+    "Correct": [
+      "Enterprise"
+    ]
   },
   {
     "Answer": 4,
@@ -1792,7 +2276,10 @@
       "The AWS Cost Explorer is a free tool that allows for an estimation of the cost savings to be had by migrating to the AWS Cloud from an on-premises datacenter."
     ],
     "id": 151,
-    "Question": "Which of the following accurately describes the function of the AWS Cost Explorer?"
+    "Question": "Which of the following accurately describes the function of the AWS Cost Explorer?",
+    "Correct": [
+      "The AWS Cost Explorer is a free tool that allows for an estimation of the cost savings to be had by migrating to the AWS Cloud from an on-premises datacenter."
+    ]
   },
   {
     "Answer": 4,
@@ -1803,7 +2290,10 @@
       "Service Control Policies"
     ],
     "id": 152,
-    "Question": "In this scenario, we want to control service usage across multiple AWS accounts using AWS Organizations. Which of the following would be used to accomplish this task?"
+    "Question": "In this scenario, we want to control service usage across multiple AWS accounts using AWS Organizations. Which of the following would be used to accomplish this task?",
+    "Correct": [
+      "Service Control Policies"
+    ]
   },
   {
     "Answer": 1,
@@ -1814,7 +2304,10 @@
       "AWS Variable Store"
     ],
     "id": 153,
-    "Question": "What two AWS services receive bulk discounted pricing for agreeing to pay for a term?"
+    "Question": "What two AWS services receive bulk discounted pricing for agreeing to pay for a term?",
+    "Correct": [
+      "EC2"
+    ]
   },
   {
     "Answer": 2,
@@ -1825,7 +2318,10 @@
       "AWS charges a sign-up fee for starting an AWS account."
     ],
     "id": 154,
-    "Question": " Which of the following is true about the AWS Pricing Model?"
+    "Question": " Which of the following is true about the AWS Pricing Model?",
+    "Correct": [
+      "AWS does not charge a termination fee."
+    ]
   },
   {
     "Answer": 1,
@@ -1836,7 +2332,10 @@
       "AWS Organizations do not enable centrally managing policies across multiple AWS accounts."
     ],
     "id": 155,
-    "Question": "In regards to AWS Organizations, which of the following is true?"
+    "Question": "In regards to AWS Organizations, which of the following is true?",
+    "Correct": [
+      "AWS Organizations provides policy-based management for multiple AWS accounts."
+    ]
   },
   {
     "Answer": 3,
@@ -1847,7 +2346,10 @@
       "Business and Enterprise"
     ],
     "id": 156,
-    "Question": "Which of the following AWS accounts do not have 24/7 access to Cloud Support Engineers? Please select the most appropriate answer."
+    "Question": "Which of the following AWS accounts do not have 24/7 access to Cloud Support Engineers? Please select the most appropriate answer.",
+    "Correct": [
+      "Basic and Developer"
+    ]
   },
   {
     "Answer": 4,
@@ -1858,7 +2360,10 @@
       "AWS Organizations"
     ],
     "id": 157,
-    "Question": "In this scenario, we want to consolidate billing between multiple AWS accounts. Which of these services would help us accomplish this goal?"
+    "Question": "In this scenario, we want to consolidate billing between multiple AWS accounts. Which of these services would help us accomplish this goal?",
+    "Correct": [
+      "AWS Organizations"
+    ]
   },
   {
     "Answer": 2,
@@ -1869,7 +2374,10 @@
       "Developer, Business, and Enterprise"
     ],
     "id": 158,
-    "Question": "Which of the following types of AWS accounts have access to AWS Trusted Advisor? Please select the most appropriate answer."
+    "Question": "Which of the following types of AWS accounts have access to AWS Trusted Advisor? Please select the most appropriate answer.",
+    "Correct": [
+      "Business and Enterprise"
+    ]
   },
   {
     "Answer": 4,
@@ -1880,7 +2388,10 @@
       " The TCO Calculator is a free tool that allows for an estimation of the cost savings to be had by migrating to the AWS Cloud from an on-premises datacenter."
     ],
     "id": 159,
-    "Question": "Which of the following describes the function of the TCO Calculator?"
+    "Question": "Which of the following describes the function of the TCO Calculator?",
+    "Correct": [
+      " The TCO Calculator is a free tool that allows for an estimation of the cost savings to be had by migrating to the AWS Cloud from an on-premises datacenter."
+    ]
   },
   {
     "Answer": 1,
@@ -1891,7 +2402,10 @@
       "AWS Lambda"
     ],
     "id": 160,
-    "Question": "What AWS service receive bulk discounted pricing for agreeing to pay for a term?"
+    "Question": "What AWS service receive bulk discounted pricing for agreeing to pay for a term?",
+    "Correct": [
+      "RDS"
+    ]
   },
   {
     "Answer": 1,
@@ -1902,7 +2416,10 @@
       "VPC"
     ],
     "id": 161,
-    "Question": "In this scenario, we want to purchase a domain name with AWS. Which AWS service would we use?"
+    "Question": "In this scenario, we want to purchase a domain name with AWS. Which AWS service would we use?",
+    "Correct": [
+      "Route 53"
+    ]
   },
   {
     "Answer": 1,
@@ -1913,7 +2430,10 @@
       "ELB"
     ],
     "id": 162,
-    "Question": "Which of these AWS services does CloudFront integrate with for DDoS protection?"
+    "Question": "Which of these AWS services does CloudFront integrate with for DDoS protection?",
+    "Correct": [
+      "AWS Shield"
+    ]
   },
   {
     "Answer": 3,
@@ -1924,7 +2444,10 @@
       "Distributes traffic across EC2 instances"
     ],
     "id": 163,
-    "Question": "Which is not a benefit of ELB?"
+    "Question": "Which is not a benefit of ELB?",
+    "Correct": [
+      "Scale-out EC2 resources to meet demand"
+    ]
   },
   {
     "Answer": 1,
@@ -1935,7 +2458,10 @@
       "Classic"
     ],
     "id": 164,
-    "Question": "What id not a type of AWS load balancers?"
+    "Question": "What id not a type of AWS load balancers?",
+    "Correct": [
+      "Adaptable"
+    ]
   },
   {
     "Answer": 4,
@@ -1946,6 +2472,9 @@
       "Scalability & Elasticity"
     ],
     "id": 165,
-    "Question": "Which of the following Cloud concepts correlate with an Auto Scaling Group?"
+    "Question": "Which of the following Cloud concepts correlate with an Auto Scaling Group?",
+    "Correct": [
+      "Scalability & Elasticity"
+    ]
   }
 ]
